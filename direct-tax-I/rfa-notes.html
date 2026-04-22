@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RFA Revision Note</title>
+<link rel="canonical" href="https://shaswata.co.in/direct-tax-I/rfa-notes.html" />
+<meta name="description" content="Revision notes on Rent-Free Accommodation covering valuation rules, salary base, hotel accommodation, exemptions, and worked examples." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Shaswata Saha" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="RFA Revision Note" />
+<meta property="og:description" content="Revision notes on Rent-Free Accommodation covering valuation rules, salary base, hotel accommodation, exemptions, and worked examples." />
+<meta property="og:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<meta property="og:url" content="https://shaswata.co.in/direct-tax-I/rfa-notes.html" />
+<meta property="og:site_name" content="Shaswata Saha" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="RFA Revision Note" />
+<meta name="twitter:description" content="Revision notes on Rent-Free Accommodation covering valuation rules, salary base, hotel accommodation, exemptions, and worked examples." />
+<meta name="twitter:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f4ef;
+    --paper: #fffdf7;
+    --ink: #1a1a18;
+    --muted: #5a5a52;
+    --accent: #c84b2f;
+    --accent2: #2f6dc8;
+    --accent3: #2a8c55;
+    --rule: #d8d6cc;
+    --yellow: #f5e642;
+    --tag-bg: #1a1a18;
+    --tag-text: #f5f4ef;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 32px 20px;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    padding: 40px 48px;
+    position: relative;
+  }
+
+  /* Header */
+  .header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-left h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  .header-left .sub {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .header-right {
+    text-align: right;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  /* Section */
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .num {
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 10px;
+    padding: 1px 6px;
+    font-weight: 600;
+  }
+
+  /* Definition box */
+  .def-box {
+    border-left: 4px solid var(--accent);
+    padding: 10px 14px;
+    background: #fff8f5;
+    font-size: 13.5px;
+    margin-bottom: 10px;
+  }
+  .def-box strong { color: var(--accent); }
+
+  /* Two-col grid */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .info-card {
+    border: 1px solid var(--rule);
+    padding: 12px 14px;
+    background: var(--paper);
+  }
+  .info-card .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .info-card .value {
+    font-size: 13.5px;
+    font-weight: 500;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  thead tr {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  thead th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  tbody tr {
+    border-bottom: 1px solid var(--rule);
+  }
+  tbody tr:nth-child(even) { background: #f9f8f2; }
+  tbody td {
+    padding: 8px 12px;
+    vertical-align: middle;
+  }
+  .rate-cell {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: var(--accent2);
+    font-size: 13px;
+  }
+
+  /* Steps */
+  .steps {
+    counter-reset: step;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .step-num {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-body { font-size: 13.5px; }
+  .step-body strong { color: var(--accent); }
+
+  /* Rule strip */
+  .rule-strip {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .rule-strip .icon {
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* Exemption list */
+  .exempt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .exempt-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    font-size: 13.5px;
+  }
+  .exempt-item .tick {
+    color: var(--accent3);
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* Example box */
+  .example-box {
+    border: 1.5px solid var(--ink);
+    padding: 18px;
+    background: #f9f8f2;
+  }
+  .example-box .ex-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: var(--muted);
+  }
+  .ex-params {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .ex-param {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 7px 10px;
+  }
+  .ex-param .pk { font-size: 10px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; text-transform: uppercase; }
+  .ex-param .pv { font-size: 13px; font-weight: 600; margin-top: 2px; }
+
+  .ex-calc table tbody tr { background: transparent !important; }
+  .ex-total td {
+    font-weight: 700 !important;
+    font-family: 'IBM Plex Mono', monospace;
+    background: var(--yellow) !important;
+    color: var(--ink) !important;
+  }
+
+  /* Salary def */
+  .salary-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .sal-tag {
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 3px 9px;
+  }
+
+  /* CII box */
+  .formula-box {
+    background: #f0f4ff;
+    border: 1px solid #b0c4ef;
+    padding: 12px 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .formula-box .f-label {
+    font-size: 10px;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+  }
+
+  /* Bottom note */
+  .bottom-note {
+    border-top: 2px solid var(--ink);
+    margin-top: 28px;
+    padding-top: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* highlight */
+  .hl { background: var(--yellow); padding: 0 3px; font-weight: 600; }
+
+  /* -------------------------------------
+     RESPONSIVE MEDIA QUERIES 
+     ------------------------------------- */
+
+  @media (max-width: 768px) {
+    body {
+      padding: 16px;
+    }
+    
+    .page {
+      padding: 24px;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .header-right {
+      text-align: left;
+    }
+
+    .two-col {
+      grid-template-columns: 1fr;
+    }
+
+    .ex-params {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Custom scrollbar for webkit to make horizontal scrolling visible */
+    table::-webkit-scrollbar {
+      height: 6px;
+    }
+    table::-webkit-scrollbar-track {
+      background: var(--rule);
+    }
+    table::-webkit-scrollbar-thumb {
+      background: var(--muted);
+      border-radius: 3px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+    
+    .page {
+      padding: 20px 16px;
+    }
+
+    .header-left h1 {
+      font-size: 20px;
+      line-height: 1.3;
+      margin-top: 6px;
+    }
+
+    .ex-params {
+      grid-template-columns: 1fr;
+    }
+
+    .example-box {
+      padding: 14px;
+    }
+
+    .bottom-note {
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  @media print {
+    body { padding: 0; }
+    .page { border: none; padding: 0; }
+    table { overflow-x: visible; white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="badge">Income Tax · Perquisite</div>
+      <h1>Rent-Free Accommodation (RFA)</h1>
+      <div class="sub">Taxability &amp; Valuation — Revision Note</div>
+    </div>
+    <div class="header-right">
+      Rates applicable from<br>
+      <strong>01 September 2023</strong><br>
+      Section: Salaries (Head of Income)
+    </div>
+  </div>
+
+  <!-- 1. BASICS -->
+  <div class="section">
+    <div class="section-title"><span class="num">01</span> What is RFA?</div>
+    <div class="def-box">
+      <strong>RFA</strong> = Accommodation given by employer to employee at <strong>zero rent</strong>.<br>
+      <strong>CRA</strong> = Accommodation given at a rent <strong>lower than market value</strong>.<br>
+      Both are <strong>perquisites taxable under the head "Salaries"</strong>. The employee does not pay rent, but pays tax on the value of this benefit.
+    </div>
+    <div class="two-col">
+      <div class="info-card">
+        <div class="label">Accommodation Types (RFA includes)</div>
+        <div class="value">Flat · House · Guest House · Hotel · Service Apartment · Caravan · Mobile Home</div>
+      </div>
+      <div class="info-card">
+        <div class="label">RFA Category</div>
+        <div class="value"><strong>Unfurnished</strong> — No furniture/appliances provided<br><strong>Furnished</strong> — TV, AC, fridge, furniture, etc. included</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SALARY DEFINITION -->
+  <div class="section">
+    <div class="section-title"><span class="num">02</span> What counts as "Salary" for RFA calculation?</div>
+    <div class="salary-items">
+      <span class="sal-tag">Basic Pay</span>
+      <span class="sal-tag">Dearness Allowance (DA)*</span>
+      <span class="sal-tag">Bonus</span>
+      <span class="sal-tag">Commission</span>
+      <span class="sal-tag">All Taxable Allowances</span>
+    </div>
+    <div style="margin-top:8px; font-size:12.5px; color:var(--muted);">* DA is included only if it forms part of salary for retirement benefit calculations.</div>
+  </div>
+
+  <!-- 3. UNFURNISHED RFA -->
+  <div class="section">
+    <div class="section-title"><span class="num">03</span> Unfurnished RFA — Perquisite Value</div>
+
+    <div class="rule-strip">
+      <span class="icon">🏛</span>
+      <span><strong>Government Employee:</strong> Perquisite value = License fee fixed by the Central/State Government. No percentage calculation applies.</span>
+    </div>
+
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.8px; color:var(--muted); margin-bottom:6px;">Non-Government Employer — Accommodation OWNED by Employer</div>
+    <table>
+      <thead>
+        <tr>
+          <th>City Population</th>
+          <th>Perquisite Value (Rate × Salary)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Up to 10 Lakh</td>
+          <td class="rate-cell">5% of Salary</td>
+        </tr>
+        <tr>
+          <td>10 Lakh – 15 Lakh</td>
+          <td class="rate-cell">5% of Salary</td>
+        </tr>
+        <tr>
+          <td>15 Lakh – 25 Lakh</td>
+          <td class="rate-cell">7.5% of Salary</td>
+        </tr>
+        <tr>
+          <td>25 Lakh – 40 Lakh</td>
+          <td class="rate-cell">7.5% of Salary</td>
+        </tr>
+        <tr>
+          <td>Above 40 Lakh</td>
+          <td class="rate-cell">10% of Salary</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.8px; color:var(--muted); margin-bottom:6px; margin-top:12px;">Non-Government Employer — Accommodation LEASED by Employer</div>
+    <div class="def-box" style="border-color:var(--accent2); background:#f5f8ff;">
+      Perquisite = <strong style="color:var(--accent2);">Lower of:</strong><br>
+      &nbsp;&nbsp;&nbsp;(a) Actual lease rent paid by the employer<br>
+      &nbsp;&nbsp;&nbsp;(b) 10% of Salary
+    </div>
+  </div>
+
+  <!-- 4. FURNISHED RFA -->
+  <div class="section">
+    <div class="section-title"><span class="num">04</span> Furnished RFA — Perquisite Value</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">Calculate perquisite value <strong>as if it were unfurnished</strong> (use Section 03 above).</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Add furniture value:</strong><br>
+          · If furniture is <strong>owned by employer</strong> → Add <span class="hl">10% of original cost of furniture</span> per year<br>
+          · If furniture is <strong>hired by employer</strong> → Add <span class="hl">actual hire/rent charges paid</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body"><strong>Deduct</strong> any <strong>rent actually paid by the employee</strong> to arrive at the final taxable perquisite value.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. HOTEL ACCOMMODATION -->
+  <div class="section">
+    <div class="section-title"><span class="num">05</span> Hotel Accommodation</div>
+
+    <div class="two-col">
+      <div class="info-card" style="border-color:var(--accent3); background:#f5fff8;">
+        <div class="label" style="color:var(--accent3);">Stay &lt; 15 Days</div>
+        <div class="value" style="font-weight:600; color:var(--accent3);">NOT TAXABLE</div>
+        <div style="font-size:12px; color:var(--muted); margin-top:4px;">No perquisite value added.</div>
+      </div>
+      <div class="info-card" style="border-color:var(--accent); background:#fff8f5;">
+        <div class="label" style="color:var(--accent);">Stay ≥ 15 Days</div>
+        <div class="value">Perquisite = <strong>Lower of:</strong><br>
+          (a) 24% of Salary<br>
+          (b) Actual hotel charges paid</div>
+      </div>
+    </div>
+
+    <div style="margin-top:10px; font-weight:600; font-size:13px; margin-bottom:6px;">Transfer Situation (Employee retains old + gets new accommodation):</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Duration of New Accommodation</th>
+          <th>What gets taxed?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Up to 90 days</td>
+          <td>Only <span class="hl">one accommodation</span> — whichever has the <strong>lower perquisite value</strong></td>
+        </tr>
+        <tr>
+          <td>More than 90 days</td>
+          <td><span class="hl">Both accommodations</span> are taxed separately</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="font-size:12px; color:var(--muted); margin-top:6px;">⚠ Hotel accommodation rules apply only to <strong>permanent employees</strong>. Temporary / project / offshore employees are excluded.</div>
+  </div>
+
+  <!-- 6. SUBSEQUENT YEARS -->
+  <div class="section">
+    <div class="section-title"><span class="num">06</span> Valuation in Subsequent Years (CII Method)</div>
+    <div style="font-size:13.5px; margin-bottom:8px;">If the same RFA continues in year 2, 3, etc., the perquisite value for that year = <strong>Lower of:</strong></div>
+    <div class="two-col">
+      <div class="info-card">
+        <div class="label">Option A</div>
+        <div class="value">Fresh calculation for that year using current salary and applicable rate (as per Section 03/04 above)</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Option B</div>
+        <div class="value">
+          <div class="formula-box" style="margin:0; background:transparent; border:none; padding:0; font-size:13px;">
+            <div class="f-label">CII Formula</div>
+            Value of 1st Year × (CII of Current Year ÷ CII of 1st Year)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. EXEMPTIONS -->
+  <div class="section">
+    <div class="section-title"><span class="num">07</span> Tax Exemptions — RFA is NOT taxable in these cases</div>
+    <div class="exempt-list">
+      <div class="exempt-item">
+        <span class="tick">✓</span>
+        <span>Accommodation is provided in a <strong>remote area</strong>.</span>
+      </div>
+      <div class="exempt-item">
+        <span class="tick">✓</span>
+        <span>Hotel stay is for <strong>less than 15 days</strong> on account of <strong>transfer</strong>.</span>
+      </div>
+      <div class="exempt-item">
+        <span class="tick">✓</span>
+        <span>RFA is provided to: <strong>Supreme Court Judge · High Court Judge · Union Minister · Member of Parliament · UPSC Member · Leader of Opposition in Parliament</strong>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. WORKED EXAMPLE -->
+  <div class="section">
+    <div class="section-title"><span class="num">08</span> Worked Example (FY 2023-24)</div>
+    <div class="example-box">
+      <div class="ex-title">Given Information</div>
+      <div class="ex-params">
+        <div class="ex-param"><div class="pk">Employee</div><div class="pv">Mr. Prabhat</div></div>
+        <div class="ex-param"><div class="pk">City</div><div class="pv">Jamshedpur (~16 Lakh pop.)</div></div>
+        <div class="ex-param"><div class="pk">Accommodation</div><div class="pv">Unfurnished, owned by employer</div></div>
+        <div class="ex-param"><div class="pk">Basic Pay</div><div class="pv">₹3,00,000 p.a.</div></div>
+        <div class="ex-param"><div class="pk">DA (retirement)</div><div class="pv">₹1,50,000 p.a.</div></div>
+        <div class="ex-param"><div class="pk">Commission</div><div class="pv">₹1,50,000 p.a.</div></div>
+        <div class="ex-param"><div class="pk">Total Salary</div><div class="pv">₹6,00,000 p.a. → ₹50,000/month</div></div>
+        <div class="ex-param"><div class="pk">Applicable Rate</div><div class="pv">7.5% (15–25 Lakh city)</div></div>
+        <div class="ex-param"><div class="pk">Rate effective from</div><div class="pv">01.09.2023</div></div>
+      </div>
+
+      <div class="ex-title" style="margin-top:4px;">Calculation (FY 2023-24 uses split: old rate Apr–Aug, new rate Sep–Mar)</div>
+      <div class="ex-calc">
+        <table>
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>Months</th>
+              <th>Monthly Salary</th>
+              <th>Rate</th>
+              <th>Perquisite Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apr 2023 – Aug 2023</td>
+              <td>5</td>
+              <td>₹50,000</td>
+              <td class="rate-cell">10% (old)</td>
+              <td>₹25,000 &nbsp;<span style="font-size:11px;color:var(--muted)">(50K×5×10%)</span></td>
+            </tr>
+            <tr>
+              <td>Sep 2023 – Mar 2024</td>
+              <td>7</td>
+              <td>₹50,000</td>
+              <td class="rate-cell">7.5% (new)</td>
+              <td>₹26,250 &nbsp;<span style="font-size:11px;color:var(--muted)">(50K×7×7.5%)</span></td>
+            </tr>
+            <tr class="ex-total">
+              <td colspan="4"><strong>Total Taxable Perquisite Value (FY 2023-24)</strong></td>
+              <td><strong>₹51,250</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:12px; color:var(--muted); margin-top:8px;">This ₹51,250 gets added to Mr. Prabhat's salary income and taxed at his applicable slab rate.</div>
+    </div>
+  </div>
+
+  <!-- QUICK RULES -->
+  <div class="section">
+    <div class="section-title"><span class="num">09</span> Must-Remember Rules</div>
+    <div style="display:flex; flex-direction:column; gap:6px;">
+      <div class="rule-strip"><span class="icon">→</span><span>Rent actually paid by the employee to the employer is <strong>always deducted</strong> from the computed perquisite value (applies to both accommodation and furniture).</span></div>
+      <div class="rule-strip"><span class="icon">→</span><span>New rates (w.e.f. 01.09.2023) apply only from September. For FY 2023-24, use <strong>split calculation</strong>: old rate for Apr–Aug (5 months), new rate for Sep–Mar (7 months).</span></div>
+      <div class="rule-strip"><span class="icon">→</span><span>Hotel accommodation rules (15-day rule, 90-day transfer rule) apply only to <strong>permanent employees</strong>.</span></div>
+      <div class="rule-strip"><span class="icon">→</span><span>For government employees, <strong>no percentage formula</strong>. Only the government-fixed license fee applies.</span></div>
+    </div>
+  </div>
+
+  <div class="bottom-note">
+    <span>Source: Income Tax Act, Rule 3 · ClearTax</span>
+    <span>Rates w.e.f. 01.09.2023 only</span>
+  </div>
+
+</div>
+</body>
+</html>

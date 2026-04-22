@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Income from House Property — Income Tax</title>
+<link rel="canonical" href="https://shaswata.co.in/direct-tax-I/income-from-house-property-section-22-to-27.html" />
+<meta name="description" content="Income tax revision notes on income from house property covering Sections 22 to 27, GAV, NAV, deductions under Section 24, vacancy, unrealised rent, co-ownership, and deemed owner rules." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Shaswata Saha" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Income from House Property — Income Tax" />
+<meta property="og:description" content="Revision notes covering Sections 22 to 27, GAV, NAV, Section 24 deductions, vacancy, unrealised rent, co-ownership, and deemed owner rules." />
+<meta property="og:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<meta property="og:url" content="https://shaswata.co.in/direct-tax-I/income-from-house-property-section-22-to-27.html" />
+<meta property="og:site_name" content="Shaswata Saha" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Income from House Property — Income Tax" />
+<meta name="twitter:description" content="Revision notes covering Sections 22 to 27, GAV, NAV, Section 24 deductions, vacancy, unrealised rent, co-ownership, and deemed owner rules." />
+<meta name="twitter:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0d0d0d;
+    --dark: #1c1c1c;
+    --mid: #555;
+    --light: #999;
+    --rule: #e0e0e0;
+    --rule-heavy: #b0b0b0;
+    --bg: #ffffff;
+    --bg-alt: #f6f6f6;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', Consolas, monospace;
+    --base-font-size: 14.5px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    font-size: var(--base-font-size);
+    line-height: 1.75;
+    color: var(--dark);
+    background: var(--bg);
+    transition: font-size 0.2s ease;
+  }
+
+  /* ── Layout ── */
+  .wrapper { display: flex; min-height: 100vh; }
+
+  /* ── Font Controls ── */
+  .font-controls {
+    position: fixed; top: 20px; right: 30px;
+    display: flex; gap: 5px;
+    background: var(--bg-alt); padding: 6px;
+    border: 1px solid var(--rule); border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); z-index: 50;
+  }
+  .font-controls button {
+    background: var(--bg); border: 1px solid var(--rule);
+    color: var(--dark); font-family: var(--font-body);
+    font-weight: 600; cursor: pointer;
+    padding: 5px 12px; font-size: 14px;
+    border-radius: 4px; transition: all 0.2s;
+  }
+  .font-controls button:hover { background: #e9e9e9; color: var(--black); }
+
+  /* ── TOC Sidebar ── */
+  .toc {
+    width: 265px; flex-shrink: 0;
+    position: sticky; top: 0; height: 100vh;
+    overflow-y: auto; border-right: 1px solid var(--rule);
+    padding: 2rem 1.1rem 2rem 1.4rem;
+    background: var(--bg-alt);
+  }
+  .toc::-webkit-scrollbar { width: 4px; }
+  .toc::-webkit-scrollbar-thumb { background: var(--rule-heavy); }
+
+  .toc .toc-label {
+    font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--light); margin-bottom: 1rem; display: block;
+  }
+  .toc ol { list-style: none; padding: 0; }
+  .toc li { margin: 0; }
+
+  .toc a {
+    display: block; font-size: 0.76rem; color: var(--mid);
+    text-decoration: none; padding: 0.3rem 0.6rem;
+    margin-bottom: 2px; border-left: 2px solid transparent;
+    line-height: 1.35; border-radius: 0 4px 4px 0;
+    transition: all 0.15s;
+  }
+  .toc a:hover { color: var(--black); background-color: rgba(0,0,0,0.03); }
+  .toc a.active { color: var(--black); font-weight: 600; border-left-color: var(--black); background-color: rgba(0,0,0,0.05); }
+
+  .toc a.section-link {
+    font-weight: 600; color: var(--dark);
+    font-size: 0.77rem; margin-top: 0.55rem;
+    border-left-color: var(--rule-heavy);
+  }
+  .toc a.section-link.active { border-left-color: var(--black); }
+
+  /* ── Level 2 Submenu ── */
+  .toc .submenu {
+    display: none; padding-left: 0.5rem;
+    margin-top: 0.2rem; margin-bottom: 0.2rem;
+    border-left: 1px dashed var(--rule-heavy);
+    margin-left: 0.8rem; list-style: none;
+  }
+  .toc .has-submenu.open > .submenu { display: block; }
+  .toc .submenu a { font-size: 0.70rem; padding: 0.2rem 0.6rem; margin-bottom: 1px; }
+
+  .toc .has-submenu > a {
+    position: relative; display: flex;
+    justify-content: space-between; align-items: center;
+    padding-right: 1.5rem;
+  }
+  .toc .has-submenu > a::after {
+    content: ''; display: inline-block;
+    width: 0; height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--light);
+    transform: rotate(-90deg);
+    transition: transform 0.2s, border-top-color 0.2s;
+    flex-shrink: 0;
+  }
+  .toc .has-submenu.open > a::after { transform: rotate(0deg); border-top-color: var(--black); }
+
+  /* ── Level 3 Sub-submenu ── */
+  .toc .sub-submenu {
+    display: none; padding-left: 0.4rem;
+    margin-top: 0.1rem; margin-bottom: 0.1rem;
+    border-left: 1px dotted var(--rule-heavy);
+    margin-left: 0.7rem; list-style: none;
+  }
+  .toc .has-sub-submenu.open > .sub-submenu { display: block; }
+  .toc .sub-submenu a { font-size: 0.65rem; padding: 0.15rem 0.5rem; color: var(--light); line-height: 1.3; }
+  .toc .sub-submenu a:hover { color: var(--black); }
+  .toc .sub-submenu a.active { color: var(--black); font-weight: 600; border-left-color: var(--black); }
+
+  .toc .has-sub-submenu > a {
+    display: flex; justify-content: space-between;
+    align-items: center; padding-right: 1.5rem;
+  }
+  .toc .has-sub-submenu > a::after {
+    content: ''; display: inline-block;
+    width: 0; height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid var(--light);
+    transform: rotate(-90deg);
+    transition: transform 0.2s; flex-shrink: 0;
+  }
+  .toc .has-sub-submenu.open > a::after { transform: rotate(0deg); }
+
+  /* ── Mobile Topbar ── */
+  .mobile-topbar {
+    display: none; position: sticky; top: 0; width: 100%;
+    background: var(--bg-alt); border-bottom: 1px solid var(--rule);
+    padding: 12px 20px; z-index: 900;
+    align-items: center; justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+  .mobile-topbar button {
+    background: none; border: none;
+    font-family: var(--font-body); font-size: 1rem;
+    font-weight: 600; color: var(--dark);
+    cursor: pointer; display: flex; align-items: center; gap: 8px;
+  }
+  .mobile-backdrop {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.4); z-index: 998;
+    opacity: 0; transition: opacity 0.3s;
+  }
+
+  /* ── Main Content ── */
+  .content-wrapper { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .content { max-width: 840px; padding: 3rem 3.5rem 5rem 3.5rem; }
+
+  /* ── Page Header ── */
+  .page-header {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 1.5rem; margin-bottom: 3rem;
+  }
+  .page-header .eyebrow {
+    font-size: 0.68rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--light); margin-bottom: 0.4rem;
+  }
+  .page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem; font-weight: 700;
+    color: var(--black); line-height: 1.1;
+  }
+  .page-header .meta {
+    margin-top: 0.6rem; font-size: 0.8rem;
+    color: var(--light); letter-spacing: 0.04em;
+  }
+
+  /* ── Section Separators ── */
+  hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  section { margin-bottom: 0; scroll-margin-top: 2rem; }
+
+  /* ── Headings ── */
+  h2 {
+    font-family: var(--font-heading); font-size: 1.45rem;
+    font-weight: 600; color: var(--black); margin-top: 0;
+    margin-bottom: 1rem; padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--rule-heavy);
+  }
+  h3 {
+    font-family: var(--font-heading); font-size: 1.1rem;
+    font-weight: 600; color: var(--dark);
+    margin-top: 1.6rem; margin-bottom: 0.5rem;
+  }
+  h4 {
+    font-family: var(--font-body); font-size: 0.72rem;
+    font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--mid);
+    margin-top: 1.2rem; margin-bottom: 0.4rem;
+  }
+
+  /* ── Text ── */
+  p { margin-bottom: 0.7rem; }
+  strong { font-weight: 600; color: var(--black); }
+  em { font-style: italic; }
+  code {
+    font-family: var(--font-mono); font-size: 0.87em;
+    background: var(--bg-alt); border: 1px solid var(--rule);
+    padding: 0.08em 0.35em; border-radius: 2px;
+  }
+
+  /* ── Lists ── */
+  ul, ol { padding-left: 1.5rem; margin-bottom: 0.7rem; }
+  li { margin-bottom: 0.3rem; }
+  li > ul, li > ol { margin-top: 0.2rem; margin-bottom: 0.2rem; }
+
+  /* ── Blockquote ── */
+  blockquote {
+    border-left: 3px solid var(--black); margin: 1.2rem 0;
+    padding: 0.8rem 1.25rem; background: var(--bg-alt);
+    font-style: italic; color: var(--dark); font-size: 0.95em;
+  }
+
+  /* ── Formula Block ── */
+  .formula {
+    font-family: var(--font-mono); font-size: 0.88rem;
+    padding: 0.7rem 1rem; background: var(--bg-alt);
+    border-left: 3px solid var(--dark); margin: 0.8rem 0; line-height: 1.5;
+  }
+
+  /* ── Note Box ── */
+  .note-box {
+    border-left: 3px solid var(--dark); background: var(--bg-alt);
+    padding: 0.75rem 1.2rem; margin: 0.75rem 0;
+    font-size: 0.9rem; line-height: 1.7;
+  }
+  .note-box .note-label {
+    font-size: 0.62rem; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--mid); display: block; margin-bottom: 0.3rem;
+  }
+
+  /* ── Tables ── */
+  .table-responsive { overflow-x: auto; margin: 0.9rem 0 1.2rem 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.865rem; min-width: 400px; }
+  th {
+    background: var(--black); color: #fff; font-weight: 500;
+    padding: 0.65rem 0.9rem; text-align: left;
+    font-size: 0.78rem; letter-spacing: 0.03em;
+  }
+  th.center { text-align: center; }
+  td { padding: 0.5rem 0.9rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td.center { text-align: center; }
+  td.mono { font-family: var(--font-mono); font-size: 0.85em; letter-spacing: 0.02em; }
+  tr:nth-child(even) td { background: var(--bg-alt); }
+
+  /* Subtotal & Total row variants */
+  tr.row-subtotal td {
+    font-weight: 600; color: var(--black);
+    background: #ececec !important;
+    border-top: 1px solid var(--rule-heavy);
+    border-bottom: 1px solid var(--rule-heavy);
+  }
+  tr.row-section-header td {
+    font-weight: 600; color: var(--dark);
+    background: var(--bg-alt) !important;
+    font-size: 0.78rem; letter-spacing: 0.05em;
+    border-top: 1px solid var(--rule-heavy);
+  }
+  tr.row-final td {
+    font-weight: 700; color: var(--black);
+    background: #e2e2e2 !important;
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+  }
+  tr.row-subhead td {
+    font-weight: 600; background: #ececec !important;
+    border-top: 1.5px solid var(--rule-heavy);
+  }
+  tr:last-child td { border-bottom: 2px solid var(--rule-heavy); }
+
+  /* ── Mermaid Wrapper ── */
+  .mermaid-wrap {
+    margin: 1.2rem 0; padding: 1.25rem 1rem;
+    border: 1px solid var(--rule); background: var(--bg-alt); overflow-x: auto;
+  }
+  .mermaid-wrap .mermaid svg { max-width: 100%; height: auto; }
+
+  /* ── Code / Pre Block ── */
+  pre {
+    font-family: var(--font-mono); font-size: 0.82rem;
+    background: var(--bg-alt); border: 1px solid var(--rule);
+    padding: 0.85rem 1.1rem; margin: 0.8rem 0;
+    overflow-x: auto; line-height: 1.65;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 920px) {
+    .font-controls { display: none; }
+    .mobile-topbar { display: flex; }
+    .toc {
+      position: fixed; left: 0; top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999; background: var(--bg);
+      box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    }
+    .toc.open { transform: translateX(0); }
+    .mobile-backdrop.open { display: block; opacity: 1; }
+    .content { padding: 1.5rem 1.2rem 4rem 1.2rem; max-width: 100%; }
+    section { scroll-margin-top: 4.5rem; }
+  }
+
+  /* ── Print ── */
+  @media print {
+    .toc, .mobile-topbar, .font-controls { display: none; }
+    .content { max-width: 100%; padding: 0.5rem 1rem; }
+    .mermaid-wrap { border: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#f0f0f0',
+      primaryTextColor: '#1c1c1c',
+      primaryBorderColor: '#888',
+      lineColor: '#555',
+      secondaryColor: '#ffffff',
+      tertiaryColor: '#e8e8e8',
+      fontSize: '13px',
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif"
+    }
+  });
+</script>
+
+<div class="wrapper">
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!--  TOC SIDEBAR                                              -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <nav class="toc" id="toc-nav" aria-label="Table of contents">
+    <span class="toc-label">Contents</span>
+    <ol>
+
+      <!-- 1 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-22">1. Sec. 22 — Charging Section</a>
+        <ul class="submenu">
+          <li><a href="#sec-22-conditions">1.1 Two Conditions for Taxability</a></li>
+          <li><a href="#sec-22-definition">1.2 Definition of House Property</a></li>
+        </ul>
+      </li>
+
+      <!-- 2 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#types-hp">2. Types of House Property</a>
+        <ul class="submenu">
+          <li><a href="#types-lop">2.1 Let-Out Property (LOP)</a></li>
+          <li class="has-sub-submenu">
+            <a href="#types-sop">2.2 Self-Occupied Property (SOP)</a>
+            <ul class="sub-submenu">
+              <li><a href="#types-sop-residence">2.2.1 SOP for Residence</a></li>
+              <li><a href="#types-sop-business">2.2.2 SOP for Business &amp; Profession</a></li>
+            </ul>
+          </li>
+          <li><a href="#types-dlop">2.3 Deemed Let-Out Property (DLOP)</a></li>
+        </ul>
+      </li>
+
+      <!-- 3 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#computation">3. Computation of Income from HP</a>
+        <ul class="submenu">
+          <li><a href="#computation-table">3.1 Computation Table</a></li>
+          <li class="has-sub-submenu">
+            <a href="#computation-definitions">3.2 Key Definitions</a>
+            <ul class="sub-submenu">
+              <li><a href="#def-municipal">3.2.1 Municipal Value</a></li>
+              <li><a href="#def-fair-rent">3.2.2 Fair Rent</a></li>
+              <li><a href="#def-standard-rent">3.2.3 Standard Rent</a></li>
+              <li><a href="#def-actual-rent">3.2.4 Actual Rent</a></li>
+              <li><a href="#def-municipal-taxes">3.2.5 Municipal Taxes</a></li>
+              <li><a href="#def-interest-loan">3.2.6 Interest on Loan</a></li>
+            </ul>
+          </li>
+          <li><a href="#computation-gav">3.3 Gross Annual Value (GAV)</a></li>
+          <li><a href="#computation-mun-ded">3.4 Municipal Taxes Deduction</a></li>
+          <li><a href="#computation-nav">3.5 Net Annual Value (NAV)</a></li>
+          <li class="has-sub-submenu">
+            <a href="#computation-sec24">3.6 Deductions u/s 24</a>
+            <ul class="sub-submenu">
+              <li><a href="#sec24-standard">3.6.1 Standard Deduction — 30% of NAV</a></li>
+              <li><a href="#sec24-interest">3.6.2 Interest on Loan</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 4 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#interest-limit">4. Limit of Interest — u/s 24(b)</a>
+        <ul class="submenu">
+          <li><a href="#interest-lop-dlop">4.1 LOP / DLOP — No Limit</a></li>
+          <li class="has-sub-submenu">
+            <a href="#interest-sop">4.2 SOP — Aggregate Limit</a>
+            <ul class="sub-submenu">
+              <li><a href="#interest-special">4.2.1 Special Case — Max ₹ 2,00,000</a></li>
+              <li><a href="#interest-general">4.2.2 General Case — Max ₹ 30,000</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 5 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#unrealised-rent">5. Unrealised Rent &amp; Recovery</a>
+        <ul class="submenu">
+          <li><a href="#unrealised-def">5.1 Definition of Unrealised Rent</a></li>
+          <li><a href="#unrealised-rule4">5.2 Four Conditions of Rule 4</a></li>
+          <li><a href="#arrears">5.3 Arrears of Rent</a></li>
+          <li class="has-sub-submenu">
+            <a href="#sec-25a">5.4 Sec. 25A — Recovery</a>
+            <ul class="sub-submenu">
+              <li><a href="#sec25a-taxability">5.4.1 Year of Taxability</a></li>
+              <li><a href="#sec25a-formula">5.4.2 Taxable Amount Formula</a></li>
+            </ul>
+          </li>
+          <li><a href="#other-expenses">5.5 Other Expenses — Why Not Allowed</a></li>
+        </ul>
+      </li>
+
+      <!-- 6 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#vacancy">6. Concept of Vacancy</a>
+        <ul class="submenu">
+          <li><a href="#vacancy-rule1">6.1 Rule — ER ≤ AR + VR</a></li>
+          <li><a href="#vacancy-rule2">6.2 Rule — ER &gt; AR + VR</a></li>
+          <li class="has-sub-submenu">
+            <a href="#vacancy-examples">6.3 Illustrations</a>
+            <ul class="sub-submenu">
+              <li><a href="#vacancy-ex1">6.3.1 Example 1</a></li>
+              <li><a href="#vacancy-ex2">6.3.2 Example 2</a></li>
+              <li><a href="#vacancy-ex3">6.3.3 Example 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 7 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#partly-letout">7. Concept of Partly Let-Out</a>
+        <ul class="submenu">
+          <li class="has-sub-submenu">
+            <a href="#partly-area">7.1 Area-wise Division</a>
+            <ul class="sub-submenu">
+              <li><a href="#partly-area-lop">7.1.1 LOP Portion</a></li>
+              <li><a href="#partly-area-sop">7.1.2 SOP Portion</a></li>
+              <li><a href="#partly-area-items">7.1.3 Items on Area Basis</a></li>
+            </ul>
+          </li>
+          <li class="has-sub-submenu">
+            <a href="#partly-time">7.2 Time-wise Division</a>
+            <ul class="sub-submenu">
+              <li><a href="#partly-time-rule">7.2.1 Even 1 Day = LOP</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 8 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#more-sop">8. Assessee Owns More than Two SOPs</a>
+        <ul class="submenu">
+          <li><a href="#sop-option">8.1 Option Available to Assessee</a></li>
+          <li><a href="#sop-dlop">8.2 Remaining SOPs Treated as DLOP</a></li>
+        </ul>
+      </li>
+
+      <!-- 9 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#joint-ownership">9. Concept of Joint Ownership</a>
+        <ul class="submenu">
+          <li><a href="#joint-computation">9.1 Computation of Income</a></li>
+          <li><a href="#joint-division">9.2 Division Among Co-owners</a></li>
+          <li class="has-sub-submenu">
+            <a href="#joint-interest">9.3 Interest on Loan Limits</a>
+            <ul class="sub-submenu">
+              <li><a href="#joint-interest-lop">9.3.1 LOP / DLOP — No Limit</a></li>
+              <li><a href="#joint-interest-sop">9.3.2 SOP — ₹ 30,000 / ₹ 2,00,000</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 10 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#composite-rent">10. Concept of Composite Rent</a>
+        <ul class="submenu">
+          <li><a href="#composite-def">10.1 Definition</a></li>
+          <li class="has-sub-submenu">
+            <a href="#composite-separable">10.2 Agreement Separable</a>
+            <ul class="sub-submenu">
+              <li><a href="#composite-hp">10.2.1 HP Rent → IFHP</a></li>
+              <li><a href="#composite-other">10.2.2 Other Asset → PGBP / IFOS</a></li>
+            </ul>
+          </li>
+          <li><a href="#composite-not-sep">10.3 Agreement Not Separable</a></li>
+          <li><a href="#composite-special">10.4 Special Case</a></li>
+        </ul>
+      </li>
+
+      <!-- 11 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-27">11. Sec. 27 — Deemed Owner</a>
+        <ul class="submenu">
+          <li class="has-sub-submenu">
+            <a href="#sec27-spouse">11.1 Spousal Transfer</a>
+            <ul class="sub-submenu">
+              <li><a href="#sec27-spouse-exc">11.1.1 Exception — Living Apart</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec27-minor">11.2 Transfer to Minor Child</a></li>
+          <li><a href="#sec27-coop">11.3 Co-operative Society</a></li>
+          <li><a href="#sec27-impartible">11.4 Holder of Impartible Estate</a></li>
+          <li><a href="#sec27-part-perf">11.5 Part Performance of Contract</a></li>
+          <li><a href="#sec27-lease">11.6 Long-Term Lease (&gt; 12 years)</a></li>
+        </ul>
+      </li>
+
+      <!-- 12 -->
+      <li class="has-submenu">
+        <a class="section-link" href="#important-notes">12. Important Notes</a>
+        <ul class="submenu">
+          <li><a href="#note-1">12.1 Stock-in-Trade Property</a></li>
+          <li><a href="#note-2">12.2 New Tax Regime u/s 115BAC</a></li>
+          <li><a href="#note-3">12.3 Definition of SOP</a></li>
+          <li><a href="#note-4">12.4 SOP Exemption — Individual &amp; HUF</a></li>
+          <li><a href="#note-5">12.5 Foreign Municipal Taxes</a></li>
+        </ul>
+      </li>
+
+    </ol>
+  </nav>
+
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <div class="content-wrapper">
+
+    <div class="mobile-topbar">
+      <button id="menu-toggle-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        Table of Contents
+      </button>
+    </div>
+
+    <div class="font-controls">
+      <button onclick="changeFontSize(-1)" title="Decrease font size">A−</button>
+      <button onclick="resetFontSize()" title="Reset font size">A</button>
+      <button onclick="changeFontSize(1)" title="Increase font size">A+</button>
+    </div>
+
+    <main class="content">
+
+      <!-- ══ PAGE HEADER ══════════════════════════════════════ -->
+      <div class="page-header">
+        <p class="eyebrow">Income Tax</p>
+        <h1>Income from House Property</h1>
+        <p class="meta">Sec. 22 to Sec. 27 &nbsp;&nbsp;|&nbsp;&nbsp; AY 2025–26</p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 1 — SEC. 22 CHARGING SECTION                 -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="sec-22">
+        <h2>1. Sec. 22 — Charging Section</h2>
+
+        <section id="sec-22-conditions">
+          <h3>1.1 Two Conditions for Taxability</h3>
+          <p><strong>Rental Income (Annual Value)</strong> is taxable under the head <strong>"Income from House Property"</strong> if the following two conditions are satisfied:</p>
+          <ol>
+            <li>There should be a <strong>House Property</strong></li>
+            <li>The <strong>Assessee</strong> should be the <strong>owner</strong> of that house property</li>
+          </ol>
+        </section>
+
+        <section id="sec-22-definition">
+          <h3>1.2 Definition of House Property</h3>
+          <div class="note-box">
+            <span class="note-label">Definition</span>
+            <strong>House Property</strong> means <em>building or land appurtenant thereto.</em>
+          </div>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 2 — TYPES OF HOUSE PROPERTY                  -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="types-hp">
+        <h2>2. Types of House Property</h2>
+
+        <section id="types-lop">
+          <h4>2.1 Let-Out Property (LOP)</h4>
+          <p>Property that is rented out to a tenant. Always <strong>taxable</strong>.</p>
+        </section>
+
+        <section id="types-sop">
+          <h4>2.2 Self-Occupied Property (SOP)</h4>
+          <section id="types-sop-residence">
+            <p><strong>SOP for Residence</strong> — Up to two SOPs are <strong>exempt</strong>. If more than two, remaining are treated as DLOP.</p>
+          </section>
+          <section id="types-sop-business">
+            <p><strong>SOP for Business &amp; Profession</strong> — <strong>Ignored</strong> under this head; income computed under PGBP.</p>
+          </section>
+        </section>
+
+        <section id="types-dlop">
+          <h4>2.3 Deemed Let-Out Property (DLOP)</h4>
+          <p>SOPs beyond the permitted two are deemed to be let out and taxed accordingly.</p>
+        </section>
+
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TD
+    A["Types of House Property"]
+    A --> B["LOP\nLet-Out Property"]
+    A --> C["SOP\nSelf-Occupied Property"]
+    B --> D["Always Taxable"]
+    C --> E["SOP — For Residence"]
+    C --> F["SOP — For Business\n& Profession"]
+    F --> G["Ignored"]
+    E --> H["Two SOP"]
+    E --> I["More than Two SOP"]
+    H --> J["Exempt"]
+    I --> K["Two SOP\n(Assessee's Choice)"]
+    I --> L["Remaining SOPs"]
+    K --> M["Exempt"]
+    L --> N["DLOP\nDeemed Let-Out Property"]
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 3 — COMPUTATION                              -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="computation">
+        <h2>3. Computation of Income from House Property</h2>
+
+        <section id="computation-table">
+          <h3>3.1 Computation Table</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:52%">Particulars</th>
+                  <th class="center" style="width:16%">SOP (Res.)</th>
+                  <th class="center" style="width:16%">LOP</th>
+                  <th class="center" style="width:16%">DLOP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mono">↑ Municipal Value</td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr>
+                  <td class="mono">│ Fair Rent</td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr>
+                  <td class="mono">│ Whichever is Higher</td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr>
+                  <td class="mono">↓ Standard Rent</td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr>
+                  <td class="mono">↑ Expected Rent</td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr>
+                  <td class="mono">│ Actual Rent</td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">—</td>
+                </tr>
+                <tr class="row-subtotal">
+                  <td><strong>Gross Annual Value (GAV)</strong></td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr>
+                  <td>Less: Municipal Taxes Paid</td>
+                  <td class="center">—</td><td class="center">(xx)</td><td class="center">(xx)</td>
+                </tr>
+                <tr class="row-subtotal">
+                  <td><strong>Net Annual Value (NAV)</strong></td>
+                  <td class="center">—</td><td class="center">xx</td><td class="center">xx</td>
+                </tr>
+                <tr class="row-section-header">
+                  <td colspan="4">Less: Deductions u/s 24</td>
+                </tr>
+                <tr>
+                  <td>&emsp;(a) Standard Deduction — 30% of NAV</td>
+                  <td class="center">—</td><td class="center">(xx)</td><td class="center">(xx)</td>
+                </tr>
+                <tr>
+                  <td>&emsp;(b) Interest on Loan</td>
+                  <td class="center">— / (xx)</td><td class="center">(xx)</td><td class="center">(xx)</td>
+                </tr>
+                <tr class="row-final">
+                  <td><strong>Income from House Property</strong></td>
+                  <td class="center"><strong>— / (xx)</strong></td>
+                  <td class="center"><strong>xx</strong></td>
+                  <td class="center"><strong>xx</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 3.2 KEY DEFINITIONS -->
+        <section id="computation-definitions">
+          <h3>3.2 Key Definitions</h3>
+
+          <section id="def-municipal">
+            <h4>3.2.1 Municipal Value</h4>
+            <p>Value of property as per <strong>municipality records</strong>.</p>
+          </section>
+
+          <section id="def-fair-rent">
+            <h4>3.2.2 Fair Rent</h4>
+            <p>Rent of a <strong>similar property in the same locality</strong>. Also known as <strong>Reasonable Rent</strong> or <strong>Reasonable Letting Value</strong>.</p>
+          </section>
+
+          <section id="def-standard-rent">
+            <h4>3.2.3 Standard Rent</h4>
+            <p>Rent as per the <strong>Rent Control Act</strong>. It is the <strong>maximum amount</strong> of rent that can be legally recovered by the owner from the tenant.</p>
+          </section>
+
+          <section id="def-actual-rent">
+            <h4>3.2.4 Actual Rent</h4>
+            <div class="formula"><strong>Actual Rent = Rent Received &nbsp;(+)&nbsp; Rent Receivable &nbsp;(−)&nbsp; Unrealised Rent</strong></div>
+          </section>
+
+          <section id="def-municipal-taxes">
+            <h4>3.2.5 Municipal Taxes</h4>
+            <ul>
+              <li>Tax recovered by <strong>Municipality / Local Authority / Gram Panchayat</strong></li>
+              <li>Also known as <strong>House Tax / Property Tax / Local Tax</strong></li>
+              <li>Allowed on <strong>payment basis</strong> — Paid: Allowed &nbsp;|&nbsp; Outstanding: Not Allowed</li>
+              <li>Allowed <strong>only if paid by the owner</strong></li>
+              <li>If given on a <strong>percentage basis</strong> → calculated on <strong>Municipal Value</strong></li>
+            </ul>
+          </section>
+
+          <section id="def-interest-loan">
+            <h4>3.2.6 Interest on Loan</h4>
+            <ul>
+              <li>Allowed if loan taken for <strong>purchase, construction, repair, or renovation</strong> of house property</li>
+              <li>Loan may be from <strong>banks, financial institutions, trusts, friends, family</strong>, etc.</li>
+              <li>Allowed on <strong>due basis</strong> — Paid: Allowed &nbsp;|&nbsp; Outstanding: Also Allowed</li>
+              <li><strong>Interest on Interest (Penal Interest)</strong> — <em>Not allowed</em></li>
+              <li><strong>Fresh loan</strong> taken to repay earlier loan (taken for HP purpose) — interest <em>allowed</em></li>
+              <li><strong>Interest paid outside India</strong> — not allowed if <strong>TDS not deducted</strong> on such interest</li>
+              <li><strong>Pre-construction / Pre-acquisition Interest</strong> — allowed in <strong>5 equal instalments</strong> from the year construction is completed</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- 3.3–3.6 ANCHORS -->
+        <section id="computation-gav">
+          <h3>3.3 Gross Annual Value (GAV)</h3>
+          <p><strong>GAV</strong> is the higher of <em>Expected Rent</em> and <em>Actual Rent</em> for LOP. For <strong>SOP (Residence)</strong>, GAV is taken as <strong>Nil</strong>.</p>
+        </section>
+
+        <section id="computation-mun-ded">
+          <h3>3.4 Municipal Taxes Deduction</h3>
+          <p><strong>Municipal taxes</strong> are deducted from GAV to arrive at NAV, provided they are <strong>paid by the owner</strong> during the previous year (payment basis).</p>
+        </section>
+
+        <section id="computation-nav">
+          <h3>3.5 Net Annual Value (NAV)</h3>
+          <div class="formula"><strong>NAV = GAV − Municipal Taxes Paid</strong></div>
+          <p>NAV is the base on which deductions u/s 24 are applied. For <strong>SOP (Residence)</strong>, NAV is <strong>Nil</strong>.</p>
+        </section>
+
+        <section id="computation-sec24">
+          <h3>3.6 Deductions u/s 24</h3>
+
+          <section id="sec24-standard">
+            <h4>3.6.1 Standard Deduction — 30% of NAV</h4>
+            <p>A <strong>flat deduction of 30%</strong> on NAV is allowed for repair, maintenance, and other expenses. This is allowed for <strong>LOP and DLOP only</strong> — not for SOP (Residence).</p>
+          </section>
+
+          <section id="sec24-interest">
+            <h4>3.6.2 Interest on Loan</h4>
+            <p>Interest on loan taken for <strong>purchase, construction, repair, or renovation</strong> of HP is deductible. Limits apply for SOP — refer Section 4 for full details.</p>
+          </section>
+        </section>
+
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 4 — LIMIT OF INTEREST DEDUCTION              -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="interest-limit">
+        <h2>4. Limit of Interest Deduction — u/s 24(b)</h2>
+
+        <section id="interest-lop-dlop">
+          <h4>4.1 LOP / DLOP — No Limit</h4>
+          <p>For <strong>Let-Out Property (LOP)</strong> and <strong>Deemed Let-Out Property (DLOP)</strong>, the <strong>full interest</strong> on loan is allowed as deduction with <strong>no upper limit</strong>.</p>
+        </section>
+
+        <section id="interest-sop">
+          <h4>4.2 SOP — Aggregate Limit Applies</h4>
+          <section id="interest-special"><span style="display:block;height:0"></span></section>
+          <section id="interest-general"><span style="display:block;height:0"></span></section>
+        </section>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:72%">Case / Conditions</th>
+                <th class="center" style="width:28%">Interest Limit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-subtotal">
+                <td><strong>LOP / DLOP</strong></td>
+                <td class="center"><strong>No Limit</strong><br><small style="font-weight:400">(Full Interest Allowed)</small></td>
+              </tr>
+              <tr class="row-subtotal">
+                <td><strong>SOP (Residence) / 2 SOP</strong></td>
+                <td class="center"><strong>Aggregate Limit Applies</strong></td>
+              </tr>
+              <tr class="row-subhead">
+                <td>✓ &nbsp;<strong>Special Case</strong></td>
+                <td class="center" rowspan="8" style="vertical-align:middle; font-size:1.05rem; font-weight:700;">Max&nbsp;₹&nbsp;2,00,000</td>
+              </tr>
+              <tr>
+                <td>&emsp;Capital borrowed on or after <strong>1 April 1999</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align:center; color:var(--mid); font-weight:600; padding:0.2rem">+</td>
+              </tr>
+              <tr>
+                <td>&emsp;Loan taken for <strong>acquisition or construction only</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align:center; color:var(--mid); font-weight:600; padding:0.2rem">+</td>
+              </tr>
+              <tr>
+                <td>&emsp;Acquisition / construction completed within <strong>5 years</strong> from the end of the FY of borrowing</td>
+              </tr>
+              <tr>
+                <td style="text-align:center; color:var(--mid); font-weight:600; padding:0.2rem">+</td>
+              </tr>
+              <tr>
+                <td>&emsp;<strong>Lender's interest certificate</strong> to be furnished</td>
+              </tr>
+              <tr class="row-subhead">
+                <td>✓ &nbsp;<strong>General Case</strong></td>
+                <td class="center" style="font-size:1.05rem; font-weight:700;">Max&nbsp;₹&nbsp;30,000</td>
+              </tr>
+              <tr>
+                <td>&emsp;Loan taken <strong>before 1 April 1999</strong> for acquisition / construction</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td style="text-align:center; color:var(--mid); font-weight:600; padding:0.2rem">OR</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>&emsp;Loan taken on or after 1 April 1999 for <strong>repair / renewal / reconstruction</strong></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td style="text-align:center; color:var(--mid); font-weight:600; padding:0.2rem">OR</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>&emsp;Acquisition / construction <strong>not completed within 5 years</strong> from end of borrowing FY</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 5 — UNREALISED RENT                          -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="unrealised-rent">
+        <h2>5. Unrealised Rent &amp; Recovery of Unrealised Rent</h2>
+
+        <section id="unrealised-def">
+          <h3>5.1 Definition of Unrealised Rent</h3>
+          <div class="formula"><strong>Actual Rent = Rent Received &nbsp;(+)&nbsp; Rent Receivable &nbsp;(−)&nbsp; Unrealised Rent</strong></div>
+          <p><strong>Unrealised Rent</strong> means rent which is <em>not recovered</em> by the owner from the tenant. It is treated like <strong>bad debts of rent</strong>.</p>
+        </section>
+
+        <section id="unrealised-rule4">
+          <h3>5.2 Four Conditions of Rule 4</h3>
+          <p>Unrealised rent is deductible while calculating Actual Rent <em>only if</em> all four conditions are satisfied:</p>
+          <ol>
+            <li><strong>Tenancy</strong> should be <em>bonafide</em></li>
+            <li><strong>Tenant</strong> should have <em>vacated</em> that house property</li>
+            <li>Such tenant should <strong>not occupy</strong> any other house property of the <em>same assessee</em></li>
+            <li><strong>Reasonable steps</strong> should have been taken for <em>recovery</em> of unrealised rent</li>
+          </ol>
+          <div class="note-box">
+            <span class="note-label">Note</span>
+            As per <strong>ITR Form</strong>, unrealised rent can be reduced from <strong>Gross Annual Value (GAV)</strong>.
+          </div>
+        </section>
+
+        <section id="arrears">
+          <h3>5.3 Arrears of Rent</h3>
+          <p><strong>Arrears of Rent</strong> — Rent under <strong>dispute</strong>.</p>
+        </section>
+
+        <section id="sec-25a">
+          <h3>5.4 Sec. 25A — Recovery of Unrealised Rent &amp; Arrears of Rent</h3>
+
+          <section id="sec25a-taxability">
+            <h4>5.4.1 Year of Taxability</h4>
+            <p>Recovery is <strong>taxable in the year in which it is recovered</strong>, under the head <strong>House Property</strong>, whether or not the assessee is the owner of the property in that financial year.</p>
+            <p>Any <strong>expenditure incurred for such recovery</strong> shall be <strong>ignored</strong>.</p>
+          </section>
+
+          <section id="sec25a-formula">
+            <h4>5.4.2 Taxable Amount Formula</h4>
+            <div class="formula"><strong>Taxable Amount = Recovery × 70%</strong> &nbsp;&nbsp;<em>(30% Standard Deduction is allowed)</em></div>
+          </section>
+        </section>
+
+        <section id="other-expenses">
+          <h3>5.5 Other Expenses — Why Not Allowed</h3>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart LR
+    A["Repair & Maintenance"]
+    B["Society Charges"]
+    C["Parking Charges"]
+    D["Insurance Charges"]
+    E["Electricity & Water Charges"]
+    F["Lift Charges, etc."]
+    G["Not Allowed\n──────────────────\n30% Standard Deduction\non NAV is already given"]
+    A --> G
+    B --> G
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 6 — CONCEPT OF VACANCY                       -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="vacancy">
+        <h2>6. Concept of Vacancy</h2>
+        <p>When a <strong>let-out property is vacant</strong> for part of the year, the GAV is determined based on the relationship between Expected Rent (ER), Actual Rent (AR), and Vacancy Rent (VR).</p>
+
+        <section id="vacancy-rule1">
+          <h4>6.1 Rule — ER ≤ AR + VR</h4>
+        </section>
+        <section id="vacancy-rule2">
+          <h4>6.2 Rule — ER &gt; AR + VR</h4>
+        </section>
+
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart LR
+    A["ER ≤ AR + VR"] --> B["GAV = AR + VR"]
+    C["ER > AR + VR"] --> D["GAV = ER"]
+          </div>
+        </div>
+
+        <section id="vacancy-examples">
+          <h3>6.3 Illustrations</h3>
+
+          <section id="vacancy-ex1">
+            <h4>6.3.1 Example 1</h4>
+            <p>Monthly Rent = ₹ 20,000 p.m. &nbsp;|&nbsp; Expected Rent = ₹ 1,92,000 &nbsp;|&nbsp; Vacancy = 3 months</p>
+<pre>       ER           AR    +    VR
+   1,92,000  ≤  1,80,000  +  60,000
+                       ↓
+           GAV = AR + VR = ₹ 2,40,000</pre>
+          </section>
+
+          <section id="vacancy-ex2">
+            <h4>6.3.2 Example 2</h4>
+            <p>Monthly Rent = ₹ 3,000 p.m. &nbsp;|&nbsp; Expected Rent = ₹ 1,95,000 &nbsp;|&nbsp; Vacancy = 2 months</p>
+<pre>       ER           AR    +   VR
+   1,95,000  >   30,000  +  6,000
+                      ↓
+           GAV = ER = ₹ 1,95,000</pre>
+          </section>
+
+          <section id="vacancy-ex3">
+            <h4>6.3.3 Example 3</h4>
+            <p>Monthly Rent = ₹ 25,000 p.m. &nbsp;|&nbsp; Expected Rent = ₹ 3,00,000 &nbsp;|&nbsp; Vacancy = 3 months</p>
+<pre>       ER            AR    +    VR
+   3,00,000  =  2,25,000  +  75,000
+                       ↓
+           GAV = ₹ 3,00,000</pre>
+          </section>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 7 — PARTLY LET-OUT PROPERTY                  -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="partly-letout">
+        <h2>7. Concept of Partly Let-Out Property</h2>
+
+        <section id="partly-area">
+          <h3>7.1 Area-wise Division</h3>
+          <p>If <strong>some area</strong> of a house property is let out and the remaining is self-occupied:</p>
+
+          <section id="partly-area-lop">
+            <h4>7.1.1 LOP Portion</h4>
+            <p>The let-out portion is treated as <strong>LOP</strong>.</p>
+          </section>
+
+          <section id="partly-area-sop">
+            <h4>7.1.2 SOP Portion</h4>
+            <p>The self-occupied portion is treated as <strong>SOP</strong>.</p>
+          </section>
+
+          <section id="partly-area-items">
+            <h4>7.1.3 Items Divided on Area Basis</h4>
+            <p><strong>Municipal Value, Fair Rent, Standard Rent, Municipal Taxes, and Interest on Loan</strong> — all are divided between SOP &amp; LOP on <strong>area basis</strong>.</p>
+            <div class="note-box">
+              <span class="note-label">Important Rule</span>
+              <strong>Actual Rent</strong> should <em>never be divided</em> — it is always for the <strong>LOP portion only</strong>.
+            </div>
+          </section>
+        </section>
+
+        <section id="partly-time">
+          <h3>7.2 Time-wise Division</h3>
+          <p>If property is let out for some period and self-occupied for the remaining time, such property is treated as <strong>LOP only</strong>.</p>
+
+          <section id="partly-time-rule">
+            <h4>7.2.1 Even 1 Day = LOP</h4>
+            <div class="note-box">
+              <span class="note-label">Rule</span>
+              If property is let out for <strong>even 1 day</strong>, the <em>entire property</em> is treated as <strong>LOP</strong> for the assessment.
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 8 — MORE THAN TWO SOPs                       -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="more-sop">
+        <h2>8. Assessee Owns More than Two SOPs</h2>
+
+        <section id="sop-option">
+          <h3>8.1 Option Available to Assessee</h3>
+          <p>Two of such house properties <em>(at the option of the Assessee)</em> are treated as <strong>SOP</strong> and remain <strong>exempt</strong>.</p>
+        </section>
+
+        <section id="sop-dlop">
+          <h3>8.2 Remaining SOPs Treated as DLOP</h3>
+          <p>All properties beyond the permitted two are treated as <strong>Deemed Let-Out Property (DLOP)</strong> and are taxable on their Expected Rent.</p>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 9 — JOINT OWNERSHIP                          -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="joint-ownership">
+        <h2>9. Concept of Joint Ownership (Co-ownership)</h2>
+
+        <section id="joint-computation">
+          <h3>9.1 Computation of Income</h3>
+          <p><strong>Joint ownership (co-ownership)</strong> means property is owned by more than one person. Income from House Property is <strong>calculated normally</strong> as a whole first.</p>
+        </section>
+
+        <section id="joint-division">
+          <h3>9.2 Division Among Co-owners</h3>
+          <p>After computation, the total income is <strong>divided between co-owners</strong> in their respective <strong>ownership ratio</strong>.</p>
+        </section>
+
+        <section id="joint-interest">
+          <h3>9.3 Interest on Loan Limits for Each Co-owner</h3>
+
+          <section id="joint-interest-lop">
+            <h4>9.3.1 LOP / DLOP — No Limit</h4>
+          </section>
+          <section id="joint-interest-sop">
+            <h4>9.3.2 SOP — Per Owner Limit</h4>
+          </section>
+
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Property Type</th>
+                  <th class="center">Interest Limit (Per Co-owner)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>LOP / DLOP</strong></td>
+                  <td class="center">No Limit</td>
+                </tr>
+                <tr>
+                  <td><strong>SOP</strong></td>
+                  <td class="center">₹ 30,000 / ₹ 2,00,000 — applies to <em>each owner individually</em></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 10 — COMPOSITE RENT                          -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="composite-rent">
+        <h2>10. Concept of Composite Rent</h2>
+
+        <section id="composite-def">
+          <h3>10.1 Definition</h3>
+          <div class="formula"><strong>Composite Rent = Rent of House Property + Rent of Other Assets &amp; Amenities</strong></div>
+        </section>
+
+        <section id="composite-separable">
+          <h3>10.2 Agreement Separable</h3>
+
+          <section id="composite-hp">
+            <h4>10.2.1 HP Rent → IFHP</h4>
+            <p>Rent attributable to the <strong>House Property</strong> is taxable under <strong>Income from House Property (IFHP)</strong>.</p>
+          </section>
+
+          <section id="composite-other">
+            <h4>10.2.2 Other Asset Rent → PGBP / IFOS</h4>
+            <p>Rent attributable to <strong>other assets and amenities</strong> (furniture, lift, services, etc.) is taxable under <strong>PGBP / IFOS</strong>.</p>
+          </section>
+        </section>
+
+        <section id="composite-not-sep">
+          <h3>10.3 Agreement Not Separable</h3>
+          <p><strong>Total composite rent</strong> is taxable entirely under <strong>PGBP / IFOS</strong>.</p>
+        </section>
+
+        <section id="composite-special">
+          <h3>10.4 Special Case</h3>
+          <div class="note-box">
+            <span class="note-label">Special Note</span>
+            If letting of property is <strong>not feasible without the other asset</strong>, the total rent is taxable under <strong>Business / Profession or Other Sources</strong> — whether the agreement is separable or not.<br><br>
+            <strong>Example:</strong> Hotel
+          </div>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 11 — SEC. 27 DEEMED OWNER                    -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="sec-27">
+        <h2>11. Sec. 27 — Deemed Owner</h2>
+        <p>The following persons are treated as <strong>Deemed Owners</strong> even though they may not be the legal owner:</p>
+
+        <section id="sec27-spouse">
+          <h3>11.1 Spousal Transfer</h3>
+          <p>If any individual transfers house property to <strong>his/her spouse</strong> without consideration or for inadequate consideration → the transferor is treated as <strong>Deemed Owner</strong>.</p>
+
+          <section id="sec27-spouse-exc">
+            <h4>11.1.1 Exception — Living Apart</h4>
+            <p>Transfer in connection with <strong>living apart</strong> is exempt from this provision.</p>
+          </section>
+        </section>
+
+        <section id="sec27-minor">
+          <h3>11.2 Transfer to Minor Child</h3>
+          <p>If any individual transfers house property to a <strong>minor child</strong> (other than a <em>minor married daughter</em>) without consideration or for inadequate consideration → the transferor is treated as <strong>Deemed Owner</strong>.</p>
+        </section>
+
+        <section id="sec27-coop">
+          <h3>11.3 Co-operative Society</h3>
+          <p>In the case of a <strong>co-operative society</strong>, the <strong>shareholder</strong> is treated as Deemed Owner of the allotted property.</p>
+        </section>
+
+        <section id="sec27-impartible">
+          <h3>11.4 Holder of Impartible Estate</h3>
+          <p>The <strong>holder of an impartible estate</strong> is treated as Deemed Owner of all properties in the estate.</p>
+        </section>
+
+        <section id="sec27-part-perf">
+          <h3>11.5 Part Performance of Contract</h3>
+          <p>In the case of immovable property, if <strong>possession is taken in part performance of a contract</strong>, the assessee is treated as <strong>Deemed Owner</strong>.</p>
+        </section>
+
+        <section id="sec27-lease">
+          <h3>11.6 Long-Term Lease (&gt; 12 years)</h3>
+          <p>If property is acquired under a <strong>long-term lease of more than 12 years</strong>, the acquirer is treated as <strong>Deemed Owner</strong>.</p>
+        </section>
+      </section>
+
+      <hr>
+
+      <!-- ══════════════════════════════════════════════════════ -->
+      <!-- SECTION 12 — IMPORTANT NOTES                         -->
+      <!-- ══════════════════════════════════════════════════════ -->
+      <section id="important-notes">
+        <h2>12. Important Notes</h2>
+
+        <section id="note-1">
+          <h3>12.1 Stock-in-Trade Property</h3>
+          <div class="note-box">
+            <span class="note-label">Note 1</span>
+            Where house property is held as <strong>stock-in-trade</strong> and <strong>not let out</strong> during the P.Y., the <strong>NAV shall be NIL</strong> for a period of <strong>2 years</strong> from the end of the Financial Year in which construction was completed.
+          </div>
+        </section>
+
+        <section id="note-2">
+          <h3>12.2 New Tax Regime u/s 115BAC</h3>
+          <div class="note-box">
+            <span class="note-label">Note 2</span>
+            If assessee pays tax under the <strong>default taxation regime u/s 115BAC</strong>, then <strong>Interest on Loan u/s 24(b)</strong> in respect of <strong>SOP</strong> (₹ 30,000 / ₹ 2,00,000) is <strong>NOT allowed</strong>.
+          </div>
+        </section>
+
+        <section id="note-3">
+          <h3>12.3 Definition of SOP</h3>
+          <div class="note-box">
+            <span class="note-label">Note 3</span>
+            <strong>SOP</strong> means property which is occupied by the assessee for <strong>self-occupation</strong> or could <strong>not be occupied due to any reason</strong>.
+          </div>
+        </section>
+
+        <section id="note-4">
+          <h3>12.4 SOP Exemption — Only for Individual &amp; HUF</h3>
+          <div class="note-box">
+            <span class="note-label">Note 4</span>
+            <strong>SOP exemption</strong> is allowed <em>only</em> in the case of <strong>Individual &amp; HUF</strong>.
+          </div>
+        </section>
+
+        <section id="note-5">
+          <h3>12.5 Foreign Municipal Taxes</h3>
+          <div class="note-box">
+            <span class="note-label">Note 5</span>
+            <strong>Municipal taxes paid to a foreign municipality</strong> are also allowed as deduction if <strong>foreign house income is taxable in India</strong>.
+          </div>
+        </section>
+
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+  // --- 1. Font Size Controls ---
+  let currentFontSize = 14.5;
+  const rootStyle = document.documentElement.style;
+
+  function updateFontSize(s) {
+    currentFontSize = Math.max(10, Math.min(s, 24));
+    rootStyle.setProperty('--base-font-size', currentFontSize + 'px');
+  }
+  function changeFontSize(step) { updateFontSize(currentFontSize + step); }
+  function resetFontSize() { updateFontSize(14.5); }
+
+  // --- 2. Mobile TOC Toggle ---
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const tocNav = document.getElementById('toc-nav');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+
+  function toggleMobileMenu() {
+    const isOpen = tocNav.classList.toggle('open');
+    mobileBackdrop.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  menuToggleBtn.addEventListener('click', toggleMobileMenu);
+  mobileBackdrop.addEventListener('click', toggleMobileMenu);
+
+  document.querySelectorAll('.toc a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 920 && tocNav.classList.contains('open')) toggleMobileMenu();
+    });
+  });
+
+  // --- 3. Level 2 Submenu Toggle ---
+  document.querySelectorAll('.toc .has-submenu > a').forEach(link => {
+    link.addEventListener('click', function() {
+      this.closest('.has-submenu').classList.toggle('open');
+    });
+  });
+
+  // --- 4. Level 3 Sub-submenu Toggle ---
+  document.querySelectorAll('.toc .has-sub-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.stopPropagation();
+      this.closest('.has-sub-submenu').classList.toggle('open');
+    });
+  });
+
+  // --- 5. Scroll Spy ---
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        const activeLink = document.querySelector(`.toc a[href="#${id}"]`);
+        if (!activeLink) return;
+
+        document.querySelectorAll('.toc a').forEach(l => l.classList.remove('active'));
+        activeLink.classList.add('active');
+
+        // Auto-open parent submenu
+        const parentSub = activeLink.closest('.submenu');
+        if (parentSub) {
+          const parentHas = parentSub.closest('.has-submenu');
+          if (parentHas) parentHas.classList.add('open');
+        }
+
+        // Auto-open parent sub-submenu + its parent
+        const parentSubSub = activeLink.closest('.sub-submenu');
+        if (parentSubSub) {
+          const parentHasSub = parentSubSub.closest('.has-sub-submenu');
+          if (parentHasSub) parentHasSub.classList.add('open');
+          const grandParentSub = parentSubSub.closest('.submenu');
+          if (grandParentSub) {
+            const grandParentHas = grandParentSub.closest('.has-submenu');
+            if (grandParentHas) grandParentHas.classList.add('open');
+          }
+        }
+
+        activeLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '-12% 0px -70% 0px',
+    threshold: 0
+  });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>

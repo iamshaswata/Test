@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salaries — Income Tax | Sec. 15</title>
+<link rel="canonical" href="https://shaswata.co.in/direct-tax-I/salary-income-tax-section-15.html" />
+<meta name="description" content="Income tax revision notes on salary under Section 15, covering computation of taxable salary, gratuity, pension, allowances, provident fund, superannuation, and perquisites." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Shaswata Saha" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Salaries — Income Tax | Sec. 15" />
+<meta property="og:description" content="Revision notes on salary taxation under Section 15, including taxable salary computation, gratuity, pension, allowances, provident fund, and perquisites." />
+<meta property="og:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<meta property="og:url" content="https://shaswata.co.in/direct-tax-I/salary-income-tax-section-15.html" />
+<meta property="og:site_name" content="Shaswata Saha" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Salaries — Income Tax | Sec. 15" />
+<meta name="twitter:description" content="Revision notes on salary taxation under Section 15, including taxable salary computation, gratuity, pension, allowances, provident fund, and perquisites." />
+<meta name="twitter:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0d0d0d;
+    --dark: #1c1c1c;
+    --mid: #555;
+    --light: #999;
+    --rule: #e0e0e0;
+    --rule-heavy: #b0b0b0;
+    --bg: #ffffff;
+    --bg-alt: #f6f6f6;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', Consolas, monospace;
+    --base-font-size: 14.5px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--base-font-size);
+    line-height: 1.75;
+    color: var(--dark);
+    background: var(--bg);
+    transition: font-size 0.2s ease;
+  }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── Desktop Font Controls ──────────────────────── */
+  .font-controls {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 5px;
+    background: var(--bg-alt);
+    padding: 6px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 50;
+  }
+
+  .font-controls button {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    color: var(--dark);
+    font-family: var(--font-body);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .font-controls button:hover {
+    background: #e9e9e9;
+    color: var(--black);
+  }
+
+  /* ── TOC Sidebar ─────────────────────────────────── */
+  .toc {
+    width: 252px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--rule);
+    padding: 2rem 1.1rem 2rem 1.4rem;
+    background: var(--bg-alt);
+  }
+
+  .toc::-webkit-scrollbar { width: 4px; }
+  .toc::-webkit-scrollbar-thumb { background: var(--rule-heavy); }
+
+  .toc .toc-label {
+    font-family: var(--font-body);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .toc ol { list-style: none; padding: 0; }
+  .toc li { margin: 0; }
+
+  .toc a {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--mid);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 2px;
+    border-left: 2px solid transparent;
+    line-height: 1.35;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s;
+  }
+
+  .toc a:hover {
+    color: var(--black);
+    background-color: rgba(0,0,0,0.03);
+  }
+
+  /* Active state for Scroll Spy */
+  .toc a.active {
+    color: var(--black);
+    font-weight: 600;
+    border-left-color: var(--black);
+    background-color: rgba(0,0,0,0.05);
+  }
+
+  .toc a.section-link {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.77rem;
+    margin-top: 0.55rem;
+    border-left-color: var(--rule-heavy);
+  }
+
+  .toc a.section-link.active {
+    border-left-color: var(--black);
+  }
+
+  /* Submenu Styles */
+  .toc .submenu {
+    display: none;
+    padding-left: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-left: 1px dashed var(--rule-heavy);
+    margin-left: 0.8rem;
+    list-style: none;
+  }
+  
+  .toc .has-submenu.open .submenu {
+    display: block;
+  }
+
+  .toc .submenu a {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 1px;
+    line-height: 1.3;
+  }
+
+  .toc .has-submenu > a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+  }
+  
+  /* Dropdown Arrow */
+  .toc .has-submenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--light);
+    transform: rotate(-90deg);
+    transition: transform 0.2s, border-top-color 0.2s;
+  }
+
+  .toc .has-submenu.open > a::after {
+    transform: rotate(0deg);
+    border-top-color: var(--black);
+  }
+
+  /* ── Mobile TOC Bar ──────────────────────────────── */
+  .mobile-topbar {
+    display: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 20px;
+    z-index: 900;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+
+  .mobile-topbar button {
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mobile-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* ── Main Content ────────────────────────────────── */
+  .content-wrapper {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 840px;
+    padding: 3rem 3.5rem 5rem 3.5rem;
+  }
+
+  /* ── Page Header ─────────────────────────────────── */
+  .page-header {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-header .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 0.4rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.1;
+  }
+
+  .page-header .meta {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--light);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Section Separators ──────────────────────────── */
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  section { margin-bottom: 0; scroll-margin-top: 2rem; }
+
+  /* ── Headings ────────────────────────────────────── */
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--rule-heavy);
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Paragraphs & Text ───────────────────────────── */
+  p { margin-bottom: 0.7rem; }
+  strong { font-weight: 600; color: var(--black); }
+  em { font-style: italic; }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.87em;
+    background: var(--bg-alt);
+    border: 1px solid var(--rule);
+    padding: 0.08em 0.35em;
+    border-radius: 2px;
+  }
+
+  /* ── Lists ───────────────────────────────────────── */
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  li { margin-bottom: 0.25rem; }
+  li > ul, li > ol { margin-top: 0.2rem; margin-bottom: 0.2rem; }
+
+  /* Step list (Rebate u/s 89) */
+  .step-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+  }
+  .step-list li {
+    counter-increment: step;
+    padding-left: 4.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  .step-list li::before {
+    content: "Step " counter(step);
+    position: absolute;
+    left: 0;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--light);
+    top: 0.25rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border: 1px solid var(--rule);
+    padding: 0.05rem 0.3rem;
+  }
+
+  /* ── Blockquote ──────────────────────────────────── */
+  blockquote {
+    border-left: 3px solid var(--black);
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.25rem;
+    background: var(--bg-alt);
+    font-style: italic;
+    color: var(--dark);
+    font-size: 0.95em;
+  }
+
+  /* ── Formula block ───────────────────────────────── */
+  .formula {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg-alt);
+    border-left: 3px solid var(--dark);
+    margin: 0.8rem 0;
+    line-height: 1.5;
+  }
+
+  /* ── Tables ──────────────────────────────────────── */
+  .table-responsive {
+    overflow-x: auto;
+    margin: 0.9rem 0 1.2rem 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.865rem;
+    min-width: 400px;
+  }
+
+  th {
+    background: var(--black);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+  }
+
+  td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td { background: var(--bg-alt); }
+  tr:last-child td { border-bottom: 2px solid var(--rule-heavy); }
+
+  /* Amount column alignment */
+  .amt th:last-child, .amt td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .amt th:nth-child(2), .amt td:nth-child(2) { text-align: right; }
+
+  /* Number column */
+  .num td:first-child, .num th:first-child { text-align: right; width: 2.5rem; }
+
+  /* ── Mermaid wrapper ─────────────────────────────── */
+  .mermaid-wrap {
+    margin: 1.2rem 0;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--rule);
+    background: var(--bg-alt);
+    overflow-x: auto;
+  }
+
+  .mermaid-wrap .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 920px) {
+    .font-controls { display: none; }
+    .mobile-topbar { display: flex; }
+    
+    .toc {
+      position: fixed;
+      left: 0;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+      background: var(--bg);
+      box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    }
+    .toc.open { transform: translateX(0); }
+    .mobile-backdrop.open { display: block; opacity: 1; }
+
+    .content { padding: 1.5rem 1.2rem 4rem 1.2rem; max-width: 100%; }
+    section { scroll-margin-top: 4.5rem; }
+  }
+
+  /* ── Print ───────────────────────────────────────── */
+  @media print {
+    .toc, .mobile-topbar, .font-controls { display: none; }
+    .content { max-width: 100%; padding: 0.5rem 1rem; }
+    h2 { page-break-before: auto; }
+    .mermaid-wrap { border: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#f0f0f0',
+      primaryTextColor: '#1c1c1c',
+      primaryBorderColor: '#888',
+      lineColor: '#555',
+      secondaryColor: '#ffffff',
+      tertiaryColor: '#e8e8e8',
+      fontSize: '13px',
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif"
+    }
+  });
+</script>
+
+<div class="wrapper">
+
+  <!-- ════════════════ TOC ════════════════ -->
+  <nav class="toc" id="toc-nav" aria-label="Table of contents">
+    <span class="toc-label">Contents</span>
+    <ol>
+      <li><a class="section-link" href="#sec-15">Sec. 15 — Charging Section</a></li>
+      <li><a class="section-link" href="#computation">Computation of Taxable Salary</a></li>
+      <li><a href="#note-1">Note 1 — Basic Salary</a></li>
+      <li><a href="#note-2">Note 2 — Dearness Allowance</a></li>
+      <li><a href="#note-3">Note 3 — Commission</a></li>
+      <li><a href="#note-4">Note 4 — Bonus</a></li>
+      <li><a href="#note-5">Note 5 — Advance &amp; Arrears</a></li>
+      <li><a href="#note-6">Note 6 — Gratuity</a></li>
+      <li><a href="#note-7">Note 7 — Pension</a></li>
+      <li><a href="#note-8">Note 8 — Leave Salary</a></li>
+      <li><a href="#note-9">Note 9 — Allowances</a></li>
+      <li><a href="#note-10">Note 10 — Provident Fund</a></li>
+      <li><a href="#note-11">Note 11 — Superannuation Fund</a></li>
+      <li><a href="#note-12">Note 12 — VRS</a></li>
+      <li><a href="#note-13">Note 13 — Retrenchment</a></li>
+      <li class="has-submenu">
+        <a class="section-link" href="#note-14">Note 14 — Perquisites</a>
+        <ul class="submenu">
+          <li><a href="#perq-1">1. LTC</a></li>
+          <li><a href="#perq-2">2. Medical Facility</a></li>
+          <li><a href="#perq-3">3. Concessional Loan</a></li>
+          <li><a href="#perq-4">4. Gift from Employer</a></li>
+          <li><a href="#perq-5">5. ESOP / Sweat Equity</a></li>
+          <li><a href="#perq-6">6. Use of Movable Assets</a></li>
+          <li><a href="#perq-7">7. Transfer of Assets</a></li>
+          <li><a href="#perq-8">8. Lunch Facility</a></li>
+          <li><a href="#perq-9">9. ER Contrib. to Funds</a></li>
+          <li><a href="#perq-10">10. Annual Accretion</a></li>
+          <li><a href="#perq-11">11. Rent Free Accomm.</a></li>
+          <li><a href="#perq-12">12. Hotel Benefit</a></li>
+          <li><a href="#perq-13">13. Motor Car Facility</a></li>
+          <li><a href="#perq-14">14. Transport Facility</a></li>
+          <li><a href="#perq-15">15. Education Facility</a></li>
+          <li><a href="#perq-16">16. Gas, Elec. &amp; Water</a></li>
+          <li><a href="#perq-17">17. Free Servant</a></li>
+          <li><a href="#perq-18">18. Other Perquisites</a></li>
+        </ul>
+      </li>
+      <li><a href="#note-15">Note 15 — Professional Tax</a></li>
+      <li><a href="#note-16">Note 16 — Entertainment Allowance</a></li>
+      <li><a href="#note-17">Note 17 — Standard Deduction</a></li>
+      <li><a class="section-link" href="#pay-scale">Concept of Pay Scale</a></li>
+      <li><a class="section-link" href="#rebate-89">Rebate u/s 89</a></li>
+      <li><a class="section-link" href="#def-salary">Definition of Salary</a></li>
+      <li><a class="section-link" href="#sec-115bac">Section 115BAC</a></li>
+      <li><a class="section-link" href="#non-citizen">Non-Citizen Exemptions</a></li>
+    </ol>
+  </nav>
+
+  <!-- Mobile Backdrop -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <!-- ════════════════ MAIN CONTENT WRAPPER ════════════════ -->
+  <div class="content-wrapper">
+    
+    <!-- Mobile Topbar -->
+    <div class="mobile-topbar">
+      <button id="menu-toggle-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        Table of Contents
+      </button>
+    </div>
+
+    <!-- Desktop Font Controls -->
+    <div class="font-controls">
+      <button onclick="changeFontSize(-1)" title="Decrease font size">A-</button>
+      <button onclick="resetFontSize()" title="Reset font size">A</button>
+      <button onclick="changeFontSize(1)" title="Increase font size">A+</button>
+    </div>
+
+    <main class="content">
+
+      <div class="page-header">
+        <p class="eyebrow">Income Tax — Head of Income</p>
+        <h1>Salaries</h1>
+        <p class="meta">PY 25–26 &nbsp;&nbsp;|&nbsp;&nbsp; AY 26–27</p>
+      </div>
+
+      <!-- ── Sec. 15 ───────────────────────────────────── -->
+      <section id="sec-15">
+        <h2>Sec. 15: Charging Section</h2>
+        <ul>
+          <li>Income is taxable under the head salary if there is <strong>Employee - Employer relationship</strong> (master - servant relation).</li>
+          <li>Salary is taxable even in case of part time job like employee work with 2 employers simultaneously.</li>
+          <li>Salary is taxable on the basis of <strong>due or received</strong> whichever is <strong>earlier</strong>.</li>
+          <li>Salary received by <strong>partner</strong> from partnership firm shall be taxable under the head <strong>PGBP</strong>.</li>
+          <li>Salary received by <strong>MP, MLA, MLC</strong> shall be taxable under the head <strong>IFOS</strong>.</li>
+          <li>Contract <strong>"of"</strong> service - Taxable under <strong>Salary</strong>.</li>
+          <li>Contract <strong>"for"</strong> service - Taxable under <strong>PGBP</strong>.</li>
+          <li>Salary forgone is always taxable since it is merely application of income. Salary surrendered to central Govt., shall not to be treated as salary.</li>
+          <li>Any amount received before joining employment or after cessation of employment with that person is treated as <strong>"Profit in lieu"</strong> of salary &amp; it is taxable under salary.</li>
+        </ul>
+        <blockquote>
+          In this topic we have to find out salary income of employee as per default tax regime u/s 115BAC &amp; as per Normal Provision of Income tax. So let's begin this Topic and we will complete this topic with the help of 17 working notes
+        </blockquote>
+      </section>
+
+      <hr>
+
+      <!-- ── Computation Table ─────────────────────────── -->
+      <section id="computation">
+        <h2>Computation of Taxable Salary</h2>
+        <p><strong>Name of Assessee:–</strong><br><strong>PY 25-26 &nbsp;&nbsp; AY 26-27</strong></p>
+
+        <div class="table-responsive">
+          <table class="amt">
+            <thead>
+              <tr>
+                <th style="text-align:left">Particulars</th>
+                <th style="text-align:right">Note</th>
+                <th style="text-align:right">Amount (₹)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Basic Salary</td><td style="text-align:right">Note-1</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Dearness Allowance (D.A.)</td><td style="text-align:right">Note-2</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Commission</td><td style="text-align:right">Note-3</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Bonus</td><td style="text-align:right">Note-4</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Advance Salary / Arrears salary</td><td style="text-align:right">Note-5</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Gratuity</td><td style="text-align:right">Note-6</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Pension</td><td style="text-align:right">Note-7</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Leave salary</td><td style="text-align:right">Note-8</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Allowances</td><td style="text-align:right">Note-9</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Provident Fund</td><td style="text-align:right">Note-10</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Super Annuation fund</td><td style="text-align:right">Note-11</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Voluntary Retirement Compensation</td><td style="text-align:right">Note-12</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Retrenchment Compensation</td><td style="text-align:right">Note-13</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Perquisite</td><td style="text-align:right">Note-14</td><td style="text-align:right">xxx</td></tr>
+              <tr><td><strong>Gross Salary</strong></td><td></td><td style="text-align:right"><strong>xxx</strong></td></tr>
+              
+              <!-- FIXED ALIGNMENT HERE -->
+              <tr><td colspan="3" style="text-align: left !important;"><strong>Less: Deduction u/s 16</strong></td></tr>
+              
+              <tr><td>&nbsp;&nbsp;&nbsp;1. Professional Tax [Sec 16(iii)]</td><td style="text-align:right">Note-15</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>&nbsp;&nbsp;&nbsp;2. Entertainment Allowance [Sec 16(ii)]</td><td style="text-align:right">Note-16</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>&nbsp;&nbsp;&nbsp;3. Standard deduction [Sec 16(ai)]</td><td style="text-align:right">Note-17</td><td style="text-align:right">xxx</td></tr>
+              <tr><td><strong>Net Taxable Salary</strong></td><td></td><td style="text-align:right"><strong>xxx</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 1 ─────────────────────────────────────── -->
+      <section id="note-1">
+        <h2>Note 1: Basic Salary</h2>
+        <p>It means fixed regular payment (base salary) of Employee. It is fully taxable.</p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 2 ─────────────────────────────────────── -->
+      <section id="note-2">
+        <h2>Note 2: Dearness Allowance (D.A.)</h2>
+        <p>DA is fully taxable whether it is <strong>'in terms'</strong> or not <strong>'in terms'</strong>.</p>
+        <p>DA in terms means DA which is forming part of retirement benefit calculation (provided in terms of employment for retirement benefits). In all the formulas, DA is considered only if it is <strong>'in terms'</strong>. If nothing is given about DA then assume it is <strong>'not in terms.'</strong></p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 3 ─────────────────────────────────────── -->
+      <section id="note-3">
+        <h2>Note 3: Commission</h2>
+        <p>Commission is fully taxable whether it is Turnover commission or any other commission.</p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 4 ─────────────────────────────────────── -->
+      <section id="note-4">
+        <h2>Note 4: Bonus</h2>
+        <p>It is fully taxable.</p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 5 ─────────────────────────────────────── -->
+      <section id="note-5">
+        <h2>Note 5: Advance &amp; Arrears Salary</h2>
+        <ul>
+          <li><strong>Advance Salary:</strong> Advance salary is taxable on <strong>receipt basis</strong>. If advance against salary is given or only advance is given then it should be ignored because it is treated as loan.</li>
+          <li><strong>Arrears Salary:</strong> It means salary under dispute or increase of salary retrospectively. It is taxable in the year in which it is received or dispute resolved whichever is earlier.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 6 ─────────────────────────────────────── -->
+      <section id="note-6">
+        <h2>Note 6: Gratuity</h2>
+        <p>Gratuity is a voluntary payment made by an employer in appreciation of services rendered by the employee.</p>
+        <ul>
+          <li>Gratuity received during the employment - <strong>fully taxable for all employees</strong> (Government as well as non-government employees).</li>
+          <li>Gratuity received at the time of retirement - It is <strong>Exempt u/s 10(10)</strong> as follows</li>
+        </ul>
+
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TB
+    A["Gratuity received at the time of retirement- It is Exempt u/s 10(10) as follows"]
+    A --> B["Govt. Employee"]
+    A --> C["Other Employee"]
+    B --> B1["Fully Exempt"]
+    C --> D["POGA Employee<br/>(EE covered under Payment of Gratuity Act, 1972)"]
+    C --> E["Non - POGA Employee"]
+    D --> D1["Exempt Amount: Lower of<br/>(i) 15/26 × salary p.m.* × No. of years of completion of service [rounding off allowed]<br/>(ii) Actual amount received<br/>(iii) Maximum ₹ 20 lakhs"]
+    E --> E1["Exempt Amount: Lower of<br/>(i) 1/2 × Avg. salary p.m.* × No. of years of completion of service [rounding NOT allowed]<br/>(ii) Actual amount received<br/>(iii) Maximum ₹ 20 lakhs"]
+          </div>
+        </div>
+
+        <h3>POGA / Non POGA</h3>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr><th>POGA</th><th>Non POGA</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>*Salary P.M.</td><td>*Avg. Salary P.M. (Don't include month of retirement)</td></tr>
+              <tr><td>Latest Basic salary p.m</td><td>Avg. Basic salary of last 10 months</td></tr>
+              <tr><td>(+) Latest D.A (both)</td><td>(+) Avg. D.A(T) of last 10 months</td></tr>
+              <tr><td>Salary P.M.</td><td>(+) Avg. T/O comm. of last 10 months</td></tr>
+              <tr><td></td><td>Avg. Salary P.M.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>POGA</h4>
+        <p>In case of POGA employee if fraction is more than 6 months, it should be rounded off.</p>
+        <p>e.g.</p>
+        <ul>
+          <li>30 years 4 months = 30 years</li>
+          <li>30 years 6 months = 30 years</li>
+          <li>30 years 9 months = 31 years</li>
+        </ul>
+
+        <h4>Non POGA</h4>
+        <p>In case of Non-POGA employee fraction should be ignored.</p>
+        <p>eg:</p>
+        <ul>
+          <li>30 years 3 months = 30 years</li>
+          <li>30 years 11 months = 30 years</li>
+        </ul>
+
+        <h4>Notes</h4>
+        <ol>
+          <li>If gratuity is received from more than one employer in the same previous year, the maximum exemption allowed is ₹ 20,00,000.</li>
+          <li>If gratuity was received in an earlier previous year and another gratuity is received in the current year from a different employer, the ₹ 20,00,000 limit will be reduced by the amount of exemption already claimed.</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 7 ─────────────────────────────────────── -->
+      <section id="note-7">
+        <h2>Note 7: Pension</h2>
+        <ul>
+          <li><strong>Uncommuted pension (monthly pension)</strong> - Taxable for <strong>All employees</strong></li>
+          <li><strong>Commuted pension (lumpsum pension)</strong> - It is exempt u/s 10(10A) as follows</li>
+        </ul>
+
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TB
+    A["Commuted pension (lumpsum pension) - It is exempt u/s 10(10A) as follows"]
+    A --> B["Govt. Employee"]
+    A --> C["Other Employee"]
+    B --> B1["Fully Exempt"]
+    C --> D["Gratuity also received<br/>Exempt Amt. = Total Pension* × 1/3"]
+    C --> E["Gratuity also received<br/>Exempt Amt. = Total Pension* × 1/2"]
+          </div>
+        </div>
+
+        <p><em><strong>*Total Pension = Full value of pension.</strong></em></p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 8 ─────────────────────────────────────── -->
+      <section id="note-8">
+        <h2>Note 8: Leave Salary</h2>
+        <p>It means encashment of un-utilised leave.</p>
+        <ul>
+          <li>Received during the employment - <strong>fully taxable for all employees</strong>.</li>
+          <li>Received at the time of retirement - It is <strong>Exempt u/s 10(10AA)</strong> as follows</li>
+        </ul>
+
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TB
+    A["Received at the time of retirement- It is Exempt u/s 10(10AA) as follows"]
+    A --> B["Govt. Employee"]
+    A --> C["Other Employee"]
+    B --> B1["Fully Exempt"]
+    C --> C1["Exempt Amount<br/>(i) Leave credit × Avg. salary p.m.<br/>(ii) 10 months × Avg. salary p.m.<br/>(iii) Actual amount received<br/>(iv) Maximum ₹ 25,00,000<br/>whichever is lower"]
+          </div>
+        </div>
+
+        <h3>Avg. Salary P.M. (Avg of last 10 months upto date of Retirement)</h3>
+        <div class="table-responsive">
+          <table class="amt">
+            <thead>
+              <tr><th style="text-align:left">Particulars</th><th style="text-align:right">Amount</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Avg. Basic salary of last 10 months</td><td style="text-align:right">xx</td></tr>
+              <tr><td>Avg. DA (in terms) of last 10 months</td><td style="text-align:right">xx</td></tr>
+              <tr><td>Avg. Turnover Commission of last 10 months</td><td style="text-align:right">xx</td></tr>
+              <tr><td><strong>Avg. Salary P.M.</strong></td><td style="text-align:right"><strong>xx</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Leave Credit (months)</h3>
+        <p><strong>Leave Credit (months) = Leave allowed – Leave taken</strong></p>
+        <p><strong>[Max. 30 days for every completed year]</strong></p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 9 ─────────────────────────────────────── -->
+      <section id="note-9">
+        <h2>Note 9: Allowances</h2>
+        <div class="table-responsive">
+          <table class="num">
+            <thead>
+              <tr>
+                <th style="text-align:right">S.No.</th>
+                <th>Allowance</th>
+                <th>Exempt u/s 10(14)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:right">1.</td>
+                <td>Commutation / Transport allowance (Office to Home &amp; Home to Office)</td>
+                <td>Max ₹ 3200 p.m (in case of blind/deaf &amp; dumb or handicapped)</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">2.</td>
+                <td>Children Education Allowance</td>
+                <td>Max ₹ 100 p.m. per child (Max 2 child.)</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">3.</td>
+                <td>Children Hostel Allowance</td>
+                <td>Max ₹ 300 p.m. per child (Max 2 child.)</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">4.</td>
+                <td>Underground Allowance (Mines)</td>
+                <td>Max ₹ 800 p.m.</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">5.</td>
+                <td>Tribal area Allowance</td>
+                <td>Max ₹ 200 p.m.</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">6.</td>
+                <td>Allowance to employees of Transport undertaking</td>
+                <td>70% of such allowance upto a max. of ₹ 10,000 p.m.</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">7.</td>
+                <td>Traveling or Tour allowance</td>
+                <td>Exempt amount = Amount spent</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">8.</td>
+                <td>Conveyance allowance</td>
+                <td>Exempt amount = Amount spent</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">9.</td>
+                <td>Uniform allowance</td>
+                <td>Exempt amount = Amount spent</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">10.</td>
+                <td>Daily allowance</td>
+                <td>Exempt amount = Amount spent</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">11.</td>
+                <td>Helper allowance (for office Purpose)</td>
+                <td>Exempt amount = Amount spent</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">12.</td>
+                <td>Research / Academy allowance</td>
+                <td>Exempt amount = Amount spent</td>
+              </tr>
+              <tr>
+                <td style="text-align:right">13.</td>
+                <td>House Rent Allowance (HRA)</td>
+                <td>
+                  Exempt u/s 10(13A) - Lower of<br>
+                  (i) 40% / 50% * of salary [BS+DA(T)+T/O Comm.]<br>
+                  (ii) Actual Amount received<br>
+                  (iii) Rent paid - 10% of salary<br><br>
+                  [BS+DA(T)+ T/O Comm.] * 50% if metro cities (Mumbai/Delhi/Chennai/Kolkata), 40% for other cities.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Notes</h4>
+        <ol>
+          <li>All other allowances are fully taxable.</li>
+          <li>If assessee opted 115BAC default tax regime then above exemptions are not available except DTC (1,7,8,10 allowance exemptions above)</li>
+          <li>Entertainment allowance is also taxable but Govt. EE can claim deduction u/s 16.</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 10 ────────────────────────────────────── -->
+      <section id="note-10">
+        <h2>Note 10: Provident Fund</h2>
+
+        <h3>Statutory Provident Fund (SPF) – PF for Govt. or semi-Govt. employees</h3>
+        <h4>A. During the Employment</h4>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>EE's Contribution</th>
+                <th>ER's Contribution</th>
+                <th>Int. on EE Cont.</th>
+                <th>Int on ER Cont.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ignore (deduction u/s 80C allowed)</td>
+                <td>Exempt</td>
+                <td>Exempt</td>
+                <td>Exempt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>B. At the time of retirement lumpsum amount received by Employee – Fully Exempt u/s 10(11)</h4>
+
+        <h3>Recognised Provident Fund (RPF) – PF which is recognised by Commissioner of IT</h3>
+        <h4>A. During the Employment</h4>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>EE's Contribution</th>
+                <th>ER's Contribution</th>
+                <th>Int. on EE Cont.</th>
+                <th>Int on ER Cont.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ignore (deduction u/s 80C allowed)</td>
+                <td>Exempt upto 12% of salary [Basic + DT(T)+ T/o Comm]</td>
+                <td>Exempt upto 9.5% p.a.</td>
+                <td>Exempt upto 9.5% p.a.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>B. At the time of retirement lumpsum amount received by Employee – Fully Exempt u/s 10(12)</h4>
+
+        <h4>Notes</h4>
+        <ol>
+          <li>
+            Lumpsum amount received from RPF is exempt if employee has rendered service of 5 years or more, If employee rendered service less than 5 years then exemption allowed in respect of employer's contribution and interest shall be withdrawn. However in the following 3 cases exemption shall not be withdrawn even though service is less than 5 years:
+            <ul>
+              <li>(i) Employee retired due to ill health.</li>
+              <li>(ii) Employee retired due to shut down of employer's business.</li>
+              <li>(iii) Employee has retired with the instruction that his balance in RPF should be transferred to new employer, or to NPS A/C referred u/s 80CCD.</li>
+            </ul>
+          </li>
+          <li>
+            Interest on EE's Contribution towards SPF/RPF : Exemption u/s 10(11) or 10(12) not available for interest accrued during the PY to the extent it relates to the contribution made by that employee exceeding ₹ 2,50,000 in any PY in that fund, on or after 01/04/21. If in that fund employer not made any contribution, then, a higher limit of ₹ 5,00,000 would be applicable. It may be noted that interest accrued on contribution to such funds upto 31/03/21 would be exempt without any limit, even if the accrual of income is after that date.
+          </li>
+        </ol>
+
+        <h3>Unrecognised Provident Fund (URPF) – PF which is recognised by Commissioner of IT</h3>
+        <h4>A. During the Employment</h4>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>EE's Contribution</th>
+                <th>ER's Contribution</th>
+                <th>Int. on EE Cont.</th>
+                <th>Int on ER Cont.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ignore</td>
+                <td>Exempt</td>
+                <td>Exempt</td>
+                <td>Exempt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>B. At the time of retirement lumpsum amount received by Employee – Taxable</h4>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>EE's Contribution</th>
+                <th>ER's Contribution</th>
+                <th>Int. on EE Cont.</th>
+                <th>Int on ER Cont.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ignore</td>
+                <td>Taxable under Salary</td>
+                <td>Taxable under IFOS</td>
+                <td>Taxable under Salary</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 11 ────────────────────────────────────── -->
+      <section id="note-11">
+        <h2>Note 11: Superannuation Fund</h2>
+
+        <h3>Approved Superannuation Fund (ASF)</h3>
+        <h4>A. During the Employment</h4>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>EE's Contribution</th>
+                <th>ER's Contribution</th>
+                <th>Int. on EE Cont.</th>
+                <th>Int on ER Cont.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ignore (deduction u/s 80C allowed)</td>
+                <td>Exempt upto ₹ 7,50,000 p.a. [as per sec 17(2)(vii)]</td>
+                <td>Exempt</td>
+                <td>Exempt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>B. At the time of retirement lumpsum amount received by Employee – Fully Exempt u/s 10(13)</h4>
+
+        <h3>Unapproved Superannuation Fund (UASF) – treatment same as URPF.</h3>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 12 ────────────────────────────────────── -->
+      <section id="note-12">
+        <h2>Note 12: Voluntary Retirement Scheme Compensation [VRS]</h2>
+        <p>Exempt u/s 10(10C) – Lower of:</p>
+        <ol>
+          <li>Salary p.m. x 3 months x No. of years of completion of service (<strong>Fraction IGNORED</strong>)</li>
+          <li>Salary p.m. x No. of remaining months of service</li>
+          <li>Actual amount received</li>
+          <li>Maximum ₹ 5,00,000</li>
+        </ol>
+        <p><strong>Salary p.m. = Basic + DA(T) + T/O Commission</strong></p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 13 ────────────────────────────────────── -->
+      <section id="note-13">
+        <h2>Note 13: Retrenchment Compensation</h2>
+        <p>Exempt u/s 10(10B) – Lower of:</p>
+        <ol>
+          <li>* Compensation as per Industrial Disputes Act.</li>
+          <li>Maximum ₹ 5,00,000</li>
+        </ol>
+        <p>* <strong>15/26 × Avg salary of last 3 months × No. of years of completion of service</strong><br>
+        (<strong>Basic + DA(T) + T/O Commission</strong>)<br>
+        <em>(if fraction is more than 6 months, then round off)</em></p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 14 ────────────────────────────────────── -->
+      <section id="note-14">
+        <h2>Note 14: Perquisites</h2>
+        <p>It means extra benefit offered by employer to employee. It may be monetary or non- monetary.</p>
+        <p>Difference between allowance &amp; perquisites.</p>
+        <ul>
+          <li><strong>Allowance</strong> – It means monthly fixed amount received by employee from employer whether actual expenditure is incurred or not. It is part of salary, e.g. HRA, Medical Allowance etc.</li>
+          <li><strong>Perquisites</strong> – It means benefits or facility provided by employer. It is received when actual expenditure is incurred e.g. Medical facility, car facility etc.</li>
+        </ul>
+
+        <!-- Perquisite 1 -->
+        <section id="perq-1">
+          <h3>1. Leave Travel Concession (LTC): Travel benefit is provided for travel anywhere in India</h3>
+          <h4>Notes</h4>
+          <ol>
+            <li>
+              LTC exemption is available for the travel of <strong>employee, his spouse, children*</strong> &amp; <strong>dependent relative</strong> - (Mother, Father, Brother, Sister)<br>
+              * Exemption of LTC is available only for 2 children born on or after 1/10/1998.
+              <ul>
+                <li>1st time = 1 child, 2nd time = Twins<br>Total 3 children = Exemption Allowed to all 3 children.</li>
+                <li>1st time = Twins, 2nd time = 1 child<br>Total 3 children = Exemption allowed to only 2 children.</li>
+              </ul>
+            </li>
+            <li>LTC exemption is available for 2 years during the block of 4 Calendar years (current block is 2022-25)</li>
+          </ol>
+        </section>
+
+        <!-- Perquisite 2 -->
+        <section id="perq-2">
+          <h3>2. Medical Facility</h3>
+          <h4>A. Treatment in India</h4>
+          <h4>B. Treatment outside India</h4>
+          <h4>Notes</h4>
+          <p>(i) Medical insurance premium paid by ER for EE is fully exempt.<br>
+          (ii) Exemption for treatment is allowed for employee, spouse, children &amp; dependent relative (Mother, Father, Brother, Sister).<br>
+          (iii) Exemption of stay &amp; travel is allowed only for one patient &amp; one attendant.<br>
+          (iv) Exemption allowed in respect of any illness relating to COVID-19 subject to such conditions as the CG may notify.</p>
+          <p>Employee shall submit the following documents to the employer, -</p>
+          <ul>
+            <li>COVID-19 positive report of the employee or family member;</li>
+            <li>all necessary documents of medical treatment of the employee or his family member for COVID-19 or illness related to COVID-19 suffered within 6 months from the date of being determined as COVID-19 positive; and</li>
+            <li>a certification in respect of all expenditure incurred on the treatment.</li>
+          </ul>
+        </section>
+
+        <!-- Perquisite 3 -->
+        <section id="perq-3">
+          <h3>3. "Loan" given by Employer to Employee or any family member of EE at concessional rate of interest or without rate of interest</h3>
+          <p>Taxable amount =</p>
+          <div class="formula"><strong>Loan Amt o/s at end of month × ( SBI Interest rate on 1st April of PY – Actual Interest rate )</strong></div>
+          <h4>Notes</h4>
+          <p>(i) Loan amount is upto ₹ 20,000 then interest benefit is not taxable.<br>
+          (ii) If loan is taken for treatment of specified disease, then interest benefit is not taxable even loan amt is more than ₹ 20,000.</p>
+        </section>
+
+        <!-- Perquisite 4 -->
+        <section id="perq-4">
+          <h3>4. Gift from ER to EE</h3>
+          <ul>
+            <li>Gift in Cash/Money = <strong>Taxable</strong></li>
+            <li>Gift in Kind = if FMV of Gift is less than ₹ 5000 p.a. then it is fully exempt otherwise fully taxable</li>
+          </ul>
+        </section>
+
+        <!-- Perquisite 5 -->
+        <section id="perq-5">
+          <h3>5. ESOP: Employee stock option plan or Sweat Equity shares to EE</h3>
+          <p>It means Company offers shares to employee at concessional rates.</p>
+          <p>Taxable amount:- <strong>FMV of shares – Issue price</strong></p>
+          <p>FMV should be taken on the date on which option is exercised by employee.</p>
+          <p>Calculation of FMV</p>
+          <p>(i) Case where share is listed on a recognized stock exchange (RSE), FMV shall be average of opening price and closing price of share on that date.</p>
+          <p>If share is listed on more than one RSE, FMV shall be the avg. of opening price and closing price on RSE which records highest volume of trading in the share.</p>
+          <p>If on the date of exercising the option, there is no trading in the share on any RSE, FMV shall be— closing price on last trading session.</p>
+          <p>(ii) Case where share is not listed, the FMV shall be determined by a merchant banker.</p>
+        </section>
+
+        <!-- Perquisite 6 -->
+        <section id="perq-6">
+          <h3>6. Use of Movable Assets</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr><th>Asset</th><th>Treatment</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Computer &amp; Laptop</td>
+                  <td><strong>Fully Exempt</strong></td>
+                </tr>
+                <tr>
+                  <td>Any other Asset (Tv, AC, Bike etc.)</td>
+                  <td>
+                    Taxable Amount<br>
+                    &nbsp;&nbsp;Owned by Employer → 10% of cost of Asset<br>
+                    &nbsp;&nbsp;Hired by Employer → Hire charges paid by Employer
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Perquisite 7 -->
+        <section id="perq-7">
+          <h3>7. Transfer of Movable Assets</h3>
+          <p>Taxable Amt = <strong>WDV of Asset – Consideration paid by EE</strong></p>
+          <p>For WDV calculation depreciation shall be calculated for every completed year from the date of acquisition of asset till transfer of asset as per following methods</p>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr><th>Particulars</th><th>Methods</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Computer, Laptop &amp; Electronic items</td><td>Depn @ 50% on WDV method</td></tr>
+                <tr><td>Motor Cars</td><td>Depn @ 20% on WDV method</td></tr>
+                <tr><td>Any other Asset</td><td>Depn @ 10% on SLM method</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Perquisite 8 -->
+        <section id="perq-8">
+          <h3>8. Lunch Facility</h3>
+          <p>It is exempt upto ₹ 50 per meal, if lunch is provided in office premises or through Paid voucher.</p>
+          <p>Notes:<br>
+          (i) Tea, coffee, or breakfast provided in office - <strong>Not taxable</strong>.<br>
+          (ii) Lunch is provided in remote area is <strong>Not taxable</strong></p>
+        </section>
+
+        <!-- Perquisite 9 -->
+        <section id="perq-9">
+          <h3>9. Employer contribution towards RPF, ASF &amp; NPS [Sec 17(2)(vii)]</h3>
+          <p>Employer contribution towards Recognized Provident Fund (RPF), New Pension Scheme (NPS) referred u/s 80CCD, Approved Super annuation Fund (ASF) in excess of ₹ 7,50,000 is treated as perquisite in hands of EE and Taxable.</p>
+        </section>
+
+        <!-- Perquisite 10 -->
+        <section id="perq-10">
+          <h3>10. Annual Accretion of Interest on RPF, ASF &amp; NPS in excess of ₹ 7.5 lakhs [Sec 17(2)(viia)]</h3>
+          <p>Annual Accretion by way of Interest/dividend on contribution of more than ₹ 7,50,000 by ER also treated as perquisite in hands of EE and Taxable.</p>
+          <p>Calculation of Annual Accretion in PY:</p>
+          <div class="formula"><strong>TP = (PC/2)*R + (PC1 + TP1)*R</strong></div>
+          <p>TP : Taxable perquisite u/s 17(2)(viia) for the current PY.</p>
+          <p>PC : Amount of ER's contribution in excess of ₹ 7.5 lakh to RPF, NPS and ASF during PY.</p>
+          <p>PC1 : Amount or aggregate of amounts of ER's contribution in excess of ₹ 7.5 lakh to RPF, NPS and ASF for the PY or years commencing on or after 01/04/20 other than the current PY.</p>
+          <p>TP1: Aggregate of taxable perquisite u/s 17(2)(viia) for the PY or years commencing on or after 01/04/20 other than the current PY.</p>
+          <p>R : I/ Favg</p>
+          <p>I : Amount of income accrued during the current PY in RPF, NPS and ASF.</p>
+          <p>Favg : (Amount of balance to the credit of RPF, NPS and ASF on 01/04/25 + Amount of balance to the credit of RPF, NPS and ASF on 31/03/26)/2</p>
+        </section>
+
+        <!-- Perquisite 11 -->
+        <section id="perq-11">
+          <h3>11. Rent Free Accommodation (House Facility)</h3>
+          <ol>
+            <li><strong>Govt Employee</strong> : Taxable as per Licence fees decided by Govt.</li>
+            <li><strong>Other Employee</strong></li>
+          </ol>
+          <h4>House Owned by Employer</h4>
+          <p>Taxable amount = <strong>* 5% / 7.5% / 10% of Salary [BDBACM]</strong></p>
+          <p>* Population as per 2011 census upto 15 lakhs = 5%<br>
+          &nbsp;&nbsp;&nbsp;Population &gt; 15 lakhs upto 40 lakhs = 7.5%<br>
+          &nbsp;&nbsp;&nbsp;Population &gt; 40 lakhs = 10%</p>
+          <h4>House Hired by Employer</h4>
+          <p>Taxable amount =</p>
+          <ul>
+            <li>(i) 10% of salary [BDBACM]</li>
+            <li>(ii) Hire Charges paid by Employer</li>
+          </ul>
+          <p><strong>Whichever is Lower</strong></p>
+        </section>
+
+        <!-- Perquisite 12 -->
+        <section id="perq-12">
+          <h3>12. Hotel Benefit</h3>
+          <p>Taxable amount =</p>
+          <ul>
+            <li>(i) 24% of salary [BDBACM]</li>
+            <li>(ii) Hire Charges paid by Employer</li>
+          </ul>
+          <p><strong>Whichever is Lower</strong></p>
+          <h4>Notes</h4>
+          <ol>
+            <li>If employee is provided with accommodation [on his transfer from one place to another], at the new place of posting while retaining the accommodation at the other place, the taxable amount shall be determined only for one accommodation which has the lower perquisite value, for a period of upto 90 days and thereafter, the value of perquisite shall be charged for both such accommodations.</li>
+            <li>
+              Where accommodation is provided to the same employee for more than one PY, the value of perquisite shall not exceed the amount so calculated for first PY, as multiplied by amount which is a ratio of the CII (cost inflation index) for PY for which the value is calculated and CII for the previous year in which the accommodation was initially provided to the employee.<br>
+              "First PY" means P.Y. 2023-24 or PY in which the accommodation was provided to the employee, whichever is later.
+            </li>
+            <li>Meaning of Salary - <strong>BDBACM</strong>
+              <div class="table-responsive">
+                <table style="margin-top:0.6rem">
+                  <thead>
+                    <tr><th>Particulars</th><th>Particulars</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>B – Basic salary</td><td>A – Taxable Allowances</td></tr>
+                    <tr><td>D – Dearness Allowance (T)</td><td>C – Commission (All)</td></tr>
+                    <tr><td>B – Bonus</td><td>M – Other monetary income excluding perks.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>For computing BDBACM perks should not be considered.</li>
+            <li>BDBACM should be calculated on due basis, means salary of current period should be considered. Advance salary, arrears salary should be ignored.</li>
+            <li>For computing BDBACM, retirement benefit should not be considered i.e. gratuity, Pension, leave salary, VRS, Retrenchment compensation, lump sum amount from P.F. etc.</li>
+            <li>BDBACM should be considered for the time for which assessee had occupied such house.</li>
+            <li>Employer contribution towards PF &amp; interest on PF should also be not considered.</li>
+            <li>If hotel facility is provided at the time of transfer of employee &amp; if it is upto 15 days, then it is not taxable.</li>
+            <li>If furniture is also provided with house then perks (use of movable asset Perks 6) shall also be added in above taxable amounts.</li>
+            <li>In house facility &amp; hotel facility if employer recover any rent from employee, then such rent should be deducted from above taxable amount.</li>
+          </ol>
+        </section>
+
+        <!-- Perquisite 13 -->
+        <section id="perq-13">
+          <h3>13. Motor Car Facility</h3>
+          <ul>
+            <li>Car is used for fully office purpose – <strong>Fully Exempt</strong><br>
+            If Employer maintains record of each journey &amp; Employer issue a certificate that car is used exclusively for office purpose.</li>
+            <li>Car is used for fully personal purpose – <strong>Fully Taxable</strong></li>
+          </ul>
+
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr><th>Motor Car</th><th>Taxable Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Owned by Employer</td><td>10% of cost of Asset</td></tr>
+                <tr><td>Hired by Employer</td><td>Hire charges paid by Employer</td></tr>
+                <tr><td colspan="2">Add: Driver Salary (if Paid by ER)<br>Add: Running &amp; Maintenance Charges (if paid by ER)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Car is used for partly office &amp; partly personal purpose (POPP)</p>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Car Own by</th>
+                  <th>Running &amp; Maint. Charges paid by</th>
+                  <th>Taxable Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Employee</td>
+                  <td>Employee</td>
+                  <td>No Benefit, nothing is taxable.</td>
+                </tr>
+                <tr>
+                  <td>Employer</td>
+                  <td>
+                    Running &amp; Maint. charges paid by ER &nbsp;&nbsp;&nbsp;&nbsp; xxx<br>
+                    Less: 1800 p.m. / 2400 p.m. &nbsp;&nbsp;&nbsp;&nbsp; xxx<br>
+                    [upto 1600CC] [&gt;1600CC]<br>
+                    Taxable Amount &nbsp;&nbsp;&nbsp;&nbsp; xxx
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Employer</td>
+                  <td>Employee</td>
+                  <td>600 p.m. / 900 p.m. &nbsp;&nbsp;&nbsp;&nbsp; xxx<br>[upto 1600CC] [&gt;1600CC]</td>
+                </tr>
+                <tr>
+                  <td>Employer</td>
+                  <td>1800 p.m. / 2400 p.m. &nbsp;&nbsp;&nbsp;&nbsp; xxx<br>[upto 1600CC] [&gt;1600CC]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Notes</h4>
+          <ul>
+            <li>If employer also provided driver, then ₹ 900 pm, should be added to above taxable amount.</li>
+            <li>If more than one car is provided for POPP then one car is taxable according to above standard amount &amp; other car shall be taxable on the assumption that it is fully used for personal purpose.</li>
+            <li>1600CC is also know as 1.6Ltr of engine.</li>
+          </ul>
+        </section>
+
+        <!-- Perquisite 14 -->
+        <section id="perq-14">
+          <h3>14. Transport facility for Transport Employee (Free tickets)</h3>
+          <p>(i) For airlines &amp; railway employee – <strong>Airlines &amp; Railway facility is fully exempt.</strong><br>
+          (ii) For other employees – <strong>It is fully taxable.</strong></p>
+        </section>
+
+        <!-- Perquisite 15 -->
+        <section id="perq-15">
+          <h3>15. Education Facility</h3>
+          <p>(i) For employee – <strong>Fully exempt</strong><br>
+          (ii) For children – It is exempt if value of education is upto ₹ 1000 p.m. per child &amp; education is provided in employer's own institution or institution where employer have tie-ups, otherwise fully taxable.<br>
+          (iii) For other relatives – Fully taxable.</p>
+        </section>
+
+        <!-- Perquisite 16 -->
+        <section id="perq-16">
+          <h3>16. Gas, Electricity &amp; Water Supply – Fully Taxable</h3>
+        </section>
+
+        <!-- Perquisite 17 -->
+        <section id="perq-17">
+          <h3>17. Free Servant – Fully Taxable</h3>
+        </section>
+
+        <!-- Perquisite 18 -->
+        <section id="perq-18">
+          <h3>18. Any other Perquisite – Fully Taxable</h3>
+
+          <p><strong>Note:</strong> perquisite No 13 to 17 are taxable only if employee is specified EE, if EE is non-specified then these perquisites are Exempt.</p>
+
+          <p><strong>Specified Employee means</strong></p>
+          <ul>
+            <li>Director employee;</li>
+            <li>Employee having cash salary more than ₹ 4,00,000;</li>
+            <li>employee having substantial Interest in the business of employer.</li>
+          </ul>
+
+          <h4>Following perquisites are Fully Exempt</h4>
+          <ol>
+            <li>Telephone / mobile bill paid or re-imbursed by Employer.</li>
+            <li>Scholarship to employee's children.</li>
+            <li>Goods sold by employer to employee at reasonable price.</li>
+            <li>Tax on non-monetary perquisites paid by employer.</li>
+            <li>Personal Accidental Policy premium paid by employer.</li>
+          </ol>
+        </section>
+        
+      </section> <!-- End Note 14 -->
+
+      <hr>
+
+      <!-- ── Note 15 ────────────────────────────────────── -->
+      <section id="note-15">
+        <h2>Note 15: Professional Tax</h2>
+        <p>It means tax on employment. If it is paid by employer on behalf of employee, then first it should be taxable and there after deduction allowed u/s 16. If it is paid by employee then only deduction is allowed.</p>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 16 ────────────────────────────────────── -->
+      <section id="note-16">
+        <h2>Note 16: Entertainment Allowance</h2>
+        <p>It is fully taxable for all employees but deduction is allowed to government employees u/s 16 as follows:</p>
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TB
+    A["Deduction allowed u/s 16"] --> B["(i) 20% of Basic Salary"]
+    A --> C["(ii) Actual amount received"]
+    A --> D["(iii) Maximum ₹ 5000"]
+    B --> E["Whichever is lower"]
+    C --> E
+    D --> E
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ── Note 17 ────────────────────────────────────── -->
+      <section id="note-17">
+        <h2>Note 17: Standard Deduction</h2>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>If assessee opted 115BAC</th>
+                <th>Assesee optout from 115BAC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>(i) Salary Income<br>↓<br>(ii) ₹ 75,000</td>
+                <td>(i) Salary Income<br>↓<br>(ii) ₹ 50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ── Concept of Pay Scale ───────────────────────── -->
+      <section id="pay-scale">
+        <h2>Notes: Concept of Pay Scale</h2>
+        <p>Eg:- MS. Priyal joined Railways as on 1/7/2021 on a pay scale of 10000 - 1000 - 13000 - 1500 - 16000 - 2000 - 20000 - 3000. Compute basic salary for A.Y. 2026-27</p>
+        <div class="table-responsive">
+          <table class="amt">
+            <tbody>
+              <tr><td>1/7/21</td><td>→</td><td>30/6/22</td><td style="text-align:right">10,000</td></tr>
+              <tr><td>1/7/22</td><td>→</td><td>30/6/23</td><td style="text-align:right">11,000</td></tr>
+              <tr><td>1/7/23</td><td>→</td><td>30/6/24</td><td style="text-align:right">12,000</td></tr>
+              <tr><td>1/7/24</td><td>→</td><td>30/6/25</td><td style="text-align:right">13,000</td></tr>
+              <tr><td>1/7/25</td><td>→</td><td>30/6/26</td><td style="text-align:right">14,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><strong>Salary for PY 2025 – 26</strong></p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr><th>1/4/25</th><th>→</th><th>31/3/26</th></tr>
+            </thead>
+          </table>
+        </div>
+
+        <p>= (13,000 × 3months) + (14,500 × 9months)<br>
+        = 39,000 + 1,30,500<br>
+        = 1,69,500</p>
+      </section>
+
+      <hr>
+
+      <!-- ── Rebate u/s 89 ──────────────────────────────── -->
+      <section id="rebate-89">
+        <h2>Rebate u/s 89 for Arrears of Salary</h2>
+        <p>To calculate the relief, the following steps should be taken :</p>
+        <ol class="step-list">
+          <li>Firstly, calculate the tax due in the current year by including the arrears in your total income.</li>
+          <li>Now calculate the tax due in the current year by excluding the arrears from your total income.</li>
+          <li>Compute the difference of the two figures of Step 1 &amp; 2 and let's call that difference as <code>X</code>.</li>
+          <li>Now Calculate your tax due in the year for which the arrears have been received by including the arrears in your total income.</li>
+          <li>Then Calculate your tax due in the year for which the arrears have been received by excluding the arrears from your total income.</li>
+          <li>After that compute the difference of the two figures of Step 4 &amp; 5 and let's call the difference as <code>Y</code>.</li>
+          <li>Lastly subtract X (Step 3) from Y (Step 6) and you will get the relief amount.</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <!-- ── Definition of Salary ───────────────────────── -->
+      <section id="def-salary">
+        <h2>Definition of Salary</h2>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Definition of Salary</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Entertainment Allowance</td><td>Only Basic Salary</td></tr>
+              <tr><td>Gratuity (POGA)</td><td>Basic + DA (Both)</td></tr>
+              <tr><td>Gratuity (Non POGA)</td><td rowspan="6">Basic + DA (T) + T/O Commission</td></tr>
+              <tr><td>Leave Salary</td></tr>
+              <tr><td>HRA</td></tr>
+              <tr><td>Contribution to RPF</td></tr>
+              <tr><td>VRS</td></tr>
+              <tr><td>Retrenchment Compensation</td></tr>
+              <tr><td>House &amp; Hotel Facility</td><td>BDBACM</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ── Section 115BAC ─────────────────────────────── -->
+      <section id="sec-115bac">
+        <h2>Benefits Not Available Under Section 115BAC</h2>
+        <p>Following Benefits not available when assessee opted section 115BAC</p>
+        <ol>
+          <li>HRA exemption u/s 10(13A)</li>
+          <li>LTC exemption u/s 10(5)</li>
+          <li>Allowance exemptions u/s 10(14) except DTDC</li>
+          <li>Free meal exemption upto ₹ 50</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <!-- ── Non-Citizen Exemptions ─────────────────────── -->
+      <section id="non-citizen">
+        <h2>Non-Citizen Exemptions [Sec. 10(6)]</h2>
+        <p>Remuneration received by Individual (not being a citizen of India) is fully exempt in following cases</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:6rem">Section</th>
+                <th>Conditions</th>
+                <th style="width:12rem">Eligible Person</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10(6)(ii)</td>
+                <td>
+                  Remuneration received by Foreign Diplomats/ Consulate and their staff<br>
+                  <strong>Conditions:</strong><br>
+                  (a) The remuneration received by our corresponding Govt. official's resident in such foreign countries should be exempt.<br>
+                  (b) The above-mentioned officers should be the subjects of the respective countries and should not be engaged in any other business or profession or employment in India.
+                </td>
+                <td>Individual (not being a citizen of India)</td>
+              </tr>
+              <tr>
+                <td>10(6)(vi)</td>
+                <td>
+                  Remuneration received as employee of a foreign enterprise for services rendered by him during his stay in India, if:<br>
+                  a) Foreign enterprise is not engaged in any trade or business in India;<br>
+                  b) His stay in India does not exceed period of 90 days in such PY; and<br>
+                  c) Such remuneration is not liable to deducted from the income of employer chargeable under this Act
+                </td>
+                <td>Individual – Salaried Employee (not being a citizen of India)</td>
+              </tr>
+              <tr>
+                <td>10(6)(viii)</td>
+                <td>Salary received by or due for services rendered in connection with his employment on a foreign ship if his total stay in India does not exceed 90 days in the PY.</td>
+                <td>Individual (NR who is not a citizen of India)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+  // --- 1. Desktop Font Size Controls ---
+  let currentFontSize = 14.5;
+  const rootStyle = document.documentElement.style;
+
+  function updateFontSize(newSize) {
+    currentFontSize = Math.max(10, Math.min(newSize, 24)); // clamp between 10px and 24px
+    rootStyle.setProperty('--base-font-size', currentFontSize + 'px');
+  }
+
+  function changeFontSize(step) {
+    updateFontSize(currentFontSize + step);
+  }
+
+  function resetFontSize() {
+    updateFontSize(14.5);
+  }
+
+  // --- 2. Mobile TOC Menu Toggle ---
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const tocNav = document.getElementById('toc-nav');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+  const tocLinks = document.querySelectorAll('.toc a');
+
+  function toggleMobileMenu() {
+    const isOpen = tocNav.classList.toggle('open');
+    mobileBackdrop.classList.toggle('open');
+    // Lock background scroll when menu is open on mobile
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  menuToggleBtn.addEventListener('click', toggleMobileMenu);
+  mobileBackdrop.addEventListener('click', toggleMobileMenu);
+
+  // Close the menu when a link inside it is clicked (mobile only)
+  tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 920 && tocNav.classList.contains('open')) {
+        toggleMobileMenu();
+      }
+    });
+  });
+
+  // Toggle Submenu manually when clicking the parent link
+  document.querySelectorAll('.toc .has-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const parentLi = this.closest('.has-submenu');
+      parentLi.classList.toggle('open');
+    });
+  });
+
+  // --- 3. Scroll Spy (Highlight active section & expand submenu in TOC) ---
+  const sections = document.querySelectorAll('section');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-15% 0px -70% 0px', // Triggers when the section is nicely in the viewing area
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const activeId = entry.target.getAttribute('id');
+        const activeLink = document.querySelector(`.toc a[href="#${activeId}"]`);
+        
+        if (activeLink) {
+          // Remove active class from all links
+          document.querySelectorAll('.toc a').forEach(link => link.classList.remove('active'));
+          // Close all submenus
+          document.querySelectorAll('.toc .has-submenu').forEach(li => li.classList.remove('open'));
+          
+          activeLink.classList.add('active');
+
+          // If the link is INSIDE a submenu, open the parent
+          const parentSubmenu = activeLink.closest('.submenu');
+          if (parentSubmenu) {
+            parentSubmenu.closest('.has-submenu').classList.add('open');
+          }
+
+          // If the link OWNS a submenu (like Note 14), open it
+          const wrapperLi = activeLink.closest('.has-submenu');
+          if (wrapperLi && activeLink.nextElementSibling && activeLink.nextElementSibling.classList.contains('submenu')) {
+            wrapperLi.classList.add('open');
+          }
+          
+          // Optional: Scroll TOC to keep active link in view
+          activeLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
+</html>

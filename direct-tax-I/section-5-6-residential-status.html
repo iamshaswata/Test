@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residential Status and Scope of Total Income | Sections 5, 6, 7 and 9</title>
+<link rel="canonical" href="https://shaswata.co.in/direct-tax-I/section-5-6-residential-status.html" />
+<meta name="description" content="Income tax revision notes on residential status and scope of total income covering Sections 5, 6, 7, and 9, including deemed receipt and deemed accrual in India." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Shaswata Saha" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Residential Status and Scope of Total Income | Sections 5, 6, 7 and 9" />
+<meta property="og:description" content="Revision notes on residential status and scope of total income covering Sections 5, 6, 7, and 9, including deemed receipt and deemed accrual in India." />
+<meta property="og:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<meta property="og:url" content="https://shaswata.co.in/direct-tax-I/section-5-6-residential-status.html" />
+<meta property="og:site_name" content="Shaswata Saha" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Residential Status and Scope of Total Income | Sections 5, 6, 7 and 9" />
+<meta name="twitter:description" content="Revision notes on residential status and scope of total income covering Sections 5, 6, 7, and 9, including deemed receipt and deemed accrual in India." />
+<meta name="twitter:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0d0d0d;
+    --dark: #1c1c1c;
+    --mid: #555;
+    --light: #999;
+    --rule: #e0e0e0;
+    --rule-heavy: #b0b0b0;
+    --bg: #ffffff;
+    --bg-alt: #f6f6f6;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', Consolas, monospace;
+    --base-font-size: 14.5px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--base-font-size);
+    line-height: 1.75;
+    color: var(--dark);
+    background: var(--bg);
+    transition: font-size 0.2s ease;
+  }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── Desktop Font Controls ──────────────────────── */
+  .font-controls {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 5px;
+    background: var(--bg-alt);
+    padding: 6px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 50;
+  }
+
+  .font-controls button {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    color: var(--dark);
+    font-family: var(--font-body);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .font-controls button:hover {
+    background: #e9e9e9;
+    color: var(--black);
+  }
+
+  /* ── TOC Sidebar ─────────────────────────────────── */
+  .toc {
+    width: 290px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--rule);
+    padding: 2rem 1.1rem 2rem 1.4rem;
+    background: var(--bg-alt);
+  }
+
+  .toc::-webkit-scrollbar { width: 4px; }
+  .toc::-webkit-scrollbar-thumb { background: var(--rule-heavy); }
+
+  .toc .toc-label {
+    font-family: var(--font-body);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .toc ol { list-style: none; padding: 0; }
+  .toc li { margin: 0; }
+
+  .toc a {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--mid);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 2px;
+    border-left: 2px solid transparent;
+    line-height: 1.35;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s;
+  }
+
+  .toc a:hover {
+    color: var(--black);
+    background-color: rgba(0,0,0,0.03);
+  }
+
+  /* Active state for Scroll Spy */
+  .toc a.active {
+    color: var(--black);
+    font-weight: 600;
+    border-left-color: var(--black);
+    background-color: rgba(0,0,0,0.05);
+  }
+
+  .toc a.section-link {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.77rem;
+    margin-top: 0.55rem;
+    border-left-color: var(--rule-heavy);
+  }
+
+  .toc a.section-link.active {
+    border-left-color: var(--black);
+  }
+
+  /* Submenu Styles */
+  .toc .submenu {
+    display: none;
+    padding-left: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-left: 1px dashed var(--rule-heavy);
+    margin-left: 0.8rem;
+    list-style: none;
+  }
+  
+  .toc .has-submenu.open .submenu {
+    display: block;
+  }
+
+  .toc .submenu a {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 1px;
+    line-height: 1.3;
+  }
+
+  .toc .has-submenu > a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+  }
+  
+  /* Dropdown Arrow */
+  .toc .has-submenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--light);
+    transform: rotate(-90deg);
+    transition: transform 0.2s, border-top-color 0.2s;
+  }
+
+  .toc .has-submenu.open > a::after {
+    transform: rotate(0deg);
+    border-top-color: var(--black);
+  }
+
+  /* ── Mobile TOC Bar ──────────────────────────────── */
+  .mobile-topbar {
+    display: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 20px;
+    z-index: 900;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+
+  .mobile-topbar button {
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mobile-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* ── Main Content ────────────────────────────────── */
+  .content-wrapper {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 840px;
+    padding: 3rem 3.5rem 5rem 3.5rem;
+  }
+
+  /* ── Page Header ─────────────────────────────────── */
+  .page-header {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-header .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 0.4rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.1;
+  }
+
+  .page-header .meta {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--light);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Section Separators ──────────────────────────── */
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  section { margin-bottom: 0; scroll-margin-top: 2rem; }
+
+  /* ── Headings ────────────────────────────────────── */
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--rule-heavy);
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Paragraphs & Text ───────────────────────────── */
+  p { margin-bottom: 0.7rem; }
+  strong { font-weight: 600; color: var(--black); }
+  em { font-style: italic; }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.87em;
+    background: var(--bg-alt);
+    border: 1px solid var(--rule);
+    padding: 0.08em 0.35em;
+    border-radius: 2px;
+  }
+
+  /* ── Lists ───────────────────────────────────────── */
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  li { margin-bottom: 0.25rem; }
+  li > ul, li > ol { margin-top: 0.2rem; margin-bottom: 0.2rem; }
+
+  /* Step list */
+  .step-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+  }
+  .step-list li {
+    counter-increment: step;
+    padding-left: 4.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  .step-list li::before {
+    content: "Step " counter(step);
+    position: absolute;
+    left: 0;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--light);
+    top: 0.25rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border: 1px solid var(--rule);
+    padding: 0.05rem 0.3rem;
+  }
+
+  /* ── Blockquote ──────────────────────────────────── */
+  blockquote {
+    border-left: 3px solid var(--black);
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.25rem;
+    background: var(--bg-alt);
+    font-style: italic;
+    color: var(--dark);
+    font-size: 0.95em;
+  }
+
+  /* ── Formula block ───────────────────────────────── */
+  .formula {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg-alt);
+    border-left: 3px solid var(--dark);
+    margin: 0.8rem 0;
+    line-height: 1.5;
+  }
+
+  /* ── Tables ──────────────────────────────────────── */
+  .table-responsive {
+    overflow-x: auto;
+    margin: 0.9rem 0 1.2rem 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.865rem;
+    min-width: 400px;
+  }
+
+  th {
+    background: var(--black);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+  }
+
+  td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td { background: var(--bg-alt); }
+  tr:last-child td { border-bottom: 2px solid var(--rule-heavy); }
+
+  /* Amount column alignment */
+  .amt th:last-child, .amt td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .amt th:nth-child(2), .amt td:nth-child(2) { text-align: right; }
+
+  /* Number column */
+  .num td:first-child, .num th:first-child { text-align: right; width: 2.5rem; }
+
+  /* ── Mermaid wrapper ─────────────────────────────── */
+  .mermaid-wrap {
+    margin: 1.2rem 0;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--rule);
+    background: var(--bg-alt);
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mermaid-wrap .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 920px) {
+    .font-controls { display: none; }
+    .mobile-topbar { display: flex; }
+    
+    .toc {
+      position: fixed;
+      left: 0;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+      background: var(--bg);
+      box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    }
+    .toc.open { transform: translateX(0); }
+    .mobile-backdrop.open { display: block; opacity: 1; }
+
+    .content { padding: 1.5rem 1.2rem 4rem 1.2rem; max-width: 100%; }
+    section { scroll-margin-top: 4.5rem; }
+  }
+
+  /* ── Print ───────────────────────────────────────── */
+  @media print {
+    .toc, .mobile-topbar, .font-controls { display: none; }
+    .content { max-width: 100%; padding: 0.5rem 1rem; }
+    h2 { page-break-before: auto; }
+    .mermaid-wrap { border: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#f0f0f0',
+      primaryTextColor: '#1c1c1c',
+      primaryBorderColor: '#888',
+      lineColor: '#555',
+      secondaryColor: '#ffffff',
+      tertiaryColor: '#e8e8e8',
+      fontSize: '13px',
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif"
+    }
+  });
+</script>
+
+<div class="wrapper">
+
+  <nav class="toc" id="toc-nav" aria-label="Table of contents">
+    <span class="toc-label">Contents</span>
+    <ol>
+      <li class="has-submenu">
+        <a class="section-link" href="#section-1">1. Section 6: Residential Status</a>
+        <ul class="submenu">
+          <li><a href="#sub-1-1">1.1 Residential Status of an Individual</a></li>
+          <li><a href="#sub-1-2">1.2 Basic Conditions — Section 6(1)</a></li>
+          <li><a href="#sub-1-3">1.3 Additional Conditions — Section 6(6)</a></li>
+          <li><a href="#sub-1-4">1.4 How Residential Status is Determined</a></li>
+          <li><a href="#sub-1-5">1.5 Important Notes on Day Counting</a></li>
+          <li><a href="#sub-1-6">1.6 Special Rule — Indian Citizen / PIO with Income > ₹15 Lakhs</a></li>
+          <li><a href="#sub-1-7">1.7 Summary Table — Indian Citizen / PIO Visiting India</a></li>
+          <li><a href="#sub-1-8">1.8 Special Rule — Indian Citizen Crew Member</a></li>
+          <li><a href="#sub-1-9">1.9 Section 6(1A): Deemed Resident</a></li>
+          <li><a href="#sub-1-10">1.10 Section 6(2): Residential Status of HUF</a></li>
+          <li><a href="#sub-1-11">1.11 Section 6(2): Firm / AOP / BOI / Local Authority / AJP</a></li>
+          <li><a href="#sub-1-12">1.12 Section 6(3): Residential Status of a Company</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a class="section-link" href="#section-2">2. Section 5: Scope of Total Income</a>
+        <ul class="submenu">
+          <li><a href="#sub-2-1">2.1 Taxability of Income — Individual & HUF</a></li>
+          <li><a href="#sub-2-2">2.2 Taxability of Income — Other Assessees</a></li>
+          <li><a href="#sub-2-3">2.3 Important Notes on Income Taxability</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="section-link" href="#section-3">3. Section 7: Income Deemed to be Received in India</a>
+      </li>
+      <li class="has-submenu">
+        <a class="section-link" href="#section-4">4. Section 9: Income Deemed to Accrue or Arise in India</a>
+        <ul class="submenu">
+          <li><a href="#sub-4-1">4.1 Section 9(1)(i) — Business Connection / Property / Asset</a></li>
+          <li><a href="#sub-4-2">4.2 Exceptions — NOT a Business Connection</a></li>
+          <li><a href="#sub-4-3">4.3 Section 9(1)(ii) — Salary for Services Rendered</a></li>
+          <li><a href="#sub-4-4">4.4 Section 9(1)(iii) — Salary to Indian Citizen from Govt</a></li>
+          <li><a href="#sub-4-5">4.5 Section 9(1)(iv) — Dividend Paid Outside India</a></li>
+          <li><a href="#sub-4-6">4.6 Section 9(1)(viii) — Deemed Accrual of Gift Outside India</a></li>
+          <li><a href="#sub-4-7">4.7 Section 9(1)(v) — Interest</a></li>
+          <li><a href="#sub-4-8">4.8 Diagram — Interest (Section 9(1)(v))</a></li>
+          <li><a href="#sub-4-9">4.9 Example — Deemed Interest Rule</a></li>
+          <li><a href="#sub-4-10">4.10 Section 9(1)(vi) — Royalty</a></li>
+          <li><a href="#sub-4-11">4.11 Section 9(1)(vii) — Fees for Technical Services (FTS)</a></li>
+          <li><a href="#sub-4-12">4.12 Diagram — Royalty / FTS</a></li>
+        </ul>
+      </li>
+    </ol>
+  </nav>
+
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <div class="content-wrapper">
+    
+    <div class="mobile-topbar">
+      <button id="menu-toggle-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        Table of Contents
+      </button>
+    </div>
+
+    <div class="font-controls">
+      <button onclick="changeFontSize(-1)" title="Decrease font size">A-</button>
+      <button onclick="resetFontSize()" title="Reset font size">A</button>
+      <button onclick="changeFontSize(1)" title="Increase font size">A+</button>
+    </div>
+
+    <main class="content">
+
+      <div class="page-header">
+        <p class="eyebrow">Income Tax</p>
+        <h1>Residential Status and Scope of Total Income</h1>
+        <p class="meta">Sections 5, 6, 7 and 9 · AY 2025–26</p>
+      </div>
+
+      <section id="section-1">
+        <h2>1. Section 6: Residential Status</h2>
+        
+        <section id="sub-1-1">
+          <h3>1.1 Residential Status of an Individual</h3>
+          <p>The taxability of an individual in India heavily depends upon their residential status for a given Previous Year (PY). An individual can fall into one of three categories:</p>
+          <ul>
+            <li><strong>Resident and Ordinarily Resident (ROR)</strong></li>
+            <li><strong>Resident but Not Ordinarily Resident (RNOR)</strong></li>
+            <li><strong>Non-Resident (NR)</strong></li>
+          </ul>
+        </section>
+
+        <section id="sub-1-2">
+          <h3>1.2 Basic Conditions — Section 6(1)</h3>
+          <p>An individual is treated as a <strong>Resident</strong> in India if they satisfy <strong>any one</strong> of the following basic conditions:</p>
+          <ol>
+            <li>The individual is in India for a period or periods amounting in all to <strong>182 days or more</strong> in the relevant PY.</li>
+            <li>The individual is in India for <strong>60 days or more</strong> during the relevant PY <strong>AND</strong> for <strong>365 days or more</strong> during the 4 preceding PYs.</li>
+          </ol>
+        </section>
+
+        <section id="sub-1-3">
+          <h3>1.3 Additional Conditions — Section 6(6)</h3>
+          <p>Once deemed a Resident, an individual must test for "Ordinarily Resident" status. They are <strong>ROR</strong> if they satisfy <strong>both</strong> additional conditions:</p>
+          <ol>
+            <li>Resident in India in at least <strong>2 out of 10</strong> previous years immediately preceding the relevant PY.</li>
+            <li>Present in India for <strong>730 days or more</strong> during the 7 previous years immediately preceding the relevant PY.</li>
+          </ol>
+          <p><em>Note: If a resident fails to satisfy one or both of these additional conditions, they are classified as <strong>RNOR</strong>.</em></p>
+        </section>
+
+        <section id="sub-1-4">
+          <h3>1.4 How Residential Status is Determined</h3>
+          <ul class="step-list">
+            <li><strong>Test the Basic Conditions [Sec 6(1)]</strong>: Determine if the individual meets the 182-day or 60-day rule.</li>
+            <li><strong>Evaluate Resident or NR</strong>: If no basic condition is met, the individual is a Non-Resident (NR). If one is met, they are a Resident.</li>
+            <li><strong>Test Additional Conditions [Sec 6(6)]</strong>: If Resident, check the 2/10 years and 730/7 years rule.</li>
+            <li><strong>Assign Final Status</strong>: Assign ROR if both additional conditions are satisfied, otherwise RNOR.</li>
+          </ul>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TD
+    Start["Individual"] --> Q1{"In India >= 182 days?"}
+    Q1 -- Yes --> Res["Resident"]
+    Q1 -- No --> Q2{"In India >= 60 days in PY<br/>AND >= 365 days in 4 preceding PYs?"}
+    Q2 -- Yes --> Res
+    Q2 -- No --> NR["Non-Resident"]
+    Res --> Q3{"Resident in >= 2 of 10 preceding PYs<br/>AND<br/>Present in India >= 730 days in 7 preceding PYs?"}
+    Q3 -- Yes --> ROR["Resident & Ordinarily Resident (ROR)"]
+    Q3 -- No --> RNOR["Resident but Not Ordinarily Resident (RNOR)"]
+            </div>
+          </div>
+        </section>
+
+        <section id="sub-1-5">
+          <h3>1.5 Important Notes on Day Counting</h3>
+          <ul>
+            <li>The date of arrival into India and the date of departure from India are <strong>both</strong> counted as days of stay in India.</li>
+            <li>Stay in India does not need to be continuous.</li>
+            <li>Stay can be at any place within the territorial waters of India.</li>
+          </ul>
+        </section>
+
+        <section id="sub-1-6">
+          <h3>1.6 Special Rule — Indian Citizen / PIO with Income > ₹15 Lakhs</h3>
+          <p>For an Indian Citizen or a Person of Indian Origin (PIO) coming on a visit to India, whose total income from Indian sources exceeds <strong>₹15 Lakhs</strong>, the "60 days" in the second basic condition is replaced with <strong>"120 days"</strong>. If such a person becomes a resident purely by virtue of the 120-day rule, their status is mandatorily restricted to <strong>RNOR</strong>.</p>
+        </section>
+
+        <section id="sub-1-7">
+          <h3>1.7 Summary Table — Indian Citizen / PIO Visiting India</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Total Indian Income</th>
+                  <th>Basic Condition Trigger</th>
+                  <th>Applicable Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Up to ₹15 Lakhs</td>
+                  <td>182 days or more in the PY</td>
+                  <td>Resident (ROR/RNOR based on Sec 6(6)) or NR</td>
+                </tr>
+                <tr>
+                  <td>Exceeds ₹15 Lakhs</td>
+                  <td>182 days OR (120 days in PY + 365 days in 4 preceding PYs)</td>
+                  <td>Resident (Always RNOR if qualifying via 120-day rule)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="sub-1-8">
+          <h3>1.8 Special Rule — Indian Citizen Crew Member of Foreign-Bound Ship</h3>
+          <p>For an Indian citizen who leaves India as a member of the crew of an Indian ship bound for a foreign destination, the "60 days" condition does not apply (only the 182 days condition applies). Furthermore, the period starting from the date entered into the <em>Continuous Discharge Certificate</em> regarding joining the ship until the date entered regarding signing off is <strong>excluded</strong> from their stay in India.</p>
+        </section>
+
+        <section id="sub-1-9">
+          <h3>1.9 Section 6(1A): Deemed Resident</h3>
+          <p>An individual shall be deemed to be a resident in India if they satisfy all the following criteria:</p>
+          <ul>
+            <li>They are a Citizen of India.</li>
+            <li>Their total income (other than income from foreign sources) exceeds <strong>₹15 Lakhs</strong> during the PY.</li>
+            <li>They are <strong>not liable to tax</strong> in any other country or territory by reason of their domicile or residence.</li>
+          </ul>
+          <blockquote>Such an individual is always classified as <strong>RNOR (Resident but Not Ordinarily Resident)</strong>.</blockquote>
+        </section>
+
+        <section id="sub-1-10">
+          <h3>1.10 Section 6(2): Residential Status of Hindu Undivided Family (HUF)</h3>
+          <p>An HUF is a <strong>Resident</strong> in India if the control and management of its affairs are situated wholly or partly in India. It is a Non-Resident if control and management are wholly outside India.</p>
+          <p>If the HUF is a resident, we check the Karta's status against the additional conditions (Sec 6(6)). If the Karta meets <strong>both</strong> additional conditions, the HUF is <strong>ROR</strong>. Otherwise, it is <strong>RNOR</strong>.</p>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TD
+    HUF["Hindu Undivided Family"] --> Q1{"Control & Management wholly outside India?"}
+    Q1 -- Yes --> NR["Non-Resident"]
+    Q1 -- No --> Res["Resident"]
+    Res --> Q2{"Does Karta satisfy both<br/>additional conditions of Sec 6(6)?"}
+    Q2 -- Yes --> ROR["Resident & Ordinarily Resident (ROR)"]
+    Q2 -- No --> RNOR["Resident but Not Ordinarily Resident (RNOR)"]
+            </div>
+          </div>
+        </section>
+
+        <section id="sub-1-11">
+          <h3>1.11 Section 6(2): Residential Status of Firm / AOP / BOI / Local Authority / AJP</h3>
+          <p>A Partnership Firm, AOP, BOI, Local Authority, or Artificial Juridical Person (AJP) is considered <strong>Resident</strong> if the control and management of its affairs are situated wholly or partly in India. It is <strong>Non-Resident</strong> only if control and management are <em>wholly</em> outside India. (There is no concept of ordinarily/not ordinarily resident for these entities).</p>
+        </section>
+
+        <section id="sub-1-12">
+          <h3>1.12 Section 6(3): Residential Status of a Company</h3>
+          <p>A company is said to be resident in India in any previous year if:</p>
+          <ol>
+            <li>It is an <strong>Indian Company</strong>; OR</li>
+            <li>Its <strong>Place of Effective Management (POEM)</strong> in that year is in India.</li>
+          </ol>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TD
+    Comp["Company"] --> Q1{"Is it an Indian Company?"}
+    Q1 -- Yes --> Res["Resident"]
+    Q1 -- No --> Q2{"Is Place of Effective Management (POEM) in India?"}
+    Q2 -- Yes --> Res
+    Q2 -- No --> NR["Non-Resident"]
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <hr>
+
+      <section id="section-2">
+        <h2>2. Section 5: Scope of Total Income</h2>
+
+        <section id="sub-2-1">
+          <h3>2.1 Taxability of Income — Individual & HUF</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nature of Income</th>
+                  <th style="text-align:center">ROR</th>
+                  <th style="text-align:center">RNOR</th>
+                  <th style="text-align:center">NR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Income received or deemed to be received in India</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center">Taxable</td>
+                </tr>
+                <tr>
+                  <td>Income accruing/arising or deemed to accrue/arise in India</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center">Taxable</td>
+                </tr>
+                <tr>
+                  <td>Income accruing/arising outside India from a business controlled from or profession set up in India</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center; color: var(--light);">Not Taxable</td>
+                </tr>
+                <tr>
+                  <td>Income accruing/arising outside India from other foreign sources</td>
+                  <td style="text-align:center">Taxable</td>
+                  <td style="text-align:center; color: var(--light);">Not Taxable</td>
+                  <td style="text-align:center; color: var(--light);">Not Taxable</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TD
+    Inc["Foreign Income (Accrued/Received Outside India)"] --> Q1{"Is the business controlled /<br/>profession set up in India?"}
+    Q1 -- Yes --> Tax2["Taxable for ROR & RNOR<br/>Not taxable for NR"]
+    Q1 -- No --> Tax3["Taxable ONLY for ROR<br/>Not taxable for RNOR & NR"]
+            </div>
+          </div>
+        </section>
+
+        <section id="sub-2-2">
+          <h3>2.2 Taxability of Income — Other Assessees</h3>
+          <p>For Assessees other than Individual and HUF (e.g., Company, Firm):</p>
+          <ul>
+            <li><strong>Resident:</strong> Global income is taxable in India.</li>
+            <li><strong>Non-Resident:</strong> Only Indian income (received/accrued in India) is taxable.</li>
+          </ul>
+        </section>
+
+        <section id="sub-2-3">
+          <h3>2.3 Important Notes on Income Taxability</h3>
+          <ul>
+            <li>Remittance of past untaxed foreign profits into India is <strong>not taxable</strong> in the year of remittance.</li>
+            <li>Agricultural income from land situated outside India is <strong>taxable</strong> for a Resident as "Income from Other Sources".</li>
+            <li>Income accrued in India but received outside India is taxable for all categories.</li>
+          </ul>
+        </section>
+      </section>
+
+      <hr>
+
+      <section id="section-3">
+        <h2>3. Section 7: Income Deemed to be Received in India</h2>
+        <p>The following incomes are deemed to be received in India in the previous year, irrespective of actual receipt:</p>
+        <ol>
+          <li>Employer's contribution to a Recognized Provident Fund (RPF) in excess of <strong>12% of salary</strong>.</li>
+          <li>Interest credited to RPF in excess of <strong>9.5% per annum</strong>.</li>
+          <li>The taxable portion of the transferred balance from an Unrecognized Provident Fund (URPF) to an RPF.</li>
+          <li>Contribution made by the Central Government or any other employer to the account of an employee under a notified pension scheme (NPS) under Section 80CCD.</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <section id="section-4">
+        <h2>4. Section 9: Income Deemed to Accrue or Arise in India</h2>
+
+        <section id="sub-4-1">
+          <h3>4.1 Section 9(1)(i) — Business Connection / Property / Asset / Capital Asset in India</h3>
+          <p>Any income accruing or arising, directly or indirectly, through or from the following shall be deemed to accrue or arise in India:</p>
+          <ul>
+            <li>A <strong>Business Connection</strong> in India.</li>
+            <li>Any property in India.</li>
+            <li>Any asset or source of income in India.</li>
+            <li>The transfer of a capital asset situated in India.</li>
+          </ul>
+        </section>
+
+        <section id="sub-4-2">
+          <h3>4.2 Exceptions — Following shall NOT be treated as Business Connection in India</h3>
+          <ol>
+            <li><strong>Purchase of Goods for Export:</strong> In the case of a non-resident, no income shall be deemed to accrue or arise in India from operations confined to the purchase of goods in India for the purpose of export.</li>
+            <li><strong>Collection of News:</strong> A non-resident news agency or journal confining its activities to the collection of news and views in India for transmission out of India.</li>
+            <li><strong>Shooting of Cinematograph Films:</strong> Operations confined to the shooting of any cinematograph film in India by a non-resident individual (who is not a citizen of India), a firm (no partner is a citizen or resident), or a company (no shareholder is a citizen or resident).</li>
+          </ol>
+        </section>
+
+        <section id="sub-4-3">
+          <h3>4.3 Section 9(1)(ii) — Salary for Services Rendered in India</h3>
+          <p>Salary earned for services rendered in India shall be regarded as income earned in India. Additionally, any leave salary paid abroad in respect of leave earned in India is deemed to accrue or arise in India.</p>
+        </section>
+
+        <section id="sub-4-4">
+          <h3>4.4 Section 9(1)(iii) — Salary Received by Indian Citizen from Government</h3>
+          <p>Salary payable by the Government of India to a <strong>Citizen of India</strong> for services rendered <strong>outside India</strong> shall be deemed to accrue or arise in India. (However, any allowances or perquisites paid outside India are fully exempt under Section 10(7)).</p>
+        </section>
+
+        <section id="sub-4-5">
+          <h3>4.5 Section 9(1)(iv) — Dividend Paid by Indian Company Outside India</h3>
+          <p>Dividends paid by an Indian company outside India are deemed to accrue or arise in India.</p>
+        </section>
+
+        <section id="sub-4-6">
+          <h3>4.6 Section 9(1)(viii) — Deemed Accrual of Gift Made to a Person Outside India</h3>
+          <p>Any sum of money exceeding ₹50,000 received by a non-resident or a foreign company without consideration from a person resident in India (on or after 5th July 2019) shall be deemed to accrue or arise in India.</p>
+        </section>
+
+        <section id="sub-4-7">
+          <h3>4.7 Section 9(1)(v) — Interest</h3>
+          <p>Interest is deemed to accrue or arise in India if it is payable by:</p>
+          <ul>
+            <li>The Government.</li>
+            <li>A Resident, <em>except</em> where the debt is incurred wholly for the purposes of a business or profession carried on outside India or for earning income outside India.</li>
+            <li>A Non-Resident, <em>only if</em> the debt is incurred for the purposes of a business or profession carried on in India.</li>
+          </ul>
+        </section>
+
+        <section id="sub-4-8">
+          <h3>4.8 Diagram — Interest (Section 9(1)(v))</h3>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TD
+    A[Payer of Interest]
+    A --> B{Is Payer Government?}
+    B -- Yes --> C[Deemed to accrue in India]
+    B -- No --> D{Is Payer Resident?}
+    D -- Yes --> E{Borrowed for business OUTSIDE India?}
+    E -- Yes --> F[Not deemed to accrue in India]
+    E -- No --> C
+    D -- No --> G{Borrowed for business IN India?}
+    G -- Yes --> C
+    G -- No --> F
+            </div>
+          </div>
+        </section>
+
+        <section id="sub-4-9">
+          <h3>4.9 Example — Applicability of Deemed Interest Rule</h3>
+          <p>If an Indian resident company borrows money from a US bank to construct a factory in the UK, the interest paid to the US bank will <strong>not</strong> be deemed to accrue or arise in India because the money is strictly utilized for a business situated outside India.</p>
+        </section>
+
+        <section id="sub-4-10">
+          <h3>4.10 Section 9(1)(vi) — Royalty</h3>
+          <p>Royalty is deemed to accrue or arise in India if it is payable by:</p>
+          <ul>
+            <li>The Government.</li>
+            <li>A Resident, <em>except</em> where the royalty is payable for the transfer of rights/property utilized for a business or profession carried on outside India or for earning income outside India.</li>
+            <li>A Non-Resident, <em>only if</em> the royalty is payable for the transfer of rights/property utilized for the purposes of a business or profession carried on in India or for earning income from any source in India.</li>
+          </ul>
+        </section>
+
+        <section id="sub-4-11">
+          <h3>4.11 Section 9(1)(vii) — Fees for Technical Services (FTS)</h3>
+          <p>FTS is deemed to accrue or arise in India under the exact same principles applied to Royalty. It matters not where the services were physically rendered; what matters is where the services are <strong>utilized</strong>.</p>
+        </section>
+
+        <section id="sub-4-12">
+          <h3>4.12 Diagram — Royalty / FTS (Section 9(1)(vi) & (vii))</h3>
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TD
+    A[Payer of Royalty / FTS]
+    A --> B{Is Payer Government?}
+    B -- Yes --> C[Deemed to accrue in India]
+    B -- No --> D{Is Payer Resident?}
+    D -- Yes --> E{Used for business/profession OUTSIDE India?}
+    E -- Yes --> F[Not deemed to accrue in India]
+    E -- No --> C
+    D -- No --> G{Used for business/profession IN India?}
+    G -- Yes --> C
+    G -- No --> F
+            </div>
+          </div>
+        </section>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+  // --- 1. Desktop Font Size Controls ---
+  let currentFontSize = 14.5;
+  const rootStyle = document.documentElement.style;
+
+  function updateFontSize(newSize) {
+    currentFontSize = Math.max(10, Math.min(newSize, 24)); 
+    rootStyle.setProperty('--base-font-size', currentFontSize + 'px');
+  }
+
+  function changeFontSize(step) {
+    updateFontSize(currentFontSize + step);
+  }
+
+  function resetFontSize() {
+    updateFontSize(14.5);
+  }
+
+  // --- 2. Mobile TOC Menu Toggle ---
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const tocNav = document.getElementById('toc-nav');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+  const tocLinks = document.querySelectorAll('.toc a');
+
+  function toggleMobileMenu() {
+    const isOpen = tocNav.classList.toggle('open');
+    mobileBackdrop.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  menuToggleBtn.addEventListener('click', toggleMobileMenu);
+  mobileBackdrop.addEventListener('click', toggleMobileMenu);
+
+  tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 920 && tocNav.classList.contains('open')) {
+        toggleMobileMenu();
+      }
+    });
+  });
+
+  // Toggle Submenu manually when clicking the parent link
+  document.querySelectorAll('.toc .has-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const parentLi = this.closest('.has-submenu');
+      parentLi.classList.toggle('open');
+    });
+  });
+
+  // --- 3. Scroll Spy ---
+  const sections = document.querySelectorAll('section');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-15% 0px -70% 0px', 
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const activeId = entry.target.getAttribute('id');
+        const activeLink = document.querySelector(`.toc a[href="#${activeId}"]`);
+        
+        if (activeLink) {
+          document.querySelectorAll('.toc a').forEach(link => link.classList.remove('active'));
+          document.querySelectorAll('.toc .has-submenu').forEach(li => li.classList.remove('open'));
+          
+          activeLink.classList.add('active');
+
+          const parentSubmenu = activeLink.closest('.submenu');
+          if (parentSubmenu) {
+            parentSubmenu.closest('.has-submenu').classList.add('open');
+          }
+
+          const wrapperLi = activeLink.closest('.has-submenu');
+          if (wrapperLi && activeLink.nextElementSibling && activeLink.nextElementSibling.classList.contains('submenu')) {
+            wrapperLi.classList.add('open');
+          }
+          
+          activeLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
+</html>

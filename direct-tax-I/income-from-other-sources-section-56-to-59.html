@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Income from Other Sources — Income Tax</title>
+<link rel="canonical" href="https://shaswata.co.in/direct-tax-I/income-from-other-sources-section-56-to-59.html" />
+<meta name="description" content="Income tax revision notes on income from other sources covering gifts, deductions under Section 57, disallowances under Section 58, exempt incomes, dividends, and deemed dividend." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Shaswata Saha" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Income from Other Sources — Income Tax" />
+<meta property="og:description" content="Revision notes on income from other sources, including gifts, deductions under Section 57, disallowances under Section 58, exempt incomes, dividends, and deemed dividend." />
+<meta property="og:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<meta property="og:url" content="https://shaswata.co.in/direct-tax-I/income-from-other-sources-section-56-to-59.html" />
+<meta property="og:site_name" content="Shaswata Saha" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Income from Other Sources — Income Tax" />
+<meta name="twitter:description" content="Revision notes on income from other sources, including gifts, deductions under Section 57, disallowances under Section 58, exempt incomes, dividends, and deemed dividend." />
+<meta name="twitter:image" content="https://shaswata.co.in/assets/profile-pic.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0d0d0d;
+    --dark: #1c1c1c;
+    --mid: #555;
+    --light: #999;
+    --rule: #e0e0e0;
+    --rule-heavy: #b0b0b0;
+    --bg: #ffffff;
+    --bg-alt: #f6f6f6;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', Consolas, monospace;
+    --base-font-size: 14.5px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--base-font-size);
+    line-height: 1.75;
+    color: var(--dark);
+    background: var(--bg);
+    transition: font-size 0.2s ease;
+  }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── Desktop Font Controls ──────────────────────── */
+  .font-controls {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 5px;
+    background: var(--bg-alt);
+    padding: 6px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 50;
+  }
+
+  .font-controls button {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    color: var(--dark);
+    font-family: var(--font-body);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .font-controls button:hover {
+    background: #e9e9e9;
+    color: var(--black);
+  }
+
+  /* ── TOC Sidebar ─────────────────────────────────── */
+  .toc {
+    width: 320px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--rule);
+    padding: 2rem 1.1rem 2rem 1.4rem;
+    background: var(--bg-alt);
+  }
+
+  .toc::-webkit-scrollbar { width: 4px; }
+  .toc::-webkit-scrollbar-thumb { background: var(--rule-heavy); }
+
+  .toc .toc-label {
+    font-family: var(--font-body);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .toc ol { list-style: none; padding: 0; }
+  .toc li { margin: 0; }
+
+  .toc a {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--mid);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 2px;
+    border-left: 2px solid transparent;
+    line-height: 1.35;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s;
+  }
+
+  .toc a:hover {
+    color: var(--black);
+    background-color: rgba(0,0,0,0.03);
+  }
+
+  /* Active state for Scroll Spy */
+  .toc a.active {
+    color: var(--black);
+    font-weight: 600;
+    border-left-color: var(--black);
+    background-color: rgba(0,0,0,0.05);
+  }
+
+  .toc a.section-link {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.77rem;
+    margin-top: 0.55rem;
+    border-left-color: var(--rule-heavy);
+  }
+
+  .toc a.section-link.active {
+    border-left-color: var(--black);
+  }
+
+  /* Submenu Styles */
+  .toc .submenu {
+    display: none;
+    padding-left: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-left: 1px dashed var(--rule-heavy);
+    margin-left: 0.8rem;
+    list-style: none;
+  }
+  
+  .toc .has-submenu.open > .submenu {
+    display: block;
+  }
+
+  .toc .submenu a {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 1px;
+    line-height: 1.3;
+  }
+
+  .toc .has-submenu > a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+  }
+  
+  /* Dropdown Arrow */
+  .toc .has-submenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--light);
+    transform: rotate(-90deg);
+    transition: transform 0.2s, border-top-color 0.2s;
+  }
+
+  .toc .has-submenu.open > a::after {
+    transform: rotate(0deg);
+    border-top-color: var(--black);
+  }
+
+  /* ── Mobile TOC Bar ──────────────────────────────── */
+  .mobile-topbar {
+    display: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 20px;
+    z-index: 900;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+
+  .mobile-topbar button {
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mobile-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* ── Main Content ────────────────────────────────── */
+  .content-wrapper {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 840px;
+    padding: 3rem 3.5rem 5rem 3.5rem;
+  }
+
+  /* ── Page Header ─────────────────────────────────── */
+  .page-header {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-header .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 0.4rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.1;
+  }
+
+  .page-header .meta {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--light);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Section Separators ──────────────────────────── */
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  section { margin-bottom: 0; scroll-margin-top: 2rem; }
+
+  /* ── Headings ────────────────────────────────────── */
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--rule-heavy);
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Paragraphs & Text ───────────────────────────── */
+  p { margin-bottom: 0.7rem; }
+  strong { font-weight: 600; color: var(--black); }
+  em { font-style: italic; }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.87em;
+    background: var(--bg-alt);
+    border: 1px solid var(--rule);
+    padding: 0.08em 0.35em;
+    border-radius: 2px;
+  }
+
+  /* ── Lists ───────────────────────────────────────── */
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  li { margin-bottom: 0.25rem; }
+  li > ul, li > ol { margin-top: 0.2rem; margin-bottom: 0.2rem; }
+
+  /* ── Blockquote ──────────────────────────────────── */
+  blockquote {
+    border-left: 3px solid var(--black);
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.25rem;
+    background: var(--bg-alt);
+    font-style: italic;
+    color: var(--dark);
+    font-size: 0.95em;
+  }
+
+  /* ── Formula block ───────────────────────────────── */
+  .formula {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg-alt);
+    border-left: 3px solid var(--dark);
+    margin: 0.8rem 0;
+    line-height: 1.5;
+  }
+
+  /* ── Tables ──────────────────────────────────────── */
+  .table-responsive {
+    overflow-x: auto;
+    margin: 0.9rem 0 1.2rem 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.865rem;
+    min-width: 400px;
+  }
+
+  th {
+    background: var(--black);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+  }
+
+  td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td { background: var(--bg-alt); }
+  tr:last-child td { border-bottom: 2px solid var(--rule-heavy); }
+
+  /* ── Mermaid wrapper ─────────────────────────────── */
+  .mermaid-wrap {
+    margin: 1.2rem 0;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--rule);
+    background: var(--bg-alt);
+    overflow-x: auto;
+  }
+
+  .mermaid-wrap .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 920px) {
+    .font-controls { display: none; }
+    .mobile-topbar { display: flex; }
+    
+    .toc {
+      position: fixed;
+      left: 0;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+      background: var(--bg);
+      box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    }
+    .toc.open { transform: translateX(0); }
+    .mobile-backdrop.open { display: block; opacity: 1; }
+
+    .content { padding: 1.5rem 1.2rem 4rem 1.2rem; max-width: 100%; }
+    section { scroll-margin-top: 4.5rem; }
+  }
+
+  /* ── Print ───────────────────────────────────────── */
+  @media print {
+    .toc, .mobile-topbar, .font-controls { display: none; }
+    .content { max-width: 100%; padding: 0.5rem 1rem; }
+    h2 { page-break-before: auto; }
+    .mermaid-wrap { border: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#f0f0f0',
+      primaryTextColor: '#1c1c1c',
+      primaryBorderColor: '#888',
+      lineColor: '#555',
+      secondaryColor: '#ffffff',
+      tertiaryColor: '#e8e8e8',
+      fontSize: '13px',
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif"
+    }
+  });
+</script>
+
+<div class="wrapper">
+
+  <nav class="toc" id="toc-nav" aria-label="Table of contents">
+    <span class="toc-label">Table of Contents</span>
+    <ol>
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-1">1. Income from Other Sources (IFOS)</a>
+        <ul class="submenu">
+          <li><a href="#sec-1-1">1.1 Meaning and Scope (Sec. 56(1))</a></li>
+          <li class="has-submenu">
+            <a href="#sec-1-2">1.2 Incomes Covered under IFOS (Sec. 56(2))</a>
+            <ul class="submenu">
+              <li><a href="#sec-1-2-1">1.2.1 Dividend Income</a></li>
+              <li><a href="#sec-1-2-2">1.2.2 Winnings from Lotteries, Puzzles, Card Games, etc.</a></li>
+              <li><a href="#sec-1-2-3">1.2.3 Interest on Securities</a></li>
+              <li><a href="#sec-1-2-4">1.2.4 Rental Income from Plant, Machinery and Furniture</a></li>
+              <li><a href="#sec-1-2-5">1.2.5 Keyman Insurance Policy Receipts</a></li>
+              <li><a href="#sec-1-2-6">1.2.6 Interest on Compensation</a></li>
+              <li><a href="#sec-1-2-7">1.2.7 Gifts</a></li>
+              <li><a href="#sec-1-2-8">1.2.8 Other Incomes under IFOS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-2">2. Taxation of Gifts</a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#sec-2-1">2.1 General Taxability Rules</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-1-1">2.1.1 Gifts from Employer</a></li>
+              <li><a href="#sec-2-1-2">2.1.2 Gifts under Business or Profession</a></li>
+              <li><a href="#sec-2-1-3">2.1.3 Gifts under Section 56(2)(x)</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-2-2">2.2 Taxability Based on Nature of Gift</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-2-1">2.2.1 Money Received without Consideration</a></li>
+              <li><a href="#sec-2-2-2">2.2.2 Movable Property Received without or for Inadequate Consideration</a></li>
+              <li><a href="#sec-2-2-3">2.2.3 Immovable Property Received without or for Inadequate Consideration</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-2-3">2.3 Exceptions Where Gift is Not Taxable</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-3-1">2.3.1 Gift on the Occasion of Marriage</a></li>
+              <li><a href="#sec-2-3-2">2.3.2 Gift from Relative</a></li>
+              <li><a href="#sec-2-3-3">2.3.3 Gift under Will or Inheritance</a></li>
+              <li><a href="#sec-2-3-4">2.3.4 Gift in Contemplation of Death</a></li>
+              <li><a href="#sec-2-3-5">2.3.5 Gift from Specified Institutions, Trusts, Universities and Local Authorities</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-2-4">2.4 Amendments Relating to COVID-19 Relief</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-4-1">2.4.1 Amount Received for COVID-19 Treatment</a></li>
+              <li><a href="#sec-2-4-2">2.4.2 Amount Received by Family Members of Deceased Person</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-2-5">2.5 Meaning of Property</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-5-1">2.5.1 Movable Property</a></li>
+              <li><a href="#sec-2-5-2">2.5.2 Immovable Property</a></li>
+              <li><a href="#sec-2-5-3">2.5.3 Virtual Digital Assets</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-2-6">2.6 Meaning of Relative</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-6-1">2.6.1 Relative in Case of Individual</a></li>
+              <li><a href="#sec-2-6-2">2.6.2 Relative in Case of HUF</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-2-7">2.7 Special Notes and Provisions</a>
+            <ul class="submenu">
+              <li><a href="#sec-2-7-1">2.7.1 Reference to Valuation Officer</a></li>
+              <li><a href="#sec-2-7-2">2.7.2 Applicability to Capital Asset and Stock-in-Trade</a></li>
+              <li><a href="#sec-2-7-3">2.7.3 Cost of Acquisition under Section 49(4)</a></li>
+              <li><a href="#sec-2-7-4">2.7.4 Stamp Duty Value on Date of Agreement and Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-3">3. Special Provisions Related to Property and Shares</a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#sec-3-1">3.1 Section 43CA – Stamp Duty Value as Sales Consideration</a>
+            <ul class="submenu">
+              <li><a href="#sec-3-1-1">3.1.1 Applicability to Immovable Property Held as Stock-in-Trade</a></li>
+              <li><a href="#sec-3-1-2">3.1.2 Conditions for Adoption of Stamp Duty Value</a></li>
+              <li><a href="#sec-3-1-3">3.1.3 Reference to Valuation Officer</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-3-2">3.2 Section 56(2)(viib) – Shares Issued at Premium</a>
+            <ul class="submenu">
+              <li><a href="#sec-3-2-1">3.2.1 Applicability to Closely Held Company</a></li>
+              <li><a href="#sec-3-2-2">3.2.2 Taxability of Excess Premium</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-3-3">3.3 Section 56(2)(xi) – Compensation on Termination of Employment</a>
+            <ul class="submenu">
+              <li><a href="#sec-3-3-1">3.3.1 Compensation from Non-employer</a></li>
+              <li><a href="#sec-3-3-2">3.3.2 Compensation from Employer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-4">4. Deductions under Section 57</a>
+        <ul class="submenu">
+          <li><a href="#sec-4-1">4.1 Deduction from Dividend Income</a></li>
+          <li class="has-submenu">
+            <a href="#sec-4-2">4.2 Deduction from Family Pension</a>
+            <ul class="submenu">
+              <li><a href="#sec-4-2-1">4.2.1 Normal Deduction Limit</a></li>
+              <li><a href="#sec-4-2-2">4.2.2 Deduction under Default Tax Regime</a></li>
+              <li><a href="#sec-4-2-3">4.2.3 Exempt Family Pension Cases</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec-4-3">4.3 Deduction for Interest on Compensation</a></li>
+          <li><a href="#sec-4-4">4.4 Other Expenditure Wholly and Exclusively for Earning Income</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-5">5. Expenses Not Allowed under Section 58</a>
+        <ul class="submenu">
+          <li><a href="#sec-5-1">5.1 Personal Expenses</a></li>
+          <li><a href="#sec-5-2">5.2 Interest or Salary Payable Outside India without TDS</a></li>
+          <li><a href="#sec-5-3">5.3 Cash Expenditure Exceeding Prescribed Limit</a></li>
+          <li><a href="#sec-5-4">5.4 Payments to Resident without TDS</a></li>
+          <li><a href="#sec-5-5">5.5 Expenditure Incurred in Connection with Casual Income</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-6">6. Exempt Incomes</a>
+        <ul class="submenu">
+          <li><a href="#sec-6-1">6.1 Interest on NRE Account – Section 10(4)(ii)</a></li>
+          <li><a href="#sec-6-2">6.2 Compensation on Account of Disaster – Section 10(10BC)</a></li>
+          <li><a href="#sec-6-3">6.3 Scholarship for Education – Section 10(16)</a></li>
+          <li><a href="#sec-6-4">6.4 Daily Allowance and Constituency Allowance of MPs/MLAs – Section 10(17)</a></li>
+          <li><a href="#sec-6-5">6.5 Awards and Rewards in Public Interest – Section 10(17A)</a></li>
+          <li><a href="#sec-6-6">6.6 Interest on Post Office Savings Bank Account – Section 10(15)</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-7">7. Taxability of Dividend</a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#sec-7-1">7.1 Meaning of Different Types of Companies</a>
+            <ul class="submenu">
+              <li><a href="#sec-7-1-1">7.1.1 Indian Company</a></li>
+              <li><a href="#sec-7-1-2">7.1.2 Domestic Company</a></li>
+              <li><a href="#sec-7-1-3">7.1.3 Foreign Company</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-7-2">7.2 Section 8 – Taxability of Dividend</a>
+            <ul class="submenu">
+              <li><a href="#sec-7-2-1">7.2.1 Final Dividend</a></li>
+              <li><a href="#sec-7-2-2">7.2.2 Deemed Dividend</a></li>
+              <li><a href="#sec-7-2-3">7.2.3 Interim Dividend</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-8">8. Deemed Dividend</a>
+        <ul class="submenu">
+          <li><a href="#sec-8-1">8.1 Meaning and Objective</a></li>
+          <li class="has-submenu">
+            <a href="#sec-8-2">8.2 Types of Deemed Dividend under Section 2(22)</a>
+            <ul class="submenu">
+              <li><a href="#sec-8-2-1">8.2.1 Distribution of Assets – Section 2(22)(a)</a></li>
+              <li><a href="#sec-8-2-2">8.2.2 Distribution of Debentures or Deposit Certificates – Section 2(22)(b)</a></li>
+              <li><a href="#sec-8-2-3">8.2.3 Distribution of Assets on Liquidation – Section 2(22)(c)</a></li>
+              <li><a href="#sec-8-2-4">8.2.4 Distribution on Reduction of Share Capital – Section 2(22)(d)</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec-8-3">8.3 Comparison between Section 2(22)(a)/(b)/(c)/(d) and Section 2(22)(e)</a></li>
+          <li class="has-submenu">
+            <a href="#sec-8-4">8.4 Loans or Advances by Closely Held Company – Section 2(22)(e)</a>
+            <ul class="submenu">
+              <li><a href="#sec-8-4-1">8.4.1 Conditions for Applicability</a></li>
+              <li><a href="#sec-8-4-2">8.4.2 Meaning of Concern and Substantial Interest</a></li>
+              <li><a href="#sec-8-4-3">8.4.3 Taxability in Hands of Shareholder or Concern</a></li>
+              <li><a href="#sec-8-4-4">8.4.4 Exceptions for Trade Advances</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#sec-8-5">8.5 Items Not Treated as Dividend</a>
+            <ul class="submenu">
+              <li><a href="#sec-8-5-1">8.5.1 Loans in Ordinary Course of Money-lending Business</a></li>
+              <li><a href="#sec-8-5-2">8.5.2 Dividend Set-off against Deemed Dividend Loan</a></li>
+              <li><a href="#sec-8-5-3">8.5.3 Buyback of Shares</a></li>
+              <li><a href="#sec-8-5-4">8.5.4 Shares Issued under Demerger</a></li>
+              <li><a href="#sec-8-5-5">8.5.5 Distribution Relating to Preference Shares</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a class="section-link" href="#sec-9">9. Special Notes under Default Tax Regime</a>
+        <ul class="submenu">
+          <li><a href="#sec-9-1">9.1 Non-availability of Exemption under Section 10(32)</a></li>
+          <li><a href="#sec-9-2">9.2 Non-availability of Exemption under Section 10(17)</a></li>
+        </ul>
+      </li>
+
+    </ol>
+  </nav>
+
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <div class="content-wrapper">
+    
+    <div class="mobile-topbar">
+      <button id="menu-toggle-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        Table of Contents
+      </button>
+    </div>
+
+    <div class="font-controls">
+      <button onclick="changeFontSize(-1)" title="Decrease font size">A-</button>
+      <button onclick="resetFontSize()" title="Reset font size">A</button>
+      <button onclick="changeFontSize(1)" title="Increase font size">A+</button>
+    </div>
+
+    <main class="content">
+
+      <div class="page-header">
+        <p class="eyebrow">Income Tax</p>
+        <h1>Income from Other Sources</h1>
+        <p class="meta">Sec. 56 to Sec. 59 &nbsp;&nbsp;|&nbsp;&nbsp; AY 2025&ndash;26</p>
+      </div>
+
+      <!-- SECTION 1 -->
+      <section id="sec-1">
+        <h2>1. Income from Other Sources (IFOS)</h2>
+      </section>
+
+      <section id="sec-1-1">
+        <h3>1.1 Meaning and Scope (Sec. 56(1))</h3>
+        <blockquote>
+          Any income which is <strong>not taxable</strong> under <strong>Salary</strong>, <strong>IFHP</strong>, <strong>PGBP</strong>, or <strong>Capital Gains</strong> shall be chargeable under <strong>IFOS</strong>.
+        </blockquote>
+      </section>
+
+      <section id="sec-1-2">
+        <h3>1.2 Incomes Covered under IFOS (Sec. 56(2))</h3>
+        <p>The following incomes are taxable under IFOS:</p>
+      </section>
+
+      <section id="sec-1-2-1">
+        <h4>1.2.1 Dividend Income</h4>
+        <p>Any dividend income received by an assessee is chargeable to tax under IFOS.</p>
+      </section>
+
+      <section id="sec-1-2-2">
+        <h4>1.2.2 Winnings from Lotteries, Puzzles, Card Games, etc.</h4>
+        <p>Income received by way of winnings from lotteries, crossword puzzles, races (including horse races), card games, and other games of any sort.</p>
+      </section>
+
+      <section id="sec-1-2-3">
+        <h4>1.2.3 Interest on Securities</h4>
+        <p>Interest received on securities is taxable under IFOS <em>(Note: if shares/securities are held as Stock-in-Trade, then it is taxable under PGBP)</em>.</p>
+      </section>
+
+      <section id="sec-1-2-4">
+        <h4>1.2.4 Rental Income from Plant, Machinery and Furniture</h4>
+        <p>Rent derived from the letting out of Plant &amp; Machinery or furniture, with or without a building, is taxable here if it is not chargeable under PGBP.</p>
+      </section>
+
+      <section id="sec-1-2-5">
+        <h4>1.2.5 Keyman Insurance Policy Receipts</h4>
+        <p>Any sum received under a Keyman Insurance Policy (including bonus), if it is not chargeable under PGBP or Salaries.</p>
+      </section>
+
+      <section id="sec-1-2-6">
+        <h4>1.2.6 Interest on Compensation</h4>
+        <p>Interest received on compensation or enhanced compensation due to the compulsory acquisition of a capital asset.</p>
+      </section>
+
+      <section id="sec-1-2-7">
+        <h4>1.2.7 Gifts</h4>
+        <p>Gifts received (subject to provisions under Sec. 56(2)(x)).</p>
+      </section>
+
+      <section id="sec-1-2-8">
+        <h4>1.2.8 Other Incomes under IFOS</h4>
+        <ul>
+          <li>Amount received under <strong>family pension</strong>.</li>
+          <li><strong>Interest</strong> on bank deposits &amp; loans given.</li>
+          <li><strong>Interest</strong> on Income Tax refund.</li>
+          <li>Income from <strong>sub-letting</strong> of house property.</li>
+          <li><strong>Royalty</strong> income.</li>
+          <li><strong>Agriculture income</strong> (in certain cases).</li>
+          <li><strong>Director sitting fee</strong>.</li>
+          <li><strong>Salary of MP / MLA / MLC</strong>, etc.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 2 -->
+      <section id="sec-2">
+        <h2>2. Taxation of Gifts</h2>
+      </section>
+
+      <section id="sec-2-1">
+        <h3>2.1 General Taxability Rules</h3>
+      </section>
+
+      <section id="sec-2-1-1">
+        <h4>2.1.1 Gifts from Employer</h4>
+        <p>Gift received by an employee from their employer (due to the employee–employer relationship) is <em>always taxable</em>, even if received on marriage. It is taxed under <strong>Income from Salary</strong>.</p>
+      </section>
+
+      <section id="sec-2-1-2">
+        <h4>2.1.2 Gifts under Business or Profession</h4>
+        <p>Any gift, benefit, or perquisite arising from a Business or Profession is <em>always taxable</em> under <strong>PGBP</strong>.</p>
+      </section>
+
+      <section id="sec-2-1-3">
+        <h4>2.1.3 Gifts under Section 56(2)(x)</h4>
+        <p>All other gifts are governed by the provisions of <strong>Sec. 56(2)(x)</strong> as detailed below.</p>
+      </section>
+
+      <section id="sec-2-2">
+        <h3>2.2 Taxability Based on Nature of Gift</h3>
+        <p>Taxability of gifts or assets acquired for low consideration by any person under Sec. 56(2)(x):</p>
+        
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart TD
+    classDef default fill:#ffffff,stroke:#444,stroke-width:1px,color:#111;
+
+    A["Any gift recd./asset acquired for<br/>low consideration by Any Person"]
+
+    A --> B["M.R.I.D.H.U.T.L.A.I.T.C. (Note-1)"]
+    B --> C["Sec. 56(2)(x) Not Applicable"]
+    C --> D["Not Taxable"]
+
+    A --> E["Otherwise"]
+
+    E --> F["Money (without consideration)"]
+    F --> G["If Aggregate Money > ₹ 50,000 then<br/>whole of money shall be taxable"]
+
+    E --> H["Movable property [S.S.J.D.P.S.A.O.B.V]"]
+    H --> I["Without consideration<br/>If Agg. FMV > ₹ 50,000 then<br/>entire FMV shall be taxable"]
+    H --> J["Inadequate Consideration<br/>If Agg. (FMV - consid.) > ₹ 50,000,<br/>then difference between FMV &<br/>consideration shall be taxable"]
+
+    E --> K["Immovable property [Land, Building or Both]"]
+    K --> L["Without consideration<br/>If per property, SDV > ₹ 50,000<br/>then entire SDV shall be taxable"]
+    K --> M["Inadequate Consideration<br/>If per Property<br/>a) (SDV-Consideration) > ₹ 50,000<br/>And<br/>b) SDV is more than 110% of Consid.<br/>then difference between SDV &<br/>Consid. shall be taxable"]
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-2-2-1">
+        <h4>2.2.1 Money Received without Consideration</h4>
+        <p>If the aggregate money received without consideration exceeds ₹ 50,000, then the whole of the money shall be taxable.</p>
+      </section>
+
+      <section id="sec-2-2-2">
+        <h4>2.2.2 Movable Property Received without or for Inadequate Consideration</h4>
+        <ul>
+          <li><strong>Without Consideration:</strong> If the aggregate Fair Market Value (FMV) > ₹ 50,000, the entire FMV is taxable.</li>
+          <li><strong>Inadequate Consideration:</strong> If the aggregate (FMV &ndash; Consideration) > ₹ 50,000, the difference between the FMV and the consideration is taxable.</li>
+        </ul>
+      </section>
+
+      <section id="sec-2-2-3">
+        <h4>2.2.3 Immovable Property Received without or for Inadequate Consideration</h4>
+        <ul>
+          <li><strong>Without Consideration:</strong> Examined <em>per property</em>. If the Stamp Duty Value (SDV) > ₹ 50,000, the entire SDV is taxable.</li>
+          <li><strong>Inadequate Consideration:</strong> Examined <em>per property</em>. If (SDV &ndash; Consideration) > ₹ 50,000 <strong>AND</strong> the SDV is more than 110% of the consideration, then the difference between the SDV and the consideration shall be taxable.</li>
+        </ul>
+      </section>
+
+      <section id="sec-2-3">
+        <h3>2.3 Exceptions Where Gift is Not Taxable</h3>
+        <p>Cases where Sec. 56(2)(x) is <strong>NOT</strong> applicable (Mnemonic: <strong>M.R.I.D.H.U.T.L.A.I.T.C.</strong>). Money or property is not taxable if received:</p>
+      </section>
+
+      <section id="sec-2-3-1">
+        <h4>2.3.1 Gift on the Occasion of Marriage</h4>
+        <p><strong>(M)</strong> Received on the occasion of the marriage of the individual.</p>
+      </section>
+
+      <section id="sec-2-3-2">
+        <h4>2.3.2 Gift from Relative</h4>
+        <p><strong>(R)</strong> Received from any relative (refer to the definition of relative below).</p>
+      </section>
+
+      <section id="sec-2-3-3">
+        <h4>2.3.3 Gift under Will or Inheritance</h4>
+        <p><strong>(I)</strong> Received under a Will or by way of Inheritance.</p>
+      </section>
+
+      <section id="sec-2-3-4">
+        <h4>2.3.4 Gift in Contemplation of Death</h4>
+        <p><strong>(D)</strong> Received in contemplation of death of the payer.</p>
+      </section>
+
+      <section id="sec-2-3-5">
+        <h4>2.3.5 Gift from Specified Institutions, Trusts, Universities and Local Authorities</h4>
+        <ul>
+          <li><strong>(H)</strong> From any Hospital or medical institution.</li>
+          <li><strong>(U)</strong> From any University or educational institution.</li>
+          <li><strong>(T)</strong> From or by any Trust registered u/s 12AA / 12AB.</li>
+          <li><strong>(LA)</strong> From any Local Authority u/s 10(20).</li>
+          <li><strong>(I)</strong> From an Individual by a trust created solely for the benefit of the relative of the individual.</li>
+          <li><strong>(T)</strong> By any Fund, Trust, Hospital, Medical Inst., University, Educational Institution referred u/s 10(23C).</li>
+          <li><strong>(C)</strong> Certain Exempt Transfers as per Sec. 47 (e.g., HUF Partition, Holding to Subsidiary, Subsidiary to Holding, Amalgamation &amp; Demerger).</li>
+        </ul>
+      </section>
+
+      <section id="sec-2-4">
+        <h3>2.4 Amendments Relating to COVID-19 Relief</h3>
+        <p>Sec. 56(2)(x) is not applicable in the following cases where money is received (w.e.f. AY 2020-21):</p>
+      </section>
+
+      <section id="sec-2-4-1">
+        <h4>2.4.1 Amount Received for COVID-19 Treatment</h4>
+        <p>By an individual, from any person, for expenses actually incurred on the treatment of a COVID-19 related illness of themselves or any family member.</p>
+      </section>
+
+      <section id="sec-2-4-2">
+        <h4>2.4.2 Amount Received by Family Members of Deceased Person</h4>
+        <p>Money received by the family member of a deceased person within <strong>12 months of death</strong> (death must be due to COVID-19 illness, occurring within 6 months from the date of testing positive):</p>
+        <ul>
+          <li><strong>(a)</strong> From the employer of the deceased person &mdash; <em>without any limit</em>.</li>
+          <li><strong>(b)</strong> From any other person &mdash; <em>up to ₹ 10 Lakhs</em>.</li>
+        </ul>
+        <p><em>Note: Family means spouse, children, and dependent relatives (parents, brother, sister).</em></p>
+      </section>
+
+      <section id="sec-2-5">
+        <h3>2.5 Meaning of Property</h3>
+        <p>For the purposes of this section, "Property" is explicitly defined. The list of relevant property [S.S.J.D.P.S.A.O.B.V] includes:</p>
+      </section>
+
+      <section id="sec-2-5-1">
+        <h4>2.5.1 Movable Property</h4>
+        <ul>
+          <li>Shares &amp; Securities</li>
+          <li>Jewellery</li>
+          <li>Drawing</li>
+          <li>Painting</li>
+          <li>Archaeological Collection</li>
+          <li>Sculptures</li>
+          <li>Any other work of art</li>
+          <li>Bullion</li>
+        </ul>
+      </section>
+
+      <section id="sec-2-5-2">
+        <h4>2.5.2 Immovable Property</h4>
+        <ul>
+          <li>Land, Building or Both</li>
+        </ul>
+      </section>
+
+      <section id="sec-2-5-3">
+        <h4>2.5.3 Virtual Digital Assets</h4>
+        <ul>
+          <li>Virtual Digital Assets (VDA)</li>
+        </ul>
+      </section>
+
+      <section id="sec-2-6">
+        <h3>2.6 Meaning of Relative</h3>
+      </section>
+
+      <section id="sec-2-6-1">
+        <h4>2.6.1 Relative in Case of Individual</h4>
+        
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart LR
+    classDef default fill:#ffffff,stroke:#444,stroke-width:1px,color:#111;
+
+    B1["Brother & Sp."]
+    S1["Sister & Sp."]
+    MF1["Mother & Father"]
+    LA1["Lineal Ascendent & Spouse"]
+
+    B2["Brother & Sp."]
+    S2["Sister & Sp."]
+    IA["Individual/Assessee"]
+    SP["Spouse"]
+    B3["Brother & Sp."]
+    S3["Sister & Sp."]
+
+    MF2["Mother & Father"]
+    LA2["Lineal Ascendent & Spouse"]
+    LD["Lineal descendent & Spouse"]
+
+    IA --> MF1
+    MF1 --> LA1
+    MF1 --> B1
+    MF1 --> S1
+
+    IA --> B2
+    IA --> S2
+
+    IA --> SP
+    SP --> MF2
+    MF2 --> LA2
+    SP --> B3
+    SP --> S3
+
+    IA --> LD
+    SP --> LD
+
+    MF1 --- MF2
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-2-6-2">
+        <h4>2.6.2 Relative in Case of HUF</h4>
+        <p><strong>Any member of the HUF</strong> is considered a relative in the case of a Hindu Undivided Family.</p>
+      </section>
+
+      <section id="sec-2-7">
+        <h3>2.7 Special Notes and Provisions</h3>
+      </section>
+
+      <section id="sec-2-7-1">
+        <h4>2.7.1 Reference to Valuation Officer</h4>
+        <p>If the assessee is not satisfied with the Stamp Duty Value (SDV), the case may be transferred to a <strong>Valuation Officer (VO)</strong> (similar to the provisions of Sec. 50C).</p>
+      </section>
+
+      <section id="sec-2-7-2">
+        <h4>2.7.2 Applicability to Capital Asset and Stock-in-Trade</h4>
+        <p>Sec. 56(2)(x) is applicable <strong>only if the property is in the nature of a capital asset</strong> of the recipient. If it is held as Stock-in-Trade, then Sec. 56(2)(x) is <strong>Not Applicable</strong>.</p>
+      </section>
+
+      <section id="sec-2-7-3">
+        <h4>2.7.3 Cost of Acquisition under Section 49(4)</h4>
+        <p>If any person receives an asset as a gift or acquires it for inadequate consideration, and has already been assessed u/s 56(2)(x) on FMV/SDV, then the <strong>Cost of Acquisition (COA)</strong> of such asset shall be the FMV/SDV considered under IFOS. When COA is computed as per Sec. 49(4), the <strong>period of holding of the previous owner shall NOT be included</strong> in the assessee's period of holding.</p>
+      </section>
+
+      <section id="sec-2-7-4">
+        <h4>2.7.4 Stamp Duty Value on Date of Agreement and Registration</h4>
+        <p>If the date of agreement and registration are not the same, the <strong>SDV on the date of agreement</strong> can be considered u/s 56(2)(x), provided full or part consideration is paid by <strong>Account Payee cheque</strong>, <strong>Account Payee DD</strong>, or <strong>ECS through a bank account</strong> up to the date of the agreement.</p>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 3 -->
+      <section id="sec-3">
+        <h2>3. Special Provisions Related to Property and Shares</h2>
+      </section>
+
+      <section id="sec-3-1">
+        <h3>3.1 Section 43CA – Stamp Duty Value as Sales Consideration</h3>
+        <blockquote>
+          In case of <strong>immovable property held as stock-in-trade</strong>, if <strong>SDV > 110% of consideration</strong>, then such <strong>SDV shall be deemed to be sales consideration</strong> for computing income under PGBP.
+        </blockquote>
+      </section>
+
+      <section id="sec-3-1-1">
+        <h4>3.1.1 Applicability to Immovable Property Held as Stock-in-Trade</h4>
+        <p>This section specifically governs transfers of land, building or both when they are not capital assets but held as Stock-in-Trade.</p>
+        
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart LR
+    classDef default fill:#ffffff,stroke:#444,stroke-width:1px,color:#111;
+
+    A["Immovable property"] --> B["Capital Asset"] --> C["50C Apply"] --> D["Capital Gain"]
+    A --> E["SIT"] --> F["43CA Apply"] --> G["PGBP"]
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-3-1-2">
+        <h4>3.1.2 Conditions for Adoption of Stamp Duty Value</h4>
+        <p>If the date of agreement and registration are not the same, the <strong>SDV on the date of agreement</strong> can be considered u/s 43CA, provided full or part consideration is received by <strong>Account Payee cheque</strong>, <strong>Account Payee DD</strong>, or <strong>ECS through a bank account</strong> up to the date of agreement.</p>
+      </section>
+
+      <section id="sec-3-1-3">
+        <h4>3.1.3 Reference to Valuation Officer</h4>
+        <p>If the assessee is not satisfied with the SDV, the case may be transferred to a Valuation Officer (V.O.), parallel to the procedures under Sec. 50C.</p>
+      </section>
+
+      <section id="sec-3-2">
+        <h3>3.2 Section 56(2)(viib) – Shares Issued at Premium</h3>
+        <blockquote>
+          If any <strong>closely held company</strong> (Unlisted Company) issues shares to any shareholder at a <strong>premium</strong>, then:
+          <br><br>
+          <strong>[Issue Price of Share &minus; FMV of such Shares]</strong>
+          <br><br>
+          shall be <strong>taxable in the hands of the company</strong> under IFOS.
+        </blockquote>
+      </section>
+
+      <section id="sec-3-2-1">
+        <h4>3.2.1 Applicability to Closely Held Company</h4>
+        <p>This provision applies strictly to unlisted companies issuing shares at a premium.</p>
+      </section>
+
+      <section id="sec-3-2-2">
+        <h4>3.2.2 Taxability of Excess Premium</h4>
+        <p>The difference between the high issue price and the actual Fair Market Value is treated as income for the company.</p>
+      </section>
+
+      <section id="sec-3-3">
+        <h3>3.3 Section 56(2)(xi) – Compensation on Termination of Employment</h3>
+        <blockquote>
+          Any <strong>compensation received</strong> by any person due to <strong>termination of employment</strong> (or modification of terms of employment) is treated as income.
+        </blockquote>
+      </section>
+
+      <section id="sec-3-3-1">
+        <h4>3.3.1 Compensation from Non-employer</h4>
+        <p>This provision is applicable under IFOS <strong>only if</strong> the compensation is received from a person <strong>other than the employer</strong>.</p>
+      </section>
+
+      <section id="sec-3-3-2">
+        <h4>3.3.2 Compensation from Employer</h4>
+        <p>If the compensation is received from the <strong>employer</strong>, it is taxable u/s <strong>17(3)(i)</strong> under the head <strong>"Salaries"</strong>.</p>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 4 -->
+      <section id="sec-4">
+        <h2>4. Deductions under Section 57</h2>
+      </section>
+
+      <section id="sec-4-1">
+        <h3>4.1 Deduction from Dividend Income</h3>
+        <p><strong>Dividend / Income from MF / UTI:</strong> Only <strong>interest expenses</strong> are allowed as a deduction, subject to a maximum of <strong>20%</strong> of the dividend or income from MF/UTI.</p>
+      </section>
+
+      <section id="sec-4-2">
+        <h3>4.2 Deduction from Family Pension</h3>
+      </section>
+
+      <section id="sec-4-2-1">
+        <h4>4.2.1 Normal Deduction Limit</h4>
+        <p>Under the normal regime, the deduction shall be the <strong>lower of</strong>:</p>
+        <ul>
+          <li>1/3rd of the family pension, <strong>or</strong></li>
+          <li><strong>₹ 15,000 p.a.</strong></li>
+        </ul>
+      </section>
+
+      <section id="sec-4-2-2">
+        <h4>4.2.2 Deduction under Default Tax Regime</h4>
+        <p>If the assessee opts for the <strong>default taxation regime u/s 115BAC</strong>, the standard deduction allowed is <strong>₹ 25,000</strong> instead of ₹ 15,000.</p>
+      </section>
+
+      <section id="sec-4-2-3">
+        <h4>4.2.3 Exempt Family Pension Cases</h4>
+        <ul>
+          <li>Family pension received by the <strong>widow, children, or nominated heirs</strong> of a member of the <strong>armed forces (including para-military forces)</strong>, where death occurred <strong>in the course of operational duties</strong> &mdash; <em>Exempt u/s 10(19)</em>.</li>
+          <li>Family pension received by any <strong>family member</strong> of an individual who was in service of the <strong>Central Government or State Government</strong> and was awarded <strong>"Param Vir Chakra"</strong>, <strong>"Vir Chakra"</strong>, <strong>"Mahavir Chakra"</strong>, or other notified gallantry awards &mdash; <em>Exempt u/s 10(18)(ii)</em>.</li>
+        </ul>
+      </section>
+
+      <section id="sec-4-3">
+        <h3>4.3 Deduction for Interest on Compensation</h3>
+        <p>For interest on compensation regarding compulsory acquisition, a flat deduction of <strong>50%</strong> of such interest is allowed.</p>
+      </section>
+
+      <section id="sec-4-4">
+        <h3>4.4 Other Expenditure Wholly and Exclusively for Earning Income</h3>
+        <p>Any other expenditure is allowed as a deduction if it is:</p>
+        <ul>
+          <li><strong>Not</strong> in the nature of <strong>capital expenditure</strong>, and</li>
+          <li>Incurred <strong>wholly and exclusively</strong> for the purpose of earning such income.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 5 -->
+      <section id="sec-5">
+        <h2>5. Expenses Not Allowed under Section 58</h2>
+      </section>
+
+      <section id="sec-5-1">
+        <h3>5.1 Personal Expenses</h3>
+        <p>Any personal expenses of the assessee are strictly disallowed.</p>
+      </section>
+
+      <section id="sec-5-2">
+        <h3>5.2 Interest or Salary Payable Outside India without TDS</h3>
+        <p>Any interest or salary payable outside India on which TDS has not been paid or deducted is disallowed.</p>
+      </section>
+
+      <section id="sec-5-3">
+        <h3>5.3 Cash Expenditure Exceeding Prescribed Limit</h3>
+        <p>Cash expenditure exceeding <strong>₹ 10,000</strong> is disallowed. The provisions of <strong>Sec. 40A(3)</strong> shall apply.</p>
+      </section>
+
+      <section id="sec-5-4">
+        <h3>5.4 Payments to Resident without TDS</h3>
+        <p><strong>30%</strong> of any sum payable to a <strong>resident</strong> on which TDS has not been paid or deducted at source is disallowed. The provisions of <strong>Sec. 40(a)(ia)</strong> shall apply.</p>
+      </section>
+
+      <section id="sec-5-5">
+        <h3>5.5 Expenditure Incurred in Connection with Casual Income</h3>
+        <p>Any expenditure incurred in connection with <strong>casual income</strong> (like lotteries, races, card games) is completely disallowed.</p>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 6 -->
+      <section id="sec-6">
+        <h2>6. Exempt Incomes</h2>
+        <p>Certain incomes are entirely exempt under IFOS according to Section 10 provisions:</p>
+      </section>
+
+      <section id="sec-6-1">
+        <h3>6.1 Interest on NRE Account – Section 10(4)(ii)</h3>
+        <p>Interest on moneys standing to credit in a <strong>Non-Resident (External) Account (NRE A/c)</strong> is exempt in the hands of an individual who is a person resident outside India as per FEMA, 1999, or an individual permitted by RBI to maintain such an account.</p>
+      </section>
+
+      <section id="sec-6-2">
+        <h3>6.2 Compensation on Account of Disaster – Section 10(10BC)</h3>
+        <p>Compensation received or receivable from the <strong>Central Government, State Government, or a local authority</strong> by an individual or legal heir on account of any <strong>disaster</strong> is exempt, except to the extent of loss or damage already allowed as a deduction.</p>
+      </section>
+
+      <section id="sec-6-3">
+        <h3>6.3 Scholarship for Education – Section 10(16)</h3>
+        <p>The value of any <strong>scholarship</strong> granted to meet the cost of education is exempt from tax irrespective of the amount or the source of the scholarship.</p>
+      </section>
+
+      <section id="sec-6-4">
+        <h3>6.4 Daily Allowance and Constituency Allowance of MPs/MLAs – Section 10(17)</h3>
+        <p><strong>Daily allowance</strong> and <strong>Constituency allowance</strong> received by any Member of Parliament or State Legislatures is completely exempt.</p>
+      </section>
+
+      <section id="sec-6-5">
+        <h3>6.5 Awards and Rewards in Public Interest – Section 10(17A)</h3>
+        <p>Payment (whether in cash or kind) given in pursuance of an <strong>award instituted in public interest</strong> by the Government, or a <strong>reward by the Government</strong> for approved purposes, is exempt.</p>
+      </section>
+
+      <section id="sec-6-6">
+        <h3>6.6 Interest on Post Office Savings Bank Account – Section 10(15)</h3>
+        <p>Exemption limits are as follows:</p>
+        <ul>
+          <li><strong>₹ 3,500</strong> &mdash; in case of an <strong>individual account</strong></li>
+          <li><strong>₹ 7,000</strong> &mdash; in case of a <strong>joint account</strong></li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 7 -->
+      <section id="sec-7">
+        <h2>7. Taxability of Dividend</h2>
+      </section>
+
+      <section id="sec-7-1">
+        <h3>7.1 Meaning of Different Types of Companies</h3>
+      </section>
+
+      <section id="sec-7-1-1">
+        <h4>7.1.1 Indian Company</h4>
+        <p>A company formed and registered under the Companies Act, 2013 or any corresponding previous law of a state.</p>
+      </section>
+
+      <section id="sec-7-1-2">
+        <h4>7.1.2 Domestic Company</h4>
+        <p>An Indian Company <em>or</em> any other company (including a foreign company) that has made <strong>prescribed arrangements for declaration and payment of dividend within India</strong>.</p>
+        <blockquote>
+          All Indian Companies are Domestic Companies, but <strong>not all Domestic Companies are Indian Companies</strong>. If a Foreign Company makes prescribed arrangements for payment of dividends in India, it shall be treated as a <strong>Domestic Company</strong>.
+        </blockquote>
+      </section>
+
+      <section id="sec-7-1-3">
+        <h4>7.1.3 Foreign Company</h4>
+        <p>A company that is <strong>not a Domestic Company</strong>.</p>
+      </section>
+
+      <section id="sec-7-2">
+        <h3>7.2 Section 8 – Taxability of Dividend</h3>
+        <p>Dividend income from a <strong>Domestic Company</strong> or a <strong>Foreign Company</strong> is taxable in the hands of the shareholder at the <strong>Normal Tax Rate</strong>.</p>
+        
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:30%;">Type of Dividend</th>
+                <th style="width:70%;">Year of Taxability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Final Dividend</strong></td>
+                <td>Year in which it is <strong>declared at the AGM</strong> by the company.</td>
+              </tr>
+              <tr>
+                <td><strong>Deemed Dividend</strong></td>
+                <td>Year in which it is <strong>distributed/paid</strong> by the company.</td>
+              </tr>
+              <tr>
+                <td><strong>Interim Dividend</strong></td>
+                <td>Year in which it is <strong>received</strong> by the shareholder.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="sec-7-2-1">
+        <h4>7.2.1 Final Dividend</h4>
+        <p>Taxable in the year of declaration at the AGM.</p>
+      </section>
+
+      <section id="sec-7-2-2">
+        <h4>7.2.2 Deemed Dividend</h4>
+        <p>Taxable in the year it is distributed or paid.</p>
+      </section>
+
+      <section id="sec-7-2-3">
+        <h4>7.2.3 Interim Dividend</h4>
+        <p>Taxable unconditionally in the year of actual receipt by the shareholder.</p>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 8 -->
+      <section id="sec-8">
+        <h2>8. Deemed Dividend</h2>
+      </section>
+
+      <section id="sec-8-1">
+        <h3>8.1 Meaning and Objective</h3>
+        <blockquote>
+          These payments are <strong>not dividend in reality</strong>, but are treated as dividends for Income Tax purposes to <strong>plug loopholes</strong> and <strong>check tax avoidance</strong>.
+        </blockquote>
+      </section>
+
+      <section id="sec-8-2">
+        <h3>8.2 Types of Deemed Dividend under Section 2(22)</h3>
+      </section>
+
+      <section id="sec-8-2-1">
+        <h4>8.2.1 Distribution of Assets – Section 2(22)(a)</h4>
+        <p>Any <strong>distribution of assets</strong> by a company to its shareholders, to the extent the company possesses <strong>accumulated profits</strong> <em>(capitalised or not)</em>.</p>
+        <p><em>Note:</em> In case of <strong>Bonus shares</strong>, there is no release of assets — hence, the issue of bonus shares is <strong>not deemed as dividend</strong>. When assets are distributed u/s 2(22)(a)/(c)/(d), the <strong>FMV of the asset on the date of distribution</strong> is taken for computing the dividend.</p>
+      </section>
+
+      <section id="sec-8-2-2">
+        <h4>8.2.2 Distribution of Debentures or Deposit Certificates – Section 2(22)(b)</h4>
+        <p><strong>(a)</strong> Any distribution to shareholders of <strong>debentures, debenture stock, or deposit certificates</strong>, and<br>
+        <strong>(b)</strong> Any distribution to <strong>preference shareholders of shares by way of Bonus</strong>.</p>
+        <p><em>(To the extent to which the company possesses accumulated profit, capitalised or not).</em></p>
+      </section>
+
+      <section id="sec-8-2-3">
+        <h4>8.2.3 Distribution of Assets on Liquidation – Section 2(22)(c)</h4>
+        <p>Any <strong>distribution of assets by a company on liquidation</strong>, to the extent to which the company possesses <strong>accumulated profit</strong> <em>(capitalised or not)</em>.</p>
+      </section>
+
+      <section id="sec-8-2-4">
+        <h4>8.2.4 Distribution on Reduction of Share Capital – Section 2(22)(d)</h4>
+        <p>Any <strong>distribution to shareholders on reduction of capital</strong>, to the extent to which the company has <strong>accumulated profit</strong> <em>(capitalised or not)</em>.</p>
+      </section>
+
+      <section id="sec-8-3">
+        <h3>8.3 Comparison between Section 2(22)(a)/(b)/(c)/(d) and Section 2(22)(e)</h3>
+        
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:5%;">S.No.</th>
+                <th style="width:47%;">Sec. 2(22)(a)/(b)/(c)/(d)</th>
+                <th style="width:48%;">Sec. 2(22)(e)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Treated as Deemed Dividend to the extent of <strong>accumulated profit (capitalised or not)</strong>.</td>
+                <td>Treated as Deemed Dividend to the extent of <strong>accumulated profit</strong> (not capitalised).</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Applicable to <strong>all companies</strong>.</td>
+                <td>Applicable to <strong>closely held companies only</strong>.</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <strong>Notes:</strong> Distribution treated as Deemed Dividend <em>"to the extent of accumulated profits"</em>. In case of accumulated loss, the above provision shall <strong>not</strong> apply.<br>
+                  <strong>Accumulated profit</strong> means profit/reserve created through P&amp;L A/c.<br>
+                  *<em>Capitalised</em> means the issue of bonus shares, transfers to capital reserves, etc. shall also be included in accumulated profit.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="sec-8-4">
+        <h3>8.4 Loans or Advances by Closely Held Company – Section 2(22)(e)</h3>
+        
+        <div class="mermaid-wrap">
+          <div class="mermaid">
+flowchart LR
+    classDef default fill:#ffffff,stroke:#444,stroke-width:1px,color:#111;
+
+    A["Closely held Co."]
+    B["Shareholder"]
+    C["Any Concern<br/>[Co., Firm, AOP etc.]"]
+    D["Any Person"]
+
+    A -- "Loan or Advances" --> C
+    A -- "Loan or Advances" --> B
+    B -- "10% or more Voting Power" --> A
+    B -- "Substantial Interest" --> C
+    A -- "Loan or Advances" --> D
+    B -- "Behalf or Benefits" --> D
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-8-4-1">
+        <h4>8.4.1 Conditions for Applicability</h4>
+        <p>Loans or advances are treated as <strong>deemed dividend</strong> and taxable to the extent to which the company possesses <strong>accumulated profit</strong> (accounting profit as per Companies Act, not assessable profit). Even if the loan is <strong>repaid</strong> or the company charges a <strong>market rate of interest</strong>, the loan is still deemed as dividend at the point it is made.</p>
+      </section>
+
+      <section id="sec-8-4-2">
+        <h4>8.4.2 Meaning of Concern and Substantial Interest</h4>
+        <p><strong>"Concern"</strong> means HUF, Firm, Company, or AOP/BOI. <strong>"Substantial interest"</strong> means holding <strong>20% or more</strong> voting power/Profit Sharing Ratio (PSR) at any time during the Previous Year.</p>
+      </section>
+
+      <section id="sec-8-4-3">
+        <h4>8.4.3 Taxability in Hands of Shareholder or Concern</h4>
+        <p>If the loan/advance is given to a concern, it is treated as deemed dividend in the hands of the <strong>concern</strong>; however, per some court judgments, it can be taxed in the hands of the <strong>shareholder</strong>.</p>
+      </section>
+
+      <section id="sec-8-4-4">
+        <h4>8.4.4 Exceptions for Trade Advances</h4>
+        <p>Sec. 2(22)(e) is <strong>not applicable</strong> in the case of <strong>trade advances</strong> (i.e., advances in the nature of commercial transactions) as per CBDT Circular 19/2017. <em>Example:</em> Advances made to a sister concern for job work, or an advance to a shareholder to install P&amp;M at their premises for an export order.</p>
+      </section>
+
+      <section id="sec-8-5">
+        <h3>8.5 Items Not Treated as Dividend</h3>
+      </section>
+
+      <section id="sec-8-5-1">
+        <h4>8.5.1 Loans in Ordinary Course of Money-lending Business</h4>
+        <p>Any advance or loan given by a company in the <strong>ordinary course of its business of money lending</strong>, where money lending is a <strong>"substantial part of the business" (SPOB)</strong>. This is assessed on a case-by-case basis considering turnover, profits, manpower, capital employed, etc.</p>
+      </section>
+
+      <section id="sec-8-5-2">
+        <h4>8.5.2 Dividend Set-off against Deemed Dividend Loan</h4>
+        <p>Any dividend paid by a company that is <strong>set off against the loan</strong> which has already been deemed as dividend u/s 2(22)(e).</p>
+      </section>
+
+      <section id="sec-8-5-3">
+        <h4>8.5.3 Buyback of Shares</h4>
+        <p>Payments made by a company on the buy-back of its own shares.</p>
+      </section>
+
+      <section id="sec-8-5-4">
+        <h4>8.5.4 Shares Issued under Demerger</h4>
+        <p><strong>Shares allotted</strong> to shareholders of a demerged company by the resulting company <strong>under Demerger</strong>.</p>
+      </section>
+
+      <section id="sec-8-5-5">
+        <h4>8.5.5 Distribution Relating to Preference Shares</h4>
+        <p>Any distribution made u/s <strong>2(22)(c) or 2(22)(d)</strong> in respect of <strong>preference shares</strong>.</p>
+      </section>
+
+      <hr>
+
+      <!-- SECTION 9 -->
+      <section id="sec-9">
+        <h2>9. Special Notes under Default Tax Regime</h2>
+        <p>The following benefits are <strong>not available</strong> when the assessee opts to pay taxes under the <strong>default tax regime u/s 115BAC</strong>:</p>
+      </section>
+
+      <section id="sec-9-1">
+        <h3>9.1 Non-availability of Exemption under Section 10(32)</h3>
+        <p>Exemption for the income of a minor child included in the income of the parent is withdrawn.</p>
+      </section>
+
+      <section id="sec-9-2">
+        <h3>9.2 Non-availability of Exemption under Section 10(17)</h3>
+        <p>Exemption for Daily and Constituency allowances of MPs/MLAs is withdrawn.</p>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+  // --- 1. Desktop Font Size Controls ---
+  let currentFontSize = 14.5;
+  const rootStyle = document.documentElement.style;
+
+  function updateFontSize(newSize) {
+    currentFontSize = Math.max(10, Math.min(newSize, 24)); // clamp between 10px and 24px
+    rootStyle.setProperty('--base-font-size', currentFontSize + 'px');
+  }
+
+  function changeFontSize(step) {
+    updateFontSize(currentFontSize + step);
+  }
+
+  function resetFontSize() {
+    updateFontSize(14.5);
+  }
+
+  // --- 2. Mobile TOC Menu Toggle ---
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const tocNav = document.getElementById('toc-nav');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+  const tocLinks = document.querySelectorAll('.toc a');
+
+  function toggleMobileMenu() {
+    const isOpen = tocNav.classList.toggle('open');
+    mobileBackdrop.classList.toggle('open');
+    // Lock background scroll when menu is open on mobile
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  menuToggleBtn.addEventListener('click', toggleMobileMenu);
+  mobileBackdrop.addEventListener('click', toggleMobileMenu);
+
+  // Close the menu when a link inside it is clicked (mobile only)
+  tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 920 && tocNav.classList.contains('open')) {
+        toggleMobileMenu();
+      }
+    });
+  });
+
+  // Toggle Submenu manually when clicking the parent link
+  document.querySelectorAll('.toc .has-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const parentLi = this.closest('.has-submenu');
+      parentLi.classList.toggle('open');
+    });
+  });
+
+  // --- 3. Scroll Spy (Highlight active section & expand submenu in TOC) ---
+  const sections = document.querySelectorAll('section');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-15% 0px -70% 0px', // Triggers when the section is nicely in the viewing area
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const activeId = entry.target.getAttribute('id');
+        const activeLink = document.querySelector(`.toc a[href="#${activeId}"]`);
+        
+        if (activeLink) {
+          // Remove active class from all links
+          document.querySelectorAll('.toc a').forEach(link => link.classList.remove('active'));
+          // Close all submenus
+          document.querySelectorAll('.toc .has-submenu').forEach(li => li.classList.remove('open'));
+          
+          activeLink.classList.add('active');
+
+          // If the link is INSIDE a submenu, open the parent
+          let parentSubmenu = activeLink.closest('.submenu');
+          while (parentSubmenu) {
+            const hasSubmenuParent = parentSubmenu.closest('.has-submenu');
+            if (hasSubmenuParent) {
+              hasSubmenuParent.classList.add('open');
+            }
+            // keep traversing up for deeply nested submenus
+            parentSubmenu = hasSubmenuParent.parentElement.closest('.submenu');
+          }
+
+          // If the link OWNS a submenu, open it
+          const wrapperLi = activeLink.closest('.has-submenu');
+          if (wrapperLi && activeLink.nextElementSibling && activeLink.nextElementSibling.classList.contains('submenu')) {
+            wrapperLi.classList.add('open');
+          }
+          
+          // Optional: Scroll TOC to keep active link in view
+          activeLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
+</html>

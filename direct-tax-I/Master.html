@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Topic Name — Main Category</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0d0d0d;
+    --dark: #1c1c1c;
+    --mid: #555;
+    --light: #999;
+    --rule: #e0e0e0;
+    --rule-heavy: #b0b0b0;
+    --bg: #ffffff;
+    --bg-alt: #f6f6f6;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', Consolas, monospace;
+    --base-font-size: 14.5px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--base-font-size);
+    line-height: 1.75;
+    color: var(--dark);
+    background: var(--bg);
+    transition: font-size 0.2s ease;
+  }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── Desktop Font Controls ──────────────────────── */
+  .font-controls {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 5px;
+    background: var(--bg-alt);
+    padding: 6px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 50;
+  }
+
+  .font-controls button {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    color: var(--dark);
+    font-family: var(--font-body);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .font-controls button:hover {
+    background: #e9e9e9;
+    color: var(--black);
+  }
+
+  /* ── TOC Sidebar ─────────────────────────────────── */
+  .toc {
+    width: 252px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--rule);
+    padding: 2rem 1.1rem 2rem 1.4rem;
+    background: var(--bg-alt);
+  }
+
+  .toc::-webkit-scrollbar { width: 4px; }
+  .toc::-webkit-scrollbar-thumb { background: var(--rule-heavy); }
+
+  .toc .toc-label {
+    font-family: var(--font-body);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .toc ol { list-style: none; padding: 0; }
+  .toc li { margin: 0; }
+
+  .toc a {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--mid);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 2px;
+    border-left: 2px solid transparent;
+    line-height: 1.35;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s;
+  }
+
+  .toc a:hover {
+    color: var(--black);
+    background-color: rgba(0,0,0,0.03);
+  }
+
+  /* Active state for Scroll Spy */
+  .toc a.active {
+    color: var(--black);
+    font-weight: 600;
+    border-left-color: var(--black);
+    background-color: rgba(0,0,0,0.05);
+  }
+
+  .toc a.section-link {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.77rem;
+    margin-top: 0.55rem;
+    border-left-color: var(--rule-heavy);
+  }
+
+  .toc a.section-link.active {
+    border-left-color: var(--black);
+  }
+
+  /* Submenu Styles */
+  .toc .submenu {
+    display: none;
+    padding-left: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-left: 1px dashed var(--rule-heavy);
+    margin-left: 0.8rem;
+    list-style: none;
+  }
+  
+  .toc .has-submenu.open .submenu {
+    display: block;
+  }
+
+  .toc .submenu a {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 1px;
+    line-height: 1.3;
+  }
+
+  .toc .has-submenu > a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+  }
+  
+  /* Dropdown Arrow */
+  .toc .has-submenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--light);
+    transform: rotate(-90deg);
+    transition: transform 0.2s, border-top-color 0.2s;
+  }
+
+  .toc .has-submenu.open > a::after {
+    transform: rotate(0deg);
+    border-top-color: var(--black);
+  }
+
+  /* ── Mobile TOC Bar ──────────────────────────────── */
+  .mobile-topbar {
+    display: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 20px;
+    z-index: 900;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+
+  .mobile-topbar button {
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mobile-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* ── Main Content ────────────────────────────────── */
+  .content-wrapper {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 840px;
+    padding: 3rem 3.5rem 5rem 3.5rem;
+  }
+
+  /* ── Page Header ─────────────────────────────────── */
+  .page-header {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-header .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 0.4rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.1;
+  }
+
+  .page-header .meta {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--light);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Section Separators ──────────────────────────── */
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  section { margin-bottom: 0; scroll-margin-top: 2rem; }
+
+  /* ── Headings ────────────────────────────────────── */
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--rule-heavy);
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Paragraphs & Text ───────────────────────────── */
+  p { margin-bottom: 0.7rem; }
+  strong { font-weight: 600; color: var(--black); }
+  em { font-style: italic; }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.87em;
+    background: var(--bg-alt);
+    border: 1px solid var(--rule);
+    padding: 0.08em 0.35em;
+    border-radius: 2px;
+  }
+
+  /* ── Lists ───────────────────────────────────────── */
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  li { margin-bottom: 0.25rem; }
+  li > ul, li > ol { margin-top: 0.2rem; margin-bottom: 0.2rem; }
+
+  /* Step list */
+  .step-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+  }
+  .step-list li {
+    counter-increment: step;
+    padding-left: 4.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  .step-list li::before {
+    content: "Step " counter(step);
+    position: absolute;
+    left: 0;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--light);
+    top: 0.25rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border: 1px solid var(--rule);
+    padding: 0.05rem 0.3rem;
+  }
+
+  /* ── Blockquote ──────────────────────────────────── */
+  blockquote {
+    border-left: 3px solid var(--black);
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.25rem;
+    background: var(--bg-alt);
+    font-style: italic;
+    color: var(--dark);
+    font-size: 0.95em;
+  }
+
+  /* ── Formula block ───────────────────────────────── */
+  .formula {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    padding: 0.7rem 1rem;
+    background: var(--bg-alt);
+    border-left: 3px solid var(--dark);
+    margin: 0.8rem 0;
+    line-height: 1.5;
+  }
+
+  /* ── Tables ──────────────────────────────────────── */
+  .table-responsive {
+    overflow-x: auto;
+    margin: 0.9rem 0 1.2rem 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.865rem;
+    min-width: 400px;
+  }
+
+  th {
+    background: var(--black);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+  }
+
+  td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td { background: var(--bg-alt); }
+  tr:last-child td { border-bottom: 2px solid var(--rule-heavy); }
+
+  /* Amount column alignment */
+  .amt th:last-child, .amt td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .amt th:nth-child(2), .amt td:nth-child(2) { text-align: right; }
+
+  /* Number column */
+  .num td:first-child, .num th:first-child { text-align: right; width: 2.5rem; }
+
+  /* ── Mermaid wrapper ─────────────────────────────── */
+  .mermaid-wrap {
+    margin: 1.2rem 0;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--rule);
+    background: var(--bg-alt);
+    overflow-x: auto;
+  }
+
+  .mermaid-wrap .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 920px) {
+    .font-controls { display: none; }
+    .mobile-topbar { display: flex; }
+    
+    .toc {
+      position: fixed;
+      left: 0;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+      background: var(--bg);
+      box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+    }
+    .toc.open { transform: translateX(0); }
+    .mobile-backdrop.open { display: block; opacity: 1; }
+
+    .content { padding: 1.5rem 1.2rem 4rem 1.2rem; max-width: 100%; }
+    section { scroll-margin-top: 4.5rem; }
+  }
+
+  /* ── Print ───────────────────────────────────────── */
+  @media print {
+    .toc, .mobile-topbar, .font-controls { display: none; }
+    .content { max-width: 100%; padding: 0.5rem 1rem; }
+    h2 { page-break-before: auto; }
+    .mermaid-wrap { border: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#f0f0f0',
+      primaryTextColor: '#1c1c1c',
+      primaryBorderColor: '#888',
+      lineColor: '#555',
+      secondaryColor: '#ffffff',
+      tertiaryColor: '#e8e8e8',
+      fontSize: '13px',
+      fontFamily: "'IBM Plex Sans', system-ui, sans-serif"
+    }
+  });
+</script>
+
+<div class="wrapper">
+
+  <nav class="toc" id="toc-nav" aria-label="Table of contents">
+    <span class="toc-label">Contents</span>
+    <ol>
+      <li><a class="section-link" href="#section-1">Section 1 Example</a></li>
+      <li><a href="#subsection-1">Subsection Example</a></li>
+      <li class="has-submenu">
+        <a class="section-link" href="#section-2-parent">Section 2 with Submenu</a>
+        <ul class="submenu">
+          <li><a href="#sub-item-1">1. Sub Item 1</a></li>
+          <li><a href="#sub-item-2">2. Sub Item 2</a></li>
+        </ul>
+      </li>
+    </ol>
+  </nav>
+
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <div class="content-wrapper">
+    
+    <div class="mobile-topbar">
+      <button id="menu-toggle-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        Table of Contents
+      </button>
+    </div>
+
+    <div class="font-controls">
+      <button onclick="changeFontSize(-1)" title="Decrease font size">A-</button>
+      <button onclick="resetFontSize()" title="Reset font size">A</button>
+      <button onclick="changeFontSize(1)" title="Increase font size">A+</button>
+    </div>
+
+    <main class="content">
+
+      <div class="page-header">
+        <p class="eyebrow">Category/Subject Area</p>
+        <h1>Main Title Here</h1>
+        <p class="meta">Subtitle or Meta Info &nbsp;&nbsp;|&nbsp;&nbsp; AY 26–27</p>
+      </div>
+
+      <section id="section-1">
+        <h2>Section 1 Example</h2>
+        <p>This is standard paragraph text. <strong>Bold text</strong> and <em>italic text</em>. <code>Inline code</code>.</p>
+        <ul>
+          <li>Bullet point 1</li>
+          <li>Bullet point 2</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="subsection-1">
+        <h2>Subsection Example</h2>
+        
+        <div class="table-responsive">
+          <table class="amt">
+            <thead>
+              <tr>
+                <th style="text-align:left">Particulars</th>
+                <th style="text-align:right">Amount (₹)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Item 1</td><td style="text-align:right">xxx</td></tr>
+              <tr><td>Item 2</td><td style="text-align:right">xxx</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="formula"><strong>Formula = A + B * C</strong></div>
+        
+      </section>
+
+      <hr>
+
+      <section id="section-2-parent">
+        <h2>Section 2 with Submenu</h2>
+        
+        <section id="sub-item-1">
+          <h3>1. Sub Item 1</h3>
+          <p>Content for sub item 1...</p>
+        </section>
+
+        <section id="sub-item-2">
+          <h3>2. Sub Item 2</h3>
+          
+          <div class="mermaid-wrap">
+            <div class="mermaid">
+flowchart TB
+    A["Start"] --> B["Step 1"]
+    B --> C["End"]
+            </div>
+          </div>
+
+        </section>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+  // --- 1. Desktop Font Size Controls ---
+  let currentFontSize = 14.5;
+  const rootStyle = document.documentElement.style;
+
+  function updateFontSize(newSize) {
+    currentFontSize = Math.max(10, Math.min(newSize, 24)); // clamp between 10px and 24px
+    rootStyle.setProperty('--base-font-size', currentFontSize + 'px');
+  }
+
+  function changeFontSize(step) {
+    updateFontSize(currentFontSize + step);
+  }
+
+  function resetFontSize() {
+    updateFontSize(14.5);
+  }
+
+  // --- 2. Mobile TOC Menu Toggle ---
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const tocNav = document.getElementById('toc-nav');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+  const tocLinks = document.querySelectorAll('.toc a');
+
+  function toggleMobileMenu() {
+    const isOpen = tocNav.classList.toggle('open');
+    mobileBackdrop.classList.toggle('open');
+    // Lock background scroll when menu is open on mobile
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  menuToggleBtn.addEventListener('click', toggleMobileMenu);
+  mobileBackdrop.addEventListener('click', toggleMobileMenu);
+
+  // Close the menu when a link inside it is clicked (mobile only)
+  tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 920 && tocNav.classList.contains('open')) {
+        toggleMobileMenu();
+      }
+    });
+  });
+
+  // Toggle Submenu manually when clicking the parent link
+  document.querySelectorAll('.toc .has-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const parentLi = this.closest('.has-submenu');
+      parentLi.classList.toggle('open');
+    });
+  });
+
+  // --- 3. Scroll Spy (Highlight active section & expand submenu in TOC) ---
+  const sections = document.querySelectorAll('section');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-15% 0px -70% 0px', // Triggers when the section is nicely in the viewing area
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const activeId = entry.target.getAttribute('id');
+        const activeLink = document.querySelector(`.toc a[href="#${activeId}"]`);
+        
+        if (activeLink) {
+          // Remove active class from all links
+          document.querySelectorAll('.toc a').forEach(link => link.classList.remove('active'));
+          // Close all submenus
+          document.querySelectorAll('.toc .has-submenu').forEach(li => li.classList.remove('open'));
+          
+          activeLink.classList.add('active');
+
+          // If the link is INSIDE a submenu, open the parent
+          const parentSubmenu = activeLink.closest('.submenu');
+          if (parentSubmenu) {
+            parentSubmenu.closest('.has-submenu').classList.add('open');
+          }
+
+          // If the link OWNS a submenu (like Note 14), open it
+          const wrapperLi = activeLink.closest('.has-submenu');
+          if (wrapperLi && activeLink.nextElementSibling && activeLink.nextElementSibling.classList.contains('submenu')) {
+            wrapperLi.classList.add('open');
+          }
+          
+          // Optional: Scroll TOC to keep active link in view
+          activeLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
+</html>
